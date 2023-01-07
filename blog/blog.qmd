@@ -1,0 +1,8 @@
+---
+title: Blog
+listing:
+    type: grid
+    contents: posts
+---
+
+Here would be my blog page

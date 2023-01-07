@@ -1,0 +1,39 @@
+---
+title: "Raunak Farhaz"
+image: "images/profile.jpg"
+about:
+    template: trestles 
+    image-shape: round
+    image-width: 10.0rem 
+    links:
+        - icon: envelope
+          href: mailto:farhazra@hu-berlin.de
+        - icon: github
+          href: https://github.com/Raunak12775
+        - icon: twitter
+          href: https://twitter.com/Farhazraunak
+        - icon: youtube
+          href: https://www.youtube.com/@raunakfarhaz2757
+
+---
+
+# Welcome to my personal website
+
+Hello! Hallo! Hola! Ciao! 
+
+I am Raunak and I am currently doing my doctorate in Theoretical Chemistry in Humboldt-Universität zu Berlin. I am a method developer, primarily focussing in the field of *Multiresolution-Resolution Analysis*. I love computers and programming and I have an expertise in `Fortran77`, `C++`, `Julia` and `Python`. Besides science I love to cook and am an avid music lover, I play guitar and uke. 
+
+I love teaching, hence you will find my tutorial videos and lecture notes in the [teaching](teaching/teach.qmd) section of this website.
+
+For relevant research collaboration please contact me through my [email](mailto:farhazra@hu-berlin.de).
+
+**Nice to meet you !**
+
+
+:::{.callout-note icon=true}
+## Important update:
+
+- [2023.01.06] : 1st video in youtube is coming
+
+- [2023.01.17] : coming soon . . .
+:::

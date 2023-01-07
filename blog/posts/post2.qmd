@@ -1,0 +1,6 @@
+---
+title: "Post2"
+subtitle: "Subtitle"
+image: "./../../images/profile.jpg"
+---
+Raunak farhaz and ridh fiza

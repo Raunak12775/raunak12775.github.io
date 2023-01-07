@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: ""
+  output-dir: docs
+  search: false
+  page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2023
+  navbar:
+    background: "#11028d"
+    foreground: white
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "CV"
+        href: data/cv.pdf
+      - href: publication.qmd
+        text: Publications
+      - text: "Teaching"
+        href: teaching/teach.qmd
+      - text: "Blog"
+        href: blog/blog.qmd
+
+format:
+  html:
+    theme: default
+    mainfont: canela
+    fontcolor: "#11028d"
+    linkcolor: "#6757ec"
+    monofont: courier new
+    backgroundcolor: "#d6d2fd"
+    css: styles.css
+    toc: true
+    code-fold: false
+    
+
