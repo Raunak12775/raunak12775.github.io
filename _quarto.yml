@@ -1,9 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: ""
-  output-dir: docs
   search: false
   page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2023
   navbar:
