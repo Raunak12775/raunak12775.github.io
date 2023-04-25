@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "resources/teach.html",
-    "href": "resources/teach.html",
-    "title": "Raunak Farhaz",
+    "objectID": "resources/research.html",
+    "href": "resources/research.html",
+    "title": "Research",
     "section": "",
-    "text": "Hello"
+    "text": "Multiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
   },
   {
     "objectID": "resources/cv.html",
@@ -28,80 +28,10 @@
     "text": "What can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
   },
   {
-    "objectID": "blog/posts/post2.html",
-    "href": "blog/posts/post2.html",
-    "title": "Post2",
-    "section": "",
-    "text": "Raunak farhaz and ridh fiza"
-  },
-  {
     "objectID": "blog/blog.html",
     "href": "blog/blog.html",
     "title": "The Open Diary",
     "section": "",
     "text": "Quarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/posts/post1.html#raunak",
-    "href": "blog/posts/post1.html#raunak",
-    "title": "Quarto is Super",
-    "section": "",
-    "text": "Hello this is the post"
-  },
-  {
-    "objectID": "blog/posts/post1.html#my-experience-with-quarto",
-    "href": "blog/posts/post1.html#my-experience-with-quarto",
-    "title": "Quarto is Super",
-    "section": "",
-    "text": "Quarto is a markup language which can be used to generate beautiful technical or scientific documents.\n\n\n\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook and also"
-  },
-  {
-    "objectID": "resources/research.html",
-    "href": "resources/research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Multiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
-  },
-  {
-    "objectID": "resources/teach.html#haelo-1",
-    "href": "resources/teach.html#haelo-1",
-    "title": "Hello",
-    "section": "Haelo",
-    "text": "Haelo"
-  },
-  {
-    "objectID": "resources/teach.html#haelo-2",
-    "href": "resources/teach.html#haelo-2",
-    "title": "Hello",
-    "section": "Haelo",
-    "text": "Haelo"
-  },
-  {
-    "objectID": "resources/teach.html#haelo-3",
-    "href": "resources/teach.html#haelo-3",
-    "title": "Hello",
-    "section": "Haelo",
-    "text": "Haelo"
-  },
-  {
-    "objectID": "resources/teach.html#haelo-4",
-    "href": "resources/teach.html#haelo-4",
-    "title": "Hello",
-    "section": "Haelo",
-    "text": "Haelo"
-  },
-  {
-    "objectID": "resources/teach.html#haelo-5",
-    "href": "resources/teach.html#haelo-5",
-    "title": "Hello",
-    "section": "Haelo",
-    "text": "Haelo"
-  },
-  {
-    "objectID": "publication.html",
-    "href": "publication.html",
-    "title": "Good days are yet to come . . .",
-    "section": "",
-    "text": "Good days are yet to come . . ."
   }
 ]
