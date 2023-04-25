@@ -1,7 +1,12 @@
 ---
 title: ""
-toc: true
-toc-location: left
-smooth-scroll: true     
 ---
+# Linux and Computers
 
+# Atomic Structure
+
+# Hartree Fock
+
+# Configuration Interaction
+
+# Coupled Cluster

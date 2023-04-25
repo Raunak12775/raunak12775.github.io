@@ -1,7 +1,6 @@
 ---
 Title: "My Publications"
 toc: false
-smooth-scroll: true
 ---
 
 # Good days are yet to come . . .

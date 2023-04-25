@@ -1,8 +1,5 @@
 ---
 title: Research
-toc: true
-toc-location: left
-smooth-scroll: true
 ---
 # Molecules in Strong Magnetic Field
 
