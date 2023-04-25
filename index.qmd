@@ -17,7 +17,7 @@ about:
 toc: false
 ---
 I am currently doing my Doctorate in Theoretical Chemistry in **Humboldt-Universität zu Berlin**. 
-I do method development, primarily focussing in the field of **Multiresolution Analysis**.
+I do method developmentand my primary focus is in the field of [**Multiresolution Analysis**]().
  I love computers and programming and I have an expertise in `Fortran77`, `C++`, `Julia` and `Python`. 
  Besides science I love to cook and am an avid music lover. 
 

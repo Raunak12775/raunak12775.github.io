@@ -1,6 +1,6 @@
 ---
 title: "Quarto is Super"
-description: my experience with Quarto
+description: my experience with quarto
 date: "25/04/2023" 
 image: "./../../images/quarto_logo.jpg"
 ---
@@ -18,4 +18,4 @@ Many things can be done like:
 * Presentations
 * Book
 
-and also one can render  
+and also one can translate with different kinds of document format like `html`, `pdf`, `pptx`, `docx`, `odt` etc. with an ease of simple commands. For more I recommend you to check out the official [Quarto website](https://quarto.org/).  

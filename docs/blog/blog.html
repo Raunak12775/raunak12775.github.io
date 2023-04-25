@@ -63,9 +63,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -108,6 +108,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources/research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../publication.html" rel="" target="">
@@ -165,53 +169,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1735945200000" data-listing-file-modified-sort="1682457266643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/posts/post1.html"> <img src="../images/quarto_logo.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/post1.html">
-<h3 class="no-anchor listing-title">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1735945200000" data-listing-file-modified-sort="1682461085663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/posts/post1.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../images/quarto_logo.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Quarto is Super
-</h3>
-<div class="listing-subtitle">
+</h5>
+<div class="card-text listing-description">
+my experience with quarto
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
 </div>
-<div class="listing-description">
-<p>my experience with Quarto</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post1.html">
 <div class="listing-date">
 Jan 4, 2025
 </div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1682445851731" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/posts/post2.html"> <img src="../images/profile.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/post2.html">
-<h3 class="no-anchor listing-title">
-Post2
-</h3>
-<div class="listing-subtitle">
-Subtitle
-</div>
-<div class="listing-description">
-Raunak farhaz and ridh fiza
 </div>
 </a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post2.html"> </a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">

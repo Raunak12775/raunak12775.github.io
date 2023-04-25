@@ -1,6 +1,7 @@
 ---
 title: ""
 toc: true
+toc-location: left
+smooth-scroll: true     
 ---
-
 

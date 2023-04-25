@@ -1,7 +1,7 @@
 ---
 title: The Open Diary
 listing:
-    type: default
+    type: grid
     contents: posts
     sort: "date asc"
 ---
