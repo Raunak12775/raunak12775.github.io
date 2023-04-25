@@ -13,13 +13,13 @@ about:
         - icon: twitter
           href: https://twitter.com/Farhazraunak
         - icon: youtube
-          href: https://www.youtube.com/@raunakfarhaz2757
-
+          href: https://www.youtube.com/@farhazexplains
+toc: false
 ---
-
-Hello! Hallo! Hola! Ciao! 
-
-I am Raunak and I am currently doing my doctorate in Theoretical Chemistry in Humboldt-Universität zu Berlin. I am a method developer, primarily focussing in the field of *Multiresolution-Resolution Analysis*. I love computers and programming and I have an expertise in `Fortran77`, `C++`, `Julia` and `Python`. Besides science I love to cook and am an avid music lover, I play guitar and uke. 
+I am currently doing my Doctorate in Theoretical Chemistry in **Humboldt-Universität zu Berlin**. 
+I do method development, primarily focussing in the field of **Multiresolution Analysis**.
+ I love computers and programming and I have an expertise in `Fortran77`, `C++`, `Julia` and `Python`. 
+ Besides science I love to cook and am an avid music lover. 
 
 I love teaching, hence you will find my tutorial videos and lecture notes in the [teaching](teaching/teach.qmd) section of this website.
 
@@ -29,9 +29,7 @@ For relevant research collaboration please contact me through my [email](mailto:
 
 
 :::{.callout-note icon=true}
-## Important update:
+## Important update
 
-- [02.04.2023] : First lecture video out in youtube-[Video Link](https://www.youtube.com/watch?v=yZleWj-W5Ug)
-
-- [11.04.2023] : Presenting at Adlershof Science Cafe
+- 25^th^ May 2023 : ChemistryCoffeeTalks at HU Berlin, for more details click the [link](https://twitter.com/hu_cct) here
 :::
