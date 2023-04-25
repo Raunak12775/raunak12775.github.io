@@ -1,10 +1,10 @@
 ---
 title: "Raunak Farhaz"
-image: "images/profile.jpg"
+image: "images/dp.png"
 about:
     template: trestles 
-    image-shape: round
-    image-width: 10.0rem 
+    image-shape: rounded
+    image-width: 15em 
     links:
         - icon: envelope
           href: mailto:farhazra@hu-berlin.de
@@ -16,8 +16,6 @@ about:
           href: https://www.youtube.com/@raunakfarhaz2757
 
 ---
-
-# Welcome to my personal website
 
 Hello! Hallo! Hola! Ciao! 
 

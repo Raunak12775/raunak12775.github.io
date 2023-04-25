@@ -3,34 +3,40 @@ project:
   output-dir: docs
 
 website:
-  title: ""
+  title: "Raunak Farhaz"
+  favicon: images/favicon.png
   search: false
   page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2023
   navbar:
-    background: "#11028d"
-    foreground: white
+    title: false
+    logo: images/favicon.png
     right:
       - text: "Home"
         href: index.qmd
-      - text: "CV"
-        href: data/cv.pdf
       - href: publication.qmd
         text: Publications
       - text: "Teaching"
-        href: teaching/teach.qmd
+        href: resources/teach.qmd
       - text: "Blog"
         href: blog/blog.qmd
+      - text: "CV"
+        href: resources/cv.qmd
+      
 
 format:
   html:
-    theme: default
-    mainfont: canela
-    fontcolor: "#11028d"
-    linkcolor: "#6757ec"
-    monofont: courier new
-    backgroundcolor: "#d6d2fd"
+    theme:
+      light: [morph, light.scss]
+      dark: [morph, dark.scss]
+    # mainfont: roboto
+    # fontcolor: "#11028d"
+    # linkcolor: "#6757ec"
+    # monofont: courier new
+    # backgroundcolor: "#d6d2fd"
     css: styles.css
     toc: true
-    code-fold: false
+    code-fold: true
+  
+editor: visual
     
 
