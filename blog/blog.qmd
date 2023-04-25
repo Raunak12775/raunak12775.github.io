@@ -1,8 +1,8 @@
 ---
-title: Blog
+title: The Open Diary
 listing:
     type: grid
     contents: posts
+    sort: "date asc"
 ---
-
-Here would be my blog page
+I would like to share some thoughts about different things here . . .

@@ -1,10 +1,21 @@
 ---
-title: "Post1"
-subtitle: "Subtitle"
-image: "./../../images/profile.jpg"
+title: "Quarto is Super"
+description: my experience with quarto
+date: "25/04/2023" 
+image: "./../../images/quarto_logo.jpg"
 ---
+ 
+### What is Quarto?
 
-## Raunak
+Quarto is a markup language which can be used to generate beautiful technical or scientific documents.
 
+### What can be done with it?
 
-Hello this is the post
+Many things can be done like:
+
+* Blogs/Websites
+* Articles
+* Presentations
+* Book
+
+and also one can translate with different kinds of document format like `html`, `pdf`, `pptx`, `docx`, `odt` etc. with an ease of simple commands. For more I recommend you to check out the official [Quarto website](https://quarto.org/).  

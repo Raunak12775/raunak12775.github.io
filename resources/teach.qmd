@@ -1,5 +1,7 @@
 ---
-title: "Teaching Resources"
+title: ""
+toc: true
+toc-location: left
+smooth-scroll: true     
 ---
 
-Here you will find the embedded youtube videos and my lecture notes which are ready to download.

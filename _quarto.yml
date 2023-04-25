@@ -13,6 +13,8 @@ website:
     right:
       - text: "Home"
         href: index.qmd
+      - text: "Research"
+        href: resources/research.qmd
       - href: publication.qmd
         text: Publications
       - text: "Teaching"

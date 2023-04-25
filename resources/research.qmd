@@ -1,0 +1,14 @@
+---
+title: Research
+toc: true
+toc-location: left
+smooth-scroll: true
+---
+# Molecules in Strong Magnetic Field
+
+# Multiresolution Analysis
+
+
+# Julia in Computational Chemistry
+
+> Coming soon . . .

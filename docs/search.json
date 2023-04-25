@@ -2,30 +2,30 @@
   {
     "objectID": "resources/teach.html",
     "href": "resources/teach.html",
-    "title": "Teaching Resources",
+    "title": "Raunak Farhaz",
     "section": "",
-    "text": "Here you will find the embedded youtube videos and my lecture notes which are ready to download."
+    "text": "Hello"
   },
   {
     "objectID": "resources/cv.html",
     "href": "resources/cv.html",
-    "title": "Raunak Farhaz",
+    "title": "Know about me",
     "section": "",
-    "text": "Hello I am Raunak"
+    "text": "Know about me\nHello I am Raunak"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Raunak Farhaz",
     "section": "",
-    "text": "I am Raunak and I am currently doing my doctorate in Theoretical Chemistry in Humboldt-Universität zu Berlin. I am a method developer, primarily focussing in the field of Multiresolution-Resolution Analysis. I love computers and programming and I have an expertise in Fortran77, C++, Julia and Python. Besides science I love to cook and am an avid music lover, I play guitar and uke.\nI love teaching, hence you will find my tutorial videos and lecture notes in the teaching section of this website.\nFor relevant research collaboration please contact me through my email.\nNice to meet you !\n\n\n\n\n\n\nImportant update:\n\n\n\n\n[02.04.2023] : First lecture video out in youtube-Video Link\n[11.04.2023] : Presenting at Adlershof Science Cafe"
+    "text": "I am currently doing my Doctorate in Theoretical Chemistry in Humboldt-Universität zu Berlin. I do method developmentand my primary focus is in the field of Multiresolution Analysis. I love computers and programming and I have an expertise in Fortran77, C++, Julia and Python. Besides science I love to cook and am an avid music lover.\nI love teaching, hence you will find my tutorial videos and lecture notes in the teaching section of this website.\nFor relevant research collaboration please contact me through my email.\nNice to meet you !\n\n\n\n\n\n\nImportant update\n\n\n\n\n25th May 2023 : ChemistryCoffeeTalks at HU Berlin, for more details click the link here"
   },
   {
     "objectID": "blog/posts/post1.html",
     "href": "blog/posts/post1.html",
-    "title": "Post1",
+    "title": "Quarto is Super",
     "section": "",
-    "text": "Hello this is the post"
+    "text": "What is Quarto?\nQuarto is a markup language which can be used to generate beautiful technical or scientific documents.\n\n\nWhat can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
   },
   {
     "objectID": "blog/posts/post2.html",
@@ -37,8 +37,71 @@
   {
     "objectID": "blog/blog.html",
     "href": "blog/blog.html",
-    "title": "Blog",
+    "title": "The Open Diary",
     "section": "",
-    "text": "Post1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "I would like to share some thoughts about different things here . . .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/post1.html#raunak",
+    "href": "blog/posts/post1.html#raunak",
+    "title": "Quarto is Super",
+    "section": "",
+    "text": "Hello this is the post"
+  },
+  {
+    "objectID": "blog/posts/post1.html#my-experience-with-quarto",
+    "href": "blog/posts/post1.html#my-experience-with-quarto",
+    "title": "Quarto is Super",
+    "section": "",
+    "text": "Quarto is a markup language which can be used to generate beautiful technical or scientific documents.\n\n\n\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook and also"
+  },
+  {
+    "objectID": "resources/research.html",
+    "href": "resources/research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Molecules in Strong Magnetic Field\n\n\nMultiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
+  },
+  {
+    "objectID": "resources/teach.html#haelo-1",
+    "href": "resources/teach.html#haelo-1",
+    "title": "Hello",
+    "section": "Haelo",
+    "text": "Haelo"
+  },
+  {
+    "objectID": "resources/teach.html#haelo-2",
+    "href": "resources/teach.html#haelo-2",
+    "title": "Hello",
+    "section": "Haelo",
+    "text": "Haelo"
+  },
+  {
+    "objectID": "resources/teach.html#haelo-3",
+    "href": "resources/teach.html#haelo-3",
+    "title": "Hello",
+    "section": "Haelo",
+    "text": "Haelo"
+  },
+  {
+    "objectID": "resources/teach.html#haelo-4",
+    "href": "resources/teach.html#haelo-4",
+    "title": "Hello",
+    "section": "Haelo",
+    "text": "Haelo"
+  },
+  {
+    "objectID": "resources/teach.html#haelo-5",
+    "href": "resources/teach.html#haelo-5",
+    "title": "Hello",
+    "section": "Haelo",
+    "text": "Haelo"
+  },
+  {
+    "objectID": "publication.html",
+    "href": "publication.html",
+    "title": "Good days are yet to come . . .",
+    "section": "",
+    "text": "Good days are yet to come . . ."
   }
 ]
