@@ -9,23 +9,23 @@
   {
     "objectID": "resources/cv.html",
     "href": "resources/cv.html",
-    "title": "Know about me",
+    "title": "Raunak Farhaz",
     "section": "",
-    "text": "Know about me\nHello I am Raunak"
+    "text": "Hello I am Raunak"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Raunak Farhaz",
     "section": "",
-    "text": "I am currently doing my Doctorate in Theoretical Chemistry in Humboldt-Universität zu Berlin. I do method developmentand my primary focus is in the field of Multiresolution Analysis. I love computers and programming and I have an expertise in Fortran77, C++, Julia and Python. Besides science I love to cook and am an avid music lover.\nI love teaching, hence you will find my tutorial videos and lecture notes in the teaching section of this website.\nFor relevant research collaboration please contact me through my email.\nNice to meet you !\n\n\n\n\n\n\nImportant update\n\n\n\n\n25th May 2023 : ChemistryCoffeeTalks at HU Berlin, for more details click the link here"
+    "text": "I love teaching, hence you will find my tutorial videos and lecture notes in the teaching section of this website.\nFor relevant research collaboration please contact me through my email.\nNice to meet you !\n\n\n\n\n\n\nImportant update\n\n\n\n\n25th May 2023 : ChemistryCoffeeTalks at HU Berlin, for more details click the link here"
   },
   {
     "objectID": "blog/posts/post1.html",
     "href": "blog/posts/post1.html",
     "title": "Quarto is Super",
     "section": "",
-    "text": "What is Quarto?\nQuarto is a markup language which can be used to generate beautiful technical or scientific documents.\n\n\nWhat can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
+    "text": "What can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
   },
   {
     "objectID": "blog/posts/post2.html",
@@ -39,7 +39,7 @@
     "href": "blog/blog.html",
     "title": "The Open Diary",
     "section": "",
-    "text": "I would like to share some thoughts about different things here . . .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/post1.html#raunak",
@@ -60,7 +60,7 @@
     "href": "resources/research.html",
     "title": "Research",
     "section": "",
-    "text": "Molecules in Strong Magnetic Field\n\n\nMultiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
+    "text": "Multiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
   },
   {
     "objectID": "resources/teach.html#haelo-1",
