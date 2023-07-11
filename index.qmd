@@ -18,15 +18,15 @@ toc: false
 ---
 I am currently doing my Doctorate in Theoretical Chemistry in **Humboldt-Universität zu Berlin**. 
 I do method developmentand my primary focus is in the field of [**Multiresolution Analysis**]().
- I love computers and programming and I have an expertise in `Fortran77`, `C++`, `Julia` and `Python`. 
- Besides science I love to cook and am an avid music lover. 
+I love computers and programming and I have an expertise in `Fortran95`, `C++`, `Julia`, `Python` and `Wolfram Mathematica`. 
+Besides science I love to cook and am an avid music lover. 
 
 I love teaching, hence you will find my tutorial videos and lecture notes in the [teaching](resources/teach.qmd) section of this website.
 
-For relevant research collaboration please contact me through my [email](mailto:farhazra@hu-berlin.de).
+For relevant research collaboration please contact me through my [work-email](mailto:farhazra@hu-berlin.de) or my [personal-email](mailto:farhazraunak@proton.me)
 
 :::{.callout-note icon=true}
 ## Important update
 
-- 25^th^ May 2023 : ChemistryCoffeeTalks at HU Berlin, for more details click the [link](https://twitter.com/hu_cct) here
+- No updates now
 :::
