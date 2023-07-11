@@ -21,6 +21,8 @@ website:
         href: resources/teach.qmd
       - text: "Blog"
         href: blog/blog.qmd
+      - text: "Books"
+        href: resources/books.qmd
       - text: "CV"
         href: resources/cv.qmd
       
