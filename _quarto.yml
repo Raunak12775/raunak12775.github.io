@@ -13,30 +13,22 @@ website:
     right:
       - text: "Home"
         href: index.qmd
+      - text: "Bio"
+        href: resources/cv.qmd
       - text: "Research"
         href: resources/research.qmd
-      - href: publication.qmd
-        text: Publications
-      - text: "Teaching"
-        href: resources/teach.qmd
-      - text: "Blog"
-        href: blog/blog.qmd
-      - text: "Books"
-        href: resources/books.qmd
-      - text: "CV"
-        href: resources/cv.qmd
+      - text: "Publications"
+        href: resources/publication.qmd
+      # - text: "Teaching"
+      #   href: resources/teach.qmd
+      # - text: "Blog"
+      #   href: blog/blog.qmd
+      # - text: "Writing"
+      #   href: resources/books.qmd
       
 
 format:
   html:
-    theme:
-      light: [morph, light.scss]
-      dark: [morph, dark.scss]
-    # mainfont: roboto
-    # fontcolor: "#11028d"
-    # linkcolor: "#6757ec"
-    # monofont: courier new
-    # backgroundcolor: "#d6d2fd"
     css: styles.css
     toc: true
     toc-location: left

@@ -1,51 +1,79 @@
 [
   {
+    "objectID": "resources/publication.html",
+    "href": "resources/publication.html",
+    "title": "Good days are yet to come . . .",
+    "section": "",
+    "text": "Good days are yet to come . . ."
+  },
+  {
     "objectID": "resources/research.html",
     "href": "resources/research.html",
     "title": "Research",
     "section": "",
-    "text": "Multiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
+    "text": "Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist.\n\n\nMultiresolution Analysis\n\n\nJulia in Computational Chemistry\n\nComing soon . . ."
   },
   {
     "objectID": "resources/books.html",
     "href": "resources/books.html",
     "title": "Books I have written",
     "section": "",
-    "text": "Computational Chemistry : Julian ApproachClick Here for the book link\nData Analysis for Computational Chemists Coming Soon"
-  },
-  {
-    "objectID": "resources/teach.html",
-    "href": "resources/teach.html",
-    "title": "Raunak Farhaz",
-    "section": "",
-    "text": "Atomic Structure\n\n\nHartree Fock\n\n\nConfiguration Interaction\n\n\nCoupled Cluster"
-  },
-  {
-    "objectID": "resources/cv.html",
-    "href": "resources/cv.html",
-    "title": "Raunak Farhaz",
-    "section": "",
-    "text": "Hello I am Raunak"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Raunak Farhaz",
-    "section": "",
-    "text": "I love teaching, hence you will find my tutorial videos and lecture notes in the teaching section of this website.\nFor relevant research collaboration please contact me through my work-email or my personal-email\n\n\n\n\n\n\nImportant update\n\n\n\n\nNo updates now"
+    "text": "The following links are links to the gitbook and quarto-books I have written for myself at the beginning but love to share it among others.\n\nComputational Chemistry : Julian ApproachClick Here for the book link\nData Analysis for Computational Chemists Coming Soon"
   },
   {
     "objectID": "blog/posts/post1.html",
     "href": "blog/posts/post1.html",
     "title": "Quarto is Super",
     "section": "",
-    "text": "What can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
+    "text": "What is Quarto?\nQuarto is a markup language which can be used to generate beautiful technical or scientific documents.\n\n\nWhat can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
   },
   {
     "objectID": "blog/blog.html",
     "href": "blog/blog.html",
     "title": "The Open Diary",
     "section": "",
-    "text": "Quarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "I would like to share some thoughts about different things here . . .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Raunak Farhaz",
+    "section": "",
+    "text": "I am currently doing my Doctorate in Theoretical Chemistry in Humboldt-Universität zu Berlin. I do method developmentand my primary focus is in the field of Multiresolution Analysis. The former link redirects to one of the review article written by Florian Bischoff on the topic. Nice and easy read.\nI love computers and programming. Besides science I love to cook and am an avid music lover.\nI love teaching, hence you will find my tutorial videos and lecture notes in the teaching section of this website.\nFor relevant research collaboration please contact me through my work email or my personal email\n\n\n\n\n\n\nImportant update\n\n\n\n\nNo updates now"
+  },
+  {
+    "objectID": "resources/cv.html",
+    "href": "resources/cv.html",
+    "title": "Raunak Farhaz",
+    "section": "",
+    "text": "St. Andrew’s High School + Birbhum Zilla School\nSuri, West Bengal, India\n\n\n\nJadavpur University\nKolkata, West Bengal, India\n\n\n\nJadavpur University\nKolkata, West Bengal, India"
+  },
+  {
+    "objectID": "resources/cv.html#education",
+    "href": "resources/cv.html#education",
+    "title": "Raunak Farhaz",
+    "section": "",
+    "text": "St. Andrew’s High School + Birbhum Zilla School\nSuri, West Bengal, India\n\n\n\nJadavpur University\nKolkata, West Bengal, India\n\n\n\nJadavpur University\nKolkata, West Bengal, India"
+  },
+  {
+    "objectID": "resources/cv.html#research",
+    "href": "resources/cv.html#research",
+    "title": "Raunak Farhaz",
+    "section": "Research",
+    "text": "Research\n\nOct 2021 to “Current Days” [Doctoral Studies]\n\nUniversity : Humboldt-Universitaet zu Berlin\nSupervisor : PD Dr. Florian A. Bischoff\nFunding : DAAD Research Grants: Doctoral Programmes in Germany 2021/22 (PID: 91803487)\nProject : “Study of Helium Clusters in Extreme Magnetic Fields”"
+  },
+  {
+    "objectID": "resources/cv.html#expertise",
+    "href": "resources/cv.html#expertise",
+    "title": "Raunak Farhaz",
+    "section": "Expertise",
+    "text": "Expertise\n\n\n\nProgrammming\n\nC++\nPython\nWolfram Mathematica\\(\\texttrademark\\)\nJulia\nLaTeX\nTypst\nBash\n\n\n\n\nQuantum Chemistry\n\nMADNESS\nPySCF\nMRChem\nORCA\n\n\n\n\nLanguage\n\nBengali (mother tongue)\nEnglish (fluent)\nGerman (B1)\nHindi (fluent)\n\n\n\n\n\nExtra Curricular\n\nCooking\nMusic (Guitar)\nThinking XD"
+  },
+  {
+    "objectID": "resources/teach.html",
+    "href": "resources/teach.html",
+    "title": "Linux and Computers",
+    "section": "",
+    "text": "Linux and Computers\n\n\nAtomic Structure\n\n\nHartree Fock\n\n\nConfiguration Interaction\n\n\nCoupled Cluster"
   }
 ]
