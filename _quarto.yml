@@ -6,7 +6,7 @@ website:
   title: "Raunak Farhaz"
   favicon: images/favicon.png
   search: false
-  page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2023
+  page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2024
   navbar:
     title: false
     logo: images/favicon.png
@@ -19,8 +19,8 @@ website:
         href: resources/research.qmd
       - text: "Publications"
         href: resources/publication.qmd
-      # - text: "Teaching"
-      #   href: resources/teach.qmd
+      - text: "Learn"
+        href: resources/teach.qmd
       # - text: "Blog"
       #   href: blog/blog.qmd
       # - text: "Writing"

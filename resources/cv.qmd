@@ -1,26 +1,30 @@
 ---
+title: "Bio"
 toc: false
 ---
+## In a nutshell
+[Mathematics, Computers, Atoms, Music and Food]{style="color:red"}
+
 ## Education
 
-### 2000 to 2015 [School]
+### 2000 to 2015 (School)
 *St. Andrew's High School* + *Birbhum Zilla School* \
 Suri, West Bengal, India
 
-### 2015 to 2018 [Bachelors of Science]
+### 2015 to 2018 (Bachelors of Science)
 *Jadavpur University* \
 Kolkata, West Bengal, India
 
-### 2018 to 2020 [Masters of Science]
+### 2018 to 2020 (Masters of Science)
 *Jadavpur University* \
 Kolkata, West Bengal, India
 
-### 2020 to 2021 [Covid + Teaching + Social Service]
+### 2020 to 2021 (Covid + Teaching + Social Service)
 
 ## Research 
 
-### Oct 2021 to "Current Days" [Doctoral Studies]
-- University : Humboldt-Universitaet zu Berlin
+### Oct 2021 to "Current Days" (Doctoral Studies)
+- University : Humboldt-Universität zu Berlin
 - Supervisor : [PD Dr. Florian A. Bischoff](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff/team/florian-bischoff)
 - Funding : DAAD *Research Grants: Doctoral Programmes in Germany 2021/22* (PID: 91803487)
 - Project : "Study of Helium Clusters in Extreme Magnetic Fields"

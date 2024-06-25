@@ -1,0 +1,15 @@
+---
+title: "Electrons are polygamous"
+description: "`Electronic Structure Theory` `Quantum Chemistry` `Bonding Theory`"
+date: today 
+image: "./../../images/mo-graphic.jpeg"
+toc: true
+fig-cap-location: bottom
+---
+
+The ground state MO diagram of H~2~
+
+![Figure 1 : the qualitative MO diagram of H~2~ is presented here](../../images/h2-ground.svg)
+
+
+

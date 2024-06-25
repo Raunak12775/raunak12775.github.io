@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -118,6 +138,10 @@ window.Quarto = {
     <a class="nav-link" href="../resources/publication.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources/teach.html"> 
+<span class="menu-text">Learn</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -133,9 +157,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#molecules-in-strong-magnetic-field" id="toc-molecules-in-strong-magnetic-field" class="nav-link active" data-scroll-target="#molecules-in-strong-magnetic-field">Molecules in Strong Magnetic Field</a></li>
-  <li><a href="#multiresolution-analysis" id="toc-multiresolution-analysis" class="nav-link" data-scroll-target="#multiresolution-analysis">Multiresolution Analysis</a></li>
-  <li><a href="#julia-in-computational-chemistry" id="toc-julia-in-computational-chemistry" class="nav-link" data-scroll-target="#julia-in-computational-chemistry">Julia in Computational Chemistry</a></li>
+  <li><a href="#born-oppenheimer" id="toc-born-oppenheimer" class="nav-link active" data-scroll-target="#born-oppenheimer"><span class="header-section-number">1</span> Born-Oppenheimer</a></li>
+  <li><a href="#quantum-chemistry-and-schroedingers-equation" id="toc-quantum-chemistry-and-schroedingers-equation" class="nav-link" data-scroll-target="#quantum-chemistry-and-schroedingers-equation"><span class="header-section-number">2</span> Quantum Chemistry and Schroedinger’s Equation</a></li>
+  <li><a href="#hartree-fock-hf-theory" id="toc-hartree-fock-hf-theory" class="nav-link" data-scroll-target="#hartree-fock-hf-theory"><span class="header-section-number">3</span> Hartree-Fock (HF) Theory</a></li>
+  <li><a href="#molecules-in-strong-magnetic-field" id="toc-molecules-in-strong-magnetic-field" class="nav-link" data-scroll-target="#molecules-in-strong-magnetic-field"><span class="header-section-number">4</span> Molecules in Strong Magnetic Field</a></li>
   </ul>
 </nav>
 </nav>
@@ -165,23 +190,34 @@ window.Quarto = {
 </header>
 
 
-<section id="molecules-in-strong-magnetic-field" class="level1">
-<h1>Molecules in Strong Magnetic Field</h1>
+<section id="born-oppenheimer" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="born-oppenheimer"><span class="header-section-number">1</span> Born-Oppenheimer</h2>
+</section>
+<section id="quantum-chemistry-and-schroedingers-equation" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="quantum-chemistry-and-schroedingers-equation"><span class="header-section-number">2</span> Quantum Chemistry and Schroedinger’s Equation</h2>
+<p>Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word <em>quantum</em><span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span>. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:</p>
+<p><span id="eq-se"><span class="math display">\[
+\hat{H}\psi = E \psi
+\tag{1}\]</span></span></p>
+<p>Apparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory<span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span>.</p>
+</section>
+<section id="hartree-fock-hf-theory" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="hartree-fock-hf-theory"><span class="header-section-number">3</span> Hartree-Fock (HF) Theory</h2>
+<p>In <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> there are two parts where the approximation can be made - Hamiltonian ## Multiresolution Analysis Let us assume there is a function f(x)</p>
+</section>
+<section id="molecules-in-strong-magnetic-field" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="molecules-in-strong-magnetic-field"><span class="header-section-number">4</span> Molecules in Strong Magnetic Field</h2>
 <p>There are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e.&nbsp;He<sub>2</sub>. If we consider <a href="https://en.wikipedia.org/wiki/Molecular_orbital_theory">Molecular Orbital Theory</a> we will see that He<sub>2</sub> does not exist.</p>
-</section>
-<section id="multiresolution-analysis" class="level1">
-<h1>Multiresolution Analysis</h1>
-</section>
-<section id="julia-in-computational-chemistry" class="level1">
-<h1>Julia in Computational Chemistry</h1>
-<blockquote class="blockquote">
-<p>Coming soon . . .</p>
-</blockquote>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-levine2014quantum" class="csl-entry" role="listitem">
+<div class="csl-left-margin">(1) </div><div class="csl-right-inline">Levine, I. N. <em><a href="https://books.google.de/books?id=ht6jMQEACAAJ">Quantum Chemistry</a></em>; Pearson advanced chemistry series; Pearson, 2014.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -598,7 +634,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz | Berlin, Germany 2023</p>
+<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz | Berlin, Germany 2024</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

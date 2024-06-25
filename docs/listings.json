@@ -4,5 +4,12 @@
     "items": [
       "/blog/posts/post1.html"
     ]
+  },
+  {
+    "listing": "/resources/teach.html",
+    "items": [
+      "/resources/teach/bo-approx.html",
+      "/resources/teach/mo-theory.html"
+    ]
   }
 ]

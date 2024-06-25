@@ -1,12 +1,7 @@
 ---
-title: ""
+title: Digital Computational Chemistry Book
+listing:
+    type: grid
+    contents: teach
+    sort: "date desc"
 ---
-# Linux and Computers
-
-# Atomic Structure
-
-# Hartree Fock
-
-# Configuration Interaction
-
-# Coupled Cluster

@@ -1,6 +1,6 @@
 ---
 title: "Raunak Farhaz"
-image: "images/1.jpg"
+image: "images/3.jpg"
 about:
     template: trestles 
     image-shape: rounded
@@ -16,12 +16,9 @@ about:
           href: https://www.youtube.com/@farhazexplains
 toc: false
 ---
-I am currently doing my Doctorate in Theoretical Chemistry in **Humboldt-Universität zu Berlin**. 
-I do method developmentand my primary focus is in the field of [**Multiresolution Analysis**](https://www.sciencedirect.com/science/article/abs/pii/S006532761930019X?via%3Dihub). The former link redirects to one of the review article written by Florian Bischoff on the topic. Nice and easy read.
+Hi! I am Raunak. I am currently doing my Ph.D. in Theoretical Chemistry in **Humboldt-Universität zu Berlin**. My research interest lies in the nature of bonding of atoms in **extreme magnetic fields** using [**Multiresolution Analysis**](https://www.sciencedirect.com/science/article/abs/pii/S006532761930019X?via%3Dihub)(MRA). Go to my [Bio](resources/cv.qmd) to know more.
 
-I love computers and programming. Besides science I love to cook and am an avid music lover. 
-
-I love teaching, hence you will find my tutorial videos and lecture notes in the [teaching](resources/teach.qmd) section of this website.
+<!-- I love teaching, hence you will find my tutorial videos and lecture notes in the [teaching](resources/teach.qmd) section of this website. -->
 
 For relevant research collaboration please contact me through my [work email](mailto:farhazra@hu-berlin.de) or my [personal email](mailto:farhazraunak@proton.me)
 
