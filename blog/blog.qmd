@@ -5,4 +5,3 @@ listing:
     contents: posts
     sort: "date desc"
 ---
-I would like to share some thoughts about different things here . . .

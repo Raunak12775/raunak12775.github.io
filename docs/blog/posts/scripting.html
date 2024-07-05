@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-01-04">
-<meta name="description" content="my experience with quarto">
+<meta name="dcterms.date" content="2024-04-07">
+<meta name="description" content="python, scripting, theoretical chemistry">
 
-<title>Raunak Farhaz - Quarto is Super</title>
+<title>Raunak Farhaz - Scripting is Important</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -120,6 +154,14 @@ window.Quarto = {
     <a class="nav-link" href="../../resources/publication.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources/teach.html"> 
+<span class="menu-text">Learn</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -131,14 +173,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link active" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
-  <li><a href="#what-can-be-done-with-it" id="toc-what-can-be-done-with-it" class="nav-link" data-scroll-target="#what-can-be-done-with-it">What can be done with it?</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -149,12 +184,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quarto is Super</h1>
+<h1 class="title">Scripting is Important</h1>
 </div>
 
 <div>
   <div class="description">
-    my experience with quarto
+    <code>python</code>, <code>scripting</code>, <code>theoretical chemistry</code>
   </div>
 </div>
 
@@ -165,7 +200,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 4, 2025</p>
+      <p class="date">April 7, 2024</p>
     </div>
   </div>
   
@@ -177,23 +212,66 @@ window.Quarto = {
 </header>
 
 
-<section id="what-is-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h3>
-<p>Quarto is a markup language which can be used to generate beautiful technical or scientific documents.</p>
-</section>
-<section id="what-can-be-done-with-it" class="level3">
-<h3 class="anchored" data-anchor-id="what-can-be-done-with-it">What can be done with it?</h3>
-<p>Many things can be done like:</p>
-<ul>
-<li>Blogs/Websites</li>
-<li>Articles</li>
-<li>Presentations</li>
-<li>Book</li>
-</ul>
-<p>and also one can translate with different kinds of document format like <code>html</code>, <code>pdf</code>, <code>pptx</code>, <code>docx</code>, <code>odt</code> etc. with an ease of simple commands. For more I recommend you to check out the official <a href="https://quarto.org/">Quarto website</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Disclaimer">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Disclaimer
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Knowledge of <code>python</code> is necessary for the upcoming discussion</p>
+</div>
+</div>
+<p>Being a doctoral student in computational/theoretical chemistry writing script for daily reserarch is an essential part of our work. It can be using <code>bash</code> or <code>python</code> or <code>julia</code>. From my experience in all of these 3 scripting tools I realised that <code>python</code> works the best. Firstly, I will go through some basic functions or code snippets that I needed most of the time, and I hated writing it repeatedly.</p>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Write a python function that can read a <code>.xyz</code> coordinate file of a molecule.</strong></p>
+</div>
+</div>
+</div>
+<p>Let us assume it is H<sub>2</sub> molecule.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">2</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="ex">H</span> 0. 0. 0.</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="ex">H</span> 0. 0. 1.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>the python function for reading the file and storing the is</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">def</span> read_xyz_file(file_path):</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="cf">with</span> <span class="bu">open</span>(file_path, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        <span class="co"># Read the number of atoms</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>        num_atoms <span class="op">=</span> <span class="bu">int</span>(<span class="bu">file</span>.readline().strip())</span>
+<span id="cb2-7"><a href="#cb2-7"></a>        </span>
+<span id="cb2-8"><a href="#cb2-8"></a>        <span class="co"># Read the comment line (if any)</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>        comment <span class="op">=</span> <span class="bu">file</span>.readline().strip()</span>
+<span id="cb2-10"><a href="#cb2-10"></a>        </span>
+<span id="cb2-11"><a href="#cb2-11"></a>        <span class="co"># Initialize lists </span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>        <span class="co"># to store the atom types and coordinates</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>        atom_types <span class="op">=</span> []</span>
+<span id="cb2-14"><a href="#cb2-14"></a>        coordinates <span class="op">=</span> []</span>
+<span id="cb2-15"><a href="#cb2-15"></a>        </span>
+<span id="cb2-16"><a href="#cb2-16"></a>        <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(num_atoms):</span>
+<span id="cb2-17"><a href="#cb2-17"></a>            line <span class="op">=</span> <span class="bu">file</span>.readline().strip()</span>
+<span id="cb2-18"><a href="#cb2-18"></a>            <span class="cf">if</span> line:  </span>
+<span id="cb2-19"><a href="#cb2-19"></a>                parts <span class="op">=</span> line.split()</span>
+<span id="cb2-20"><a href="#cb2-20"></a>                atom_type <span class="op">=</span> parts[<span class="dv">0</span>]</span>
+<span id="cb2-21"><a href="#cb2-21"></a>                coord <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="bu">float</span>, parts[<span class="dv">1</span>:]))</span>
+<span id="cb2-22"><a href="#cb2-22"></a>                atom_types.append(atom_type)</span>
+<span id="cb2-23"><a href="#cb2-23"></a>                coordinates.append(coord)</span>
+<span id="cb2-24"><a href="#cb2-24"></a>        </span>
+<span id="cb2-25"><a href="#cb2-25"></a>        <span class="co"># Convert the coordinates list to a NumPy array</span></span>
+<span id="cb2-26"><a href="#cb2-26"></a>        coordinates <span class="op">=</span> np.array(coordinates)</span>
+<span id="cb2-27"><a href="#cb2-27"></a>    </span>
+<span id="cb2-28"><a href="#cb2-28"></a>    <span class="cf">return</span> num_atoms, comment, atom_types, coordinates</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -612,7 +690,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz | Berlin, Germany 2023</p>
+<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz | Berlin, Germany 2024</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

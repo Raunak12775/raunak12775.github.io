@@ -21,8 +21,8 @@ website:
         href: resources/publication.qmd
       - text: "Learn"
         href: resources/teach.qmd
-      # - text: "Blog"
-      #   href: blog/blog.qmd
+      - text: "Blog"
+        href: blog/blog.qmd
       # - text: "Writing"
       #   href: resources/books.qmd
       

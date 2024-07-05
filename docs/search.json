@@ -1,17 +1,31 @@
 [
   {
-    "objectID": "resources/publication.html",
-    "href": "resources/publication.html",
-    "title": "Good days are yet to come . . .",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Raunak Farhaz",
     "section": "",
-    "text": "Good days are yet to come . . ."
+    "text": "Hi! I am Raunak. I am currently doing my Ph.D. in Theoretical Chemistry in Humboldt-Universität zu Berlin. My research interest lies in the nature of bonding of atoms in extreme magnetic fields using Multiresolution Analysis(MRA). Go to my Bio to know more.\n\nFor relevant research collaboration please contact me through my work email or my personal email\n\n\n\n\n\n\nImportant update\n\n\n\n\nNo updates now"
   },
   {
-    "objectID": "resources/research.html",
-    "href": "resources/research.html",
-    "title": "Research",
+    "objectID": "resources/teach/bo-approx.html",
+    "href": "resources/teach/bo-approx.html",
+    "title": "It’s good that nucleus is heavy",
     "section": "",
-    "text": "Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:\n\\[\n\\hat{H}\\psi = E \\psi\n\\tag{1}\\]\nApparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory1."
+    "text": "To solve Schroedinger Equation for even the smallest possible molecule can be complicated as the simplest molecule contains two nuclei and one electron. And hence all the molecular theories start with the follwing precious assumption. Without this molecular theories would have had a real bad time."
+  },
+  {
+    "objectID": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
+    "href": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
+    "title": "It’s good that nucleus is heavy",
+    "section": "Born-Oppenheimer Approximation",
+    "text": "Born-Oppenheimer Approximation\nThe assumption starts with a simple fact:\n\n\n\n\n\n\nNote\n\n\n\nNucleus is heavier in mass than an Electron\n\n\nThis simplifies the mathematics to a big extent. How? Let’s see together."
+  },
+  {
+    "objectID": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
+    "href": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
+    "title": "It’s good that nucleus is heavy",
+    "section": "Time Independent Schroedinger Equation",
+    "text": "Time Independent Schroedinger Equation\nLet’s put all the pieces together of a time independent Schroedinger Equation, so the equation looks like the following\n\\[\n\\hat{H} \\psi = E \\psi\n\\tag{1}\\]\nNow we will write the Hamiltonian explicitly from Equation 1\n\\[\n\\hat{H} = \\hat{H}_e + \\hat{H}_N=-\\frac{\\nabla^2_e}{2} -\\frac{\\nabla^2_N}{2} + V_{ee} - V_{Ne} + V_{NN}\n\\]\nHere, the operators subscripted with \\(e\\) represents electronic operators and \\(N\\) represents nuclear operators."
   },
   {
     "objectID": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
@@ -35,32 +49,32 @@
     "text": "4 Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist."
   },
   {
-    "objectID": "resources/books.html",
-    "href": "resources/books.html",
-    "title": "Books I have written",
+    "objectID": "resources/publication.html",
+    "href": "resources/publication.html",
+    "title": "Good days are yet to come . . .",
     "section": "",
-    "text": "The following links are links to the gitbook and quarto-books I have written for myself at the beginning but love to share it among others.\n\nComputational Chemistry : Julian ApproachClick Here for the book link\nData Analysis for Computational Chemists Coming Soon"
+    "text": "Good days are yet to come . . ."
   },
   {
-    "objectID": "blog/posts/post1.html",
-    "href": "blog/posts/post1.html",
-    "title": "Quarto is Super",
+    "objectID": "blog/posts/scripting.html",
+    "href": "blog/posts/scripting.html",
+    "title": "Scripting is Important",
     "section": "",
-    "text": "What is Quarto?\nQuarto is a markup language which can be used to generate beautiful technical or scientific documents.\n\n\nWhat can be done with it?\nMany things can be done like:\n\nBlogs/Websites\nArticles\nPresentations\nBook\n\nand also one can translate with different kinds of document format like html, pdf, pptx, docx, odt etc. with an ease of simple commands. For more I recommend you to check out the official Quarto website."
+    "text": "Disclaimer\n\n\n\nKnowledge of python is necessary for the upcoming discussion\n\n\nBeing a doctoral student in computational/theoretical chemistry writing script for daily reserarch is an essential part of our work. It can be using bash or python or julia. From my experience in all of these 3 scripting tools I realised that python works the best. Firstly, I will go through some basic functions or code snippets that I needed most of the time, and I hated writing it repeatedly.\n\n\n\n\n\n\nWrite a python function that can read a .xyz coordinate file of a molecule.\n\n\n\nLet us assume it is H2 molecule.\n2\n\nH 0. 0. 0.\nH 0. 0. 1.\nthe python function for reading the file and storing the is\nimport numpy as np\n\ndef read_xyz_file(file_path):\n    with open(file_path, 'r') as file:\n        # Read the number of atoms\n        num_atoms = int(file.readline().strip())\n        \n        # Read the comment line (if any)\n        comment = file.readline().strip()\n        \n        # Initialize lists \n        # to store the atom types and coordinates\n        atom_types = []\n        coordinates = []\n        \n        for _ in range(num_atoms):\n            line = file.readline().strip()\n            if line:  \n                parts = line.split()\n                atom_type = parts[0]\n                coord = list(map(float, parts[1:]))\n                atom_types.append(atom_type)\n                coordinates.append(coord)\n        \n        # Convert the coordinates list to a NumPy array\n        coordinates = np.array(coordinates)\n    \n    return num_atoms, comment, atom_types, coordinates"
   },
   {
     "objectID": "blog/blog.html",
     "href": "blog/blog.html",
     "title": "The Open Diary",
     "section": "",
-    "text": "I would like to share some thoughts about different things here . . .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto is Super\n\n\nmy experience with quarto\n\n\n\n\n\n\nJan 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Scripting is Important\n\n\npython, scripting, theoretical chemistry\n\n\n\n\n\n\nApr 7, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Raunak Farhaz",
+    "objectID": "resources/books.html",
+    "href": "resources/books.html",
+    "title": "Books I have written",
     "section": "",
-    "text": "Hi! I am Raunak. I am currently doing my Ph.D. in Theoretical Chemistry in Humboldt-Universität zu Berlin. My research interest lies in the nature of bonding of atoms in extreme magnetic fields using Multiresolution Analysis(MRA). Go to my Bio to know more.\n\nFor relevant research collaboration please contact me through my work email or my personal email\n\n\n\n\n\n\nImportant update\n\n\n\n\nNo updates now"
+    "text": "The following links are links to the gitbook and quarto-books I have written for myself at the beginning but love to share it among others.\n\nComputational Chemistry : Julian ApproachClick Here for the book link\nData Analysis for Computational Chemists Coming Soon"
   },
   {
     "objectID": "resources/cv.html",
@@ -102,56 +116,7 @@
     "href": "resources/teach.html",
     "title": "Digital Computational Chemistry Book",
     "section": "",
-    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\nElectronic Structure Theory Quantum Chemistry Bonding Theory\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html",
-    "href": "resources/teach/bo-approx.html",
-    "title": "It’s good that nucleus is heavy",
-    "section": "",
-    "text": "To solve Schroedinger Equation for even the smallest possible molecule can be complicated as the simplest molecule contains two nuclei and one electron. And hence all the molecular theories start with the follwing precious assumption. Without this molecular theories would have had a real bad time."
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
-    "href": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Born-Oppenheimer Approximation",
-    "text": "Born-Oppenheimer Approximation\nThe assumption starts with a simple fact:\n\n\n\n\n\n\nNote\n\n\n\nNucleus is heavier in mass than an Electron\n\n\nThis simplifies the mathematics to a big extent. How? Let’s see together."
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#section",
-    "href": "resources/teach/bo-approx.html#section",
-    "title": "It’s good that nucleus is heavy",
-    "section": "",
-    "text": "Let’s put all the pieces together of a time indep"
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#time-independent",
-    "href": "resources/teach/bo-approx.html#time-independent",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Time Independent",
-    "text": "Time Independent\nLet’s put all the pieces together of a time indep"
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#time-independent-s",
-    "href": "resources/teach/bo-approx.html#time-independent-s",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Time Independent S",
-    "text": "Time Independent S\nLet’s put all the pieces together of a time indep"
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#time-independent-schroedinger",
-    "href": "resources/teach/bo-approx.html#time-independent-schroedinger",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Time Independent Schroedinger",
-    "text": "Time Independent Schroedinger\nLet’s put all the pieces together of a time indep"
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
-    "href": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Time Independent Schroedinger Equation",
-    "text": "Time Independent Schroedinger Equation\nLet’s put all the pieces together of a time independent Schroedinger Equation, so the equation looks like the following\n\\[\n\\hat{H} \\psi = E \\psi\n\\tag{1}\\]\nNow we will write the Hamiltonian explicitly from Equation 1\n\\[\n\\hat{H} = \\hat{H}_e + \\hat{H}_N=-\\frac{\\nabla^2_e}{2} -\\frac{\\nabla^2_N}{2} + V_{ee} - V_{Ne} + V_{NN}\n\\]\nHere, the operators subscripted with \\(e\\) represents electronic operators and \\(N\\) represents"
+    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nJul 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\nElectronic Structure Theory Quantum Chemistry Bonding Theory\n\n\n\n\n\n\nJul 5, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/teach/mo-theory.html",
