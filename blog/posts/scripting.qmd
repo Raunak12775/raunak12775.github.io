@@ -20,7 +20,7 @@ Let us assume it is H~2~ molecule.
 H 0. 0. 0.
 H 0. 0. 1.
 ```
-
+    
 the python function for reading the file and storing the  is 
 
 ```python{code-line-numbers="true"}

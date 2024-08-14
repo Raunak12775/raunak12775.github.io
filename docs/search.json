@@ -7,46 +7,18 @@
     "text": "Hi! I am Raunak. I am currently doing my Ph.D. in Theoretical Chemistry in Humboldt-Universität zu Berlin. My research interest lies in the nature of bonding of atoms in extreme magnetic fields using Multiresolution Analysis(MRA). Go to my Bio to know more.\n\nFor relevant research collaboration please contact me through my work email or my personal email\n\n\n\n\n\n\nImportant update\n\n\n\n\nNo updates now"
   },
   {
-    "objectID": "resources/teach/bo-approx.html",
-    "href": "resources/teach/bo-approx.html",
-    "title": "It’s good that nucleus is heavy",
+    "objectID": "resources/teach/mo-theory.html",
+    "href": "resources/teach/mo-theory.html",
+    "title": "Electrons are polygamous",
     "section": "",
-    "text": "To solve Schroedinger Equation for even the smallest possible molecule can be complicated as the simplest molecule contains two nuclei and one electron. And hence all the molecular theories start with the follwing precious assumption. Without this molecular theories would have had a real bad time."
+    "text": "The ground state MO diagram of H2\n\n\n\nFigure 1 : the qualitative MO diagram of H2 is presented here"
   },
   {
-    "objectID": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
-    "href": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Born-Oppenheimer Approximation",
-    "text": "Born-Oppenheimer Approximation\nThe assumption starts with a simple fact:\n\n\n\n\n\n\nNote\n\n\n\nNucleus is heavier in mass than an Electron\n\n\nThis simplifies the mathematics to a big extent. How? Let’s see together."
-  },
-  {
-    "objectID": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
-    "href": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
-    "title": "It’s good that nucleus is heavy",
-    "section": "Time Independent Schroedinger Equation",
-    "text": "Time Independent Schroedinger Equation\nLet’s put all the pieces together of a time independent Schroedinger Equation, so the equation looks like the following\n\\[\n\\hat{H} \\psi = E \\psi\n\\tag{1}\\]\nNow we will write the Hamiltonian explicitly from Equation 1\n\\[\n\\hat{H} = \\hat{H}_e + \\hat{H}_N=-\\frac{\\nabla^2_e}{2} -\\frac{\\nabla^2_N}{2} + V_{ee} - V_{Ne} + V_{NN}\n\\]\nHere, the operators subscripted with \\(e\\) represents electronic operators and \\(N\\) represents nuclear operators."
-  },
-  {
-    "objectID": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
-    "href": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
-    "title": "Research",
-    "section": "2 Quantum Chemistry and Schroedinger’s Equation",
-    "text": "2 Quantum Chemistry and Schroedinger’s Equation\nMaterials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:\n\\[\n\\hat{H}\\psi = E \\psi\n\\tag{1}\\]\nApparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory1."
-  },
-  {
-    "objectID": "resources/research.html#hartree-fock-hf-theory",
-    "href": "resources/research.html#hartree-fock-hf-theory",
-    "title": "Research",
-    "section": "3 Hartree-Fock (HF) Theory",
-    "text": "3 Hartree-Fock (HF) Theory\nIn Equation 1 there are two parts where the approximation can be made - Hamiltonian ## Multiresolution Analysis Let us assume there is a function f(x)"
-  },
-  {
-    "objectID": "resources/research.html#molecules-in-strong-magnetic-field",
-    "href": "resources/research.html#molecules-in-strong-magnetic-field",
-    "title": "Research",
-    "section": "4 Molecules in Strong Magnetic Field",
-    "text": "4 Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist."
+    "objectID": "resources/teach.html",
+    "href": "resources/teach.html",
+    "title": "Digital Computational Chemistry Book",
+    "section": "",
+    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nAug 14, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\nElectronic Structure Theory Quantum Chemistry Bonding Theory\n\n\n\n\n\n\nAug 14, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/publication.html",
@@ -112,17 +84,45 @@
     "text": "Expertise\n\n\n\nProgrammming\n\nC++\nPython\nWolfram Mathematica\\(\\texttrademark\\)\nJulia\nLaTeX\nTypst\nBash\n\n\n\n\nQuantum Chemistry\n\nMADNESS\nPySCF\nMRChem\nORCA\n\n\n\n\nLanguage\n\nBengali (mother tongue)\nEnglish (fluent)\nGerman (B1)\nHindi (fluent)\n\n\n\n\n\nExtra Curricular\n\nCooking\nMusic (Guitar)\nThinking XD"
   },
   {
-    "objectID": "resources/teach.html",
-    "href": "resources/teach.html",
-    "title": "Digital Computational Chemistry Book",
+    "objectID": "resources/teach/bo-approx.html",
+    "href": "resources/teach/bo-approx.html",
+    "title": "It’s good that nucleus is heavy",
     "section": "",
-    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nJul 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\nElectronic Structure Theory Quantum Chemistry Bonding Theory\n\n\n\n\n\n\nJul 5, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "To solve Schroedinger Equation for even the smallest possible molecule can be complicated as the simplest molecule contains two nuclei and one electron. And hence all the molecular theories start with the follwing precious assumption. Without this molecular theories would have had a real bad time."
   },
   {
-    "objectID": "resources/teach/mo-theory.html",
-    "href": "resources/teach/mo-theory.html",
-    "title": "Electrons are polygamous",
-    "section": "",
-    "text": "The ground state MO diagram of H2\n\n\n\nFigure 1 : the qualitative MO diagram of H2 is presented here"
+    "objectID": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
+    "href": "resources/teach/bo-approx.html#born-oppenheimer-approximation",
+    "title": "It’s good that nucleus is heavy",
+    "section": "Born-Oppenheimer Approximation",
+    "text": "Born-Oppenheimer Approximation\nThe assumption starts with a simple fact:\n\n\n\n\n\n\nNote\n\n\n\nNucleus is heavier in mass than an Electron\n\n\nThis simplifies the mathematics to a big extent. How? Let’s see together."
+  },
+  {
+    "objectID": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
+    "href": "resources/teach/bo-approx.html#time-independent-schroedinger-equation",
+    "title": "It’s good that nucleus is heavy",
+    "section": "Time Independent Schroedinger Equation",
+    "text": "Time Independent Schroedinger Equation\nLet’s put all the pieces together of a time independent Schroedinger Equation, so the equation looks like the following\n\\[\n\\hat{H} \\psi = E \\psi\n\\tag{1}\\]\nNow we will write the Hamiltonian explicitly from Equation 1\n\\[\n\\hat{H} = \\hat{H}_e + \\hat{H}_N=-\\frac{\\nabla^2_e}{2} -\\frac{\\nabla^2_N}{2} + V_{ee} - V_{Ne} + V_{NN}\n\\]\nHere, the operators subscripted with \\(e\\) represents electronic operators and \\(N\\) represents nuclear operators."
+  },
+  {
+    "objectID": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
+    "href": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
+    "title": "Research",
+    "section": "2 Quantum Chemistry and Schroedinger’s Equation",
+    "text": "2 Quantum Chemistry and Schroedinger’s Equation\nMaterials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:\n\\[\n\\hat{H}\\psi = E \\psi\n\\tag{1}\\]\nApparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory1."
+  },
+  {
+    "objectID": "resources/research.html#hartree-fock-hf-theory",
+    "href": "resources/research.html#hartree-fock-hf-theory",
+    "title": "Research",
+    "section": "3 Hartree-Fock (HF) Theory",
+    "text": "3 Hartree-Fock (HF) Theory\nIn Equation 1 there are two parts where the approximation can be made - Hamiltonian ## Multiresolution Analysis Let us assume there is a function f(x)"
+  },
+  {
+    "objectID": "resources/research.html#molecules-in-strong-magnetic-field",
+    "href": "resources/research.html#molecules-in-strong-magnetic-field",
+    "title": "Research",
+    "section": "4 Molecules in Strong Magnetic Field",
+    "text": "4 Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist."
   }
 ]
