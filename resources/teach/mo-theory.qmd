@@ -1,6 +1,6 @@
 ---
 title: "Electrons are polygamous"
-description: "`Electronic Structure Theory` `Quantum Chemistry` `Bonding Theory`"
+description: ""
 date: today 
 image: "./../../images/mo-graphic.jpeg"
 toc: true
