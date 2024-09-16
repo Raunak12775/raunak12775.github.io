@@ -1,7 +1,0 @@
----
-title: The Open Diary
-listing:
-    type: grid
-    contents: posts
-    sort: "date desc"
----

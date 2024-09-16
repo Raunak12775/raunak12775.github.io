@@ -22,7 +22,7 @@ website:
       - text: "Learn"
         href: resources/teach.qmd
       - text: "Blog"
-        href: blog/blog.qmd
+        href: https://farhazraunak.quarto.pub/my-random-thoughts/   
       # - text: "Writing"
       #   href: resources/books.qmd
       
