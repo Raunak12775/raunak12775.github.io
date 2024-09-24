@@ -18,7 +18,7 @@
     "href": "resources/teach.html",
     "title": "Digital Computational Chemistry Book",
     "section": "",
-    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nSep 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\n\n\n\n\n\n\n\nSep 16, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nSep 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\n\n\n\n\n\n\n\nSep 24, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/publication.html",
@@ -26,20 +26,6 @@
     "title": "Good days are yet to come . . .",
     "section": "",
     "text": "Good days are yet to come . . ."
-  },
-  {
-    "objectID": "blog/posts/scripting.html",
-    "href": "blog/posts/scripting.html",
-    "title": "Scripting is Important",
-    "section": "",
-    "text": "Disclaimer\n\n\n\nKnowledge of python is necessary for the upcoming discussion\n\n\nBeing a doctoral student in computational/theoretical chemistry writing script for daily reserarch is an essential part of our work. It can be using bash or python or julia. From my experience in all of these 3 scripting tools I realised that python works the best. Firstly, I will go through some basic functions or code snippets that I needed most of the time, and I hated writing it repeatedly.\n\n\n\n\n\n\nWrite a python function that can read a .xyz coordinate file of a molecule.\n\n\n\nLet us assume it is H2 molecule.\n2\n\nH 0. 0. 0.\nH 0. 0. 1.\nthe python function for reading the file and storing the is\nimport numpy as np\n\ndef read_xyz_file(file_path):\n    with open(file_path, 'r') as file:\n        # Read the number of atoms\n        num_atoms = int(file.readline().strip())\n        \n        # Read the comment line (if any)\n        comment = file.readline().strip()\n        \n        # Initialize lists \n        # to store the atom types and coordinates\n        atom_types = []\n        coordinates = []\n        \n        for _ in range(num_atoms):\n            line = file.readline().strip()\n            if line:  \n                parts = line.split()\n                atom_type = parts[0]\n                coord = list(map(float, parts[1:]))\n                atom_types.append(atom_type)\n                coordinates.append(coord)\n        \n        # Convert the coordinates list to a NumPy array\n        coordinates = np.array(coordinates)\n    \n    return num_atoms, comment, atom_types, coordinates"
-  },
-  {
-    "objectID": "blog/blog.html",
-    "href": "blog/blog.html",
-    "title": "The Open Diary",
-    "section": "",
-    "text": "Scripting is Important\n\n\npython, scripting, theoretical chemistry\n\n\n\n\n\n\nApr 7, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/books.html",
