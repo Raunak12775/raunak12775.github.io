@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Raunak Farhaz"
+  site-url: https://raunakfarhaz.com
   favicon: images/favicon.png
   search: false
   page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2024
@@ -11,29 +12,27 @@ website:
     title: false
     logo: images/favicon.png
     right:
-      - text: "Home"
+      - text: "HOME"
         href: index.qmd
-      - text: "Bio"
+      - text: "BIO"
         href: resources/cv.qmd
-      - text: "Research"
+      - text: "RESEARCH"
         href: resources/research.qmd
-      - text: "Publications"
+      - text: "PUBLICATIONS"
         href: resources/publication.qmd
-      - text: "Learn"
+      - text: "LEARN"
         href: resources/teach.qmd
-      - text: "Blog"
-        href: https://farhazraunak.quarto.pub/my-random-thoughts/   
-      # - text: "Writing"
-      #   href: resources/books.qmd
+      - text: "BLOG"
+        href: resources/blog.qmd   
       
 
 format:
   html:
     theme:
         - darkly
-        - styles.css
+        - styles.scss
     toc: true
-    toc-location: left
+    toc-location: right
     smooth-scroll: true
     code-fold: true
   

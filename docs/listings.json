@@ -5,5 +5,14 @@
       "/resources/teach/bo-approx.html",
       "/resources/teach/mo-theory.html"
     ]
+  },
+  {
+    "listing": "/resources/blog.html",
+    "items": [
+      "/resources/posts/greece-trip/greece.html",
+      "/resources/posts/doi-murgi/yoghurt-chicken.html",
+      "/resources/posts/rohu_kalia/kalia.html",
+      "/resources/posts/python_blog/scripting.html"
+    ]
   }
 ]

@@ -1,0 +1,44 @@
+---
+title: "Nantu's Kitchen"
+subtitle: "Supriya Devi's Yoghurt Chicken(দই মুরগি)"
+date: "09.24.2024"
+categories: [cooking]
+---
+
+<!-- ![](kalia.jpeg){fig-align="center" width="40%"} -->
+
+It was Noah's Grain day or in Bengali মুখে ভাত (Mukhe Bhaat), so I thought I would prepare something lesser spicy and fulfiiling and also I can cook it faster. So I prepared this.
+
+::: {.callout-note title='Ingredients'}
+1. 1 kg Chicken (preferably with bone)
+2. 200 gm yoghurt
+3. $\frac{1}{2}$ of a small garlic (grinded into a paste)
+4. 1.5 tablespoons of Kashmiri red chilli powder or sweet paprika powder
+5. 1.5 tablespoons of sugar
+6. Salt to taste (2 tablespoons)
+7. 2 large red onions (sliced)
+8. 1.5 cups oil
+:::
+
+### Marination
+Take a big bowl and put the washed chicken, yoghurt, salt and garlic paste together. Mix it well. And keep it to marinate 45 mins at least.
+
+::: {.callout-tip}
+For best results one should marinate it overnight.
+:::
+
+### Cooking
+Take a wok and heat it up with full heat, put some rapseed oil or sunflower oil into it and fry the sliced onions in medium heat until caramelized. Take out the caramelized onions. 
+
+::: {.callout-tip}
+For best results in caramelizing onion one should use low heat. And take it out at 90% caramelized stage. If one makes it 100% on the stove then it can get burned afterwards with it's remaining heat by self-cooking.
+:::
+
+Now put sugar into the hot oil where you already fried the onions. Let it melt and move the spatula in the meantime otherwise the melted sugar would form a lump. Once the sugar gets melted, put red chilli powder and fry it until the intense smell is almost gone. Now it is time to put the marinated chicken into the wok. Cook it in medium to high flame for 15 mins. The chicken would be boiled or tenderized with its own released water. No need to add additional water.
+
+Once the water reduces and the raw smell of garlic is gone, put the flame to low and let it cook covered for 10 more mins or until the oil separates from the gravy. Turn off the heat, let it sit there on the stove for 5 more mins and then enjoy with rice.
+
+I hope you like it, but Noah really cried even tasting a slight bit of it. I hope he would crave for it once he gets older ;)
+
+
+

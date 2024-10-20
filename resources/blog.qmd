@@ -1,0 +1,16 @@
+---
+title: ""
+listing: 
+    contents: posts/**/*.qmd
+    sort: "date desc"
+    type: grid
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    fields: [date, title, subtitle, reading-time, categories, image]
+    feed: true
+page-layout: full
+title-block-banner: false
+---
+
+# Farhaz's Food, Science and Philosophy
