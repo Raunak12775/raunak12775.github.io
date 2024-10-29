@@ -7,8 +7,67 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-/*-- scss:defaults --*/
+// navbar color
+$forest-green: #014421;
+// primary background color
+$light-mint-green: #f1f8e9;
+//secondary background color
+$pale-green: #e8f5e9;
+// text color
+$dark-green: #1b5e20;
+$near-black: #212121;
+// accent color
+$sage-green: #4caf50;
+
+// Colors
+$navbar-bg:$forest-green;        // Forest Green for navbar
+$body-bg:$light-mint-green;          // Light Mint Green for background
+$body-color:$near-black;       // Near Black for text
+$link-color:$sage-green;       // Sage Green for links
+
+// Fonts
 $font-family-sans-serif: 'Josefin Sans', sans-serif;
-$font-family-monospace: 'Jetbrains Mono', monospace;
-$body-bg: #fffff4;
-$body-color: black;
+$headings-font-weight: 500;
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6 {
+  color:$dark-green;  // Dark Green for headings
+}
+
+.section {
+  background-color:$sage-green;  // Pale Green for sections
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/*-- scss:rules --*/
+
+// Navbar link hover effect
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(1, 68, 33, 0.1); // Light green background, adjust alpha for transparency
+    border-radius: 20px; // Rounded corners
+    padding: 5px 15px; // Adjust padding to create space around text
+  }
+  
+  // Optional: Add a subtle animation
+  .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color:$light-mint-green;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }

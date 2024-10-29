@@ -5,12 +5,12 @@ project:
 website:
   title: "Raunak Farhaz"
   site-url: https://raunakfarhaz.com
-  favicon: images/favicon.png
+  favicon: images/favicon.svg
   search: false
   page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2024
   navbar:
     title: false
-    logo: images/favicon.png
+    logo: images/favicon.svg
     right:
       - text: "HOME"
         href: index.qmd
@@ -29,7 +29,7 @@ website:
 format:
   html:
     theme:
-        - darkly
+        - default
         - styles.scss
     toc: true
     toc-location: right
