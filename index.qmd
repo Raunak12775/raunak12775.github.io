@@ -10,19 +10,17 @@ about:
           href: mailto:raunak.farhaz@hu-berlin.de
         - icon: github
           href: https://github.com/Raunak12775
-        - icon: twitter
+        - icon: twitter-x
           href: https://twitter.com/Farhazraunak
         - icon: youtube
           href: https://www.youtube.com/@farhazexplains
 toc: false
 ---
-Hi! I am Raunak. I am currently doing my Ph.D. in Theoretical Chemistry in **Humboldt-Universität zu Berlin**. My research interest lies in the nature of bonding of atoms in **extreme magnetic fields** using [**Multiresolution Analysis**](https://www.sciencedirect.com/science/article/abs/pii/S006532761930019X?via%3Dihub)(MRA). Go to my [Bio](resources/cv.qmd) to know more.
 
+I am doing a PhD in Theoretical Chemistry at Humboldt-Universität zu Berlin. I love computers, mathematics,and a little bit of chemistry. I love music, cooking, and movies. I am trying to write a book which soon maybe get published. Check the [blog](./resources/blog.qmd) to know more about my cooking skills and [research](./resources/research.qmd) to know more about my works. The [learn](./resources/teach.qmd) section is for some of my teaching resources.  
 
-For relevant research collaboration please contact me through my [work email](mailto:farhazra@hu-berlin.de) or my [personal email](mailto:farhazraunak@proton.me)
+:::{.callout-note icon=true title="Important Updates"}
 
-:::{.callout-note icon=true}
-## Important update
+- blog for my greece trip is live [here](./resources/posts/greece-trip/greece.qmd)
 
-- No updates now
 :::

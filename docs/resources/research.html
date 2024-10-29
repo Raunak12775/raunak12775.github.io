@@ -161,10 +161,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#born-oppenheimer" id="toc-born-oppenheimer" class="nav-link active" data-scroll-target="#born-oppenheimer"><span class="header-section-number">1</span> Born-Oppenheimer</a></li>
-  <li><a href="#quantum-chemistry-and-schroedingers-equation" id="toc-quantum-chemistry-and-schroedingers-equation" class="nav-link" data-scroll-target="#quantum-chemistry-and-schroedingers-equation"><span class="header-section-number">2</span> Quantum Chemistry and Schroedinger’s Equation</a></li>
-  <li><a href="#hartree-fock-hf-theory" id="toc-hartree-fock-hf-theory" class="nav-link" data-scroll-target="#hartree-fock-hf-theory"><span class="header-section-number">3</span> Hartree-Fock (HF) Theory</a></li>
-  <li><a href="#molecules-in-strong-magnetic-field" id="toc-molecules-in-strong-magnetic-field" class="nav-link" data-scroll-target="#molecules-in-strong-magnetic-field"><span class="header-section-number">4</span> Molecules in Strong Magnetic Field</a></li>
+  <li><a href="#quantum-chemistry-and-schroedingers-equation" id="toc-quantum-chemistry-and-schroedingers-equation" class="nav-link active" data-scroll-target="#quantum-chemistry-and-schroedingers-equation">Quantum Chemistry and Schroedinger’s Equation</a></li>
+  <li><a href="#multi-resolution-analysis-mra" id="toc-multi-resolution-analysis-mra" class="nav-link" data-scroll-target="#multi-resolution-analysis-mra">Multi-Resolution Analysis (MRA)</a></li>
+  <li><a href="#molecules-in-strong-magnetic-field" id="toc-molecules-in-strong-magnetic-field" class="nav-link" data-scroll-target="#molecules-in-strong-magnetic-field">Molecules in Strong Magnetic Field</a></li>
   </ul>
 </nav>
     </div>
@@ -190,23 +189,27 @@ window.Quarto = {
 </header>
 
 
-<section id="born-oppenheimer" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="born-oppenheimer"><span class="header-section-number">1</span> Born-Oppenheimer</h2>
-</section>
-<section id="quantum-chemistry-and-schroedingers-equation" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="quantum-chemistry-and-schroedingers-equation"><span class="header-section-number">2</span> Quantum Chemistry and Schroedinger’s Equation</h2>
-<p>Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word <em>quantum</em><span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span>. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:</p>
+<section id="quantum-chemistry-and-schroedingers-equation" class="level2">
+<h2 class="anchored" data-anchor-id="quantum-chemistry-and-schroedingers-equation">Quantum Chemistry and Schroedinger’s Equation</h2>
+<p>Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word <strong>quantum</strong><span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span>. The word <strong>quantum</strong> is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:</p>
 <p><span id="eq-se"><span class="math display">\[
-\hat{H}\psi = E \psi
+\hat{H}\Psi = E \Psi
 \tag{1}\]</span></span></p>
-<p>Apparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory<span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span>.</p>
+<p>Apparently it might look very straightforward equation, but trust me it is not analytically solvable for a two electron systems/molecules. So, it is necessary to use relevant approximations to solve the <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a>. Some of the famous ways to do it is using Hartree-Fock approximation, Density Functional Theory, Plane Wave methods, Finite Element methods etc.</p>
 </section>
-<section id="hartree-fock-hf-theory" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="hartree-fock-hf-theory"><span class="header-section-number">3</span> Hartree-Fock (HF) Theory</h2>
-<p>In <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> there are two parts where the approximation can be made - Hamiltonian ## Multiresolution Analysis Let us assume there is a function f(x)</p>
+<section id="multi-resolution-analysis-mra" class="level2">
+<h2 class="anchored" data-anchor-id="multi-resolution-analysis-mra">Multi-Resolution Analysis (MRA)</h2>
+<p>One of the modern ways to solve it is by MRA. It is a bit straightforward how one can use MRA to solve the partial differential equation at <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a>. Let us assume the potential energy function in the system of interest is <span class="math inline">\(\hat{V}=V(r)\)</span> and now we will split the hamiltonian into the follwing parts</p>
+<p><span class="math display">\[\begin{align}
+\hat{H}\Psi &amp;= E\Psi \\
+\Rightarrow (\hat{T} + \hat{V})\Psi &amp;= E\Psi \\
+\Rightarrow (\hat{T} - E)\Psi &amp;= -V\Psi \\
+\Rightarrow \Psi &amp;= -(\hat{T} - E)^{-1}V\Psi \\
+\end{align}\]</span></p>
+<p>Hence now we have an equation that can be self-consistently solved with a given guess of <span class="math inline">\(\Psi\)</span>. And from the [cite=alpert et al] we know that <span class="math inline">\((\hat{T}-E)^{-1}\)</span> can be approximated to a bound state helmholtz operator. For more details oe can go through the book chapter written by Florian A. Bischoff[cite=bischoff2012_book], my PhD supervisor.</p>
 </section>
-<section id="molecules-in-strong-magnetic-field" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="molecules-in-strong-magnetic-field"><span class="header-section-number">4</span> Molecules in Strong Magnetic Field</h2>
+<section id="molecules-in-strong-magnetic-field" class="level2">
+<h2 class="anchored" data-anchor-id="molecules-in-strong-magnetic-field">Molecules in Strong Magnetic Field</h2>
 <p>There are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e.&nbsp;He<sub>2</sub>. If we consider <a href="https://en.wikipedia.org/wiki/Molecular_orbital_theory">Molecular Orbital Theory</a> we will see that He<sub>2</sub> does not exist.</p>
 
 

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Raunak Farhaz",
     "section": "",
-    "text": "Hi! I am Raunak. I am currently doing my Ph.D. in Theoretical Chemistry in Humboldt-Universität zu Berlin. My research interest lies in the nature of bonding of atoms in extreme magnetic fields using Multiresolution Analysis(MRA). Go to my Bio to know more.\nFor relevant research collaboration please contact me through my work email or my personal email\n\n\n\n\n\n\nImportant update\n\n\n\n\nNo updates now"
+    "text": "I am doing a Ph.D. in Theoretical Chemistry at Humboldt-Universität zu Berlin. I love computers, mathematics,and a little bit of chemistry. I love music, cooking, and movies. I am trying to write a book which soon maybe get published. Check the blog to know more about my cooking skills and research to know more about my works. The learn section is for some of my teaching resources.\n\n\n\n\n\n\nImportant Updates\n\n\n\n\nblog for my greece trip is live here"
   },
   {
     "objectID": "resources/posts/rohu_kalia/kalia.html",
@@ -24,22 +24,22 @@
     "objectID": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
     "href": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
     "title": "Research",
-    "section": "2 Quantum Chemistry and Schroedinger’s Equation",
-    "text": "2 Quantum Chemistry and Schroedinger’s Equation\nMaterials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:\n\\[\n\\hat{H}\\psi = E \\psi\n\\tag{1}\\]\nApparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory1."
+    "section": "",
+    "text": "Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:\n\\[\n\\hat{H}\\Psi = E \\Psi\n\\tag{1}\\]\nApparently it might look very straightforward equation, but trust me it is not analytically solvable for a two electron systems/molecules. So, it is necessary to use relevant approximations to solve the Equation 1. Some of the famous ways to do it is using Hartree-Fock approximation, Density Functional Theory, Plane Wave methods, Finite Element methods etc."
   },
   {
     "objectID": "resources/research.html#hartree-fock-hf-theory",
     "href": "resources/research.html#hartree-fock-hf-theory",
     "title": "Research",
-    "section": "3 Hartree-Fock (HF) Theory",
-    "text": "3 Hartree-Fock (HF) Theory\nIn Equation 1 there are two parts where the approximation can be made - Hamiltonian ## Multiresolution Analysis Let us assume there is a function f(x)"
+    "section": "Hartree-Fock (HF) Theory",
+    "text": "Hartree-Fock (HF) Theory\nIn Equation 1 there are two parts where the approximation can be made - Hamiltonian ## Multiresolution Analysis Let us assume there is a function f(x)"
   },
   {
     "objectID": "resources/research.html#molecules-in-strong-magnetic-field",
     "href": "resources/research.html#molecules-in-strong-magnetic-field",
     "title": "Research",
-    "section": "4 Molecules in Strong Magnetic Field",
-    "text": "4 Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist."
+    "section": "Molecules in Strong Magnetic Field",
+    "text": "Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist."
   },
   {
     "objectID": "resources/teach/bo-approx.html",
@@ -159,5 +159,61 @@
     "title": "Python is for me too",
     "section": "",
     "text": "Disclaimer\n\n\n\nKnowledge of python is necessary for the upcoming discussion\n\n\nBeing a doctoral student in computational/theoretical chemistry writing script for daily reserarch is an essential part of our work. It can be using bash or python or julia. From my experience in all of these 3 scripting tools I realised that python works the best. Firstly, I will go through some basic functions or code snippets that I needed most of the time, and I hated writing it repeatedly.\n\n\n\n\n\n\nWrite a python function that can read a .xyz coordinate file of a molecule.\n\n\n\nLet us assume it is H2 molecule.\n2\n\nH 0. 0. 0.\nH 0. 0. 1.\nthe python function for reading the file and storing the is\nimport numpy as np\n\ndef read_xyz_file(file_path):\n    with open(file_path, 'r') as file:\n        # Read the number of atoms\n        num_atoms = int(file.readline().strip())\n        \n        # Read the comment line (if any)\n        comment = file.readline().strip()\n        \n        # Initialize lists \n        # to store the atom types and coordinates\n        atom_types = []\n        coordinates = []\n        \n        for _ in range(num_atoms):\n            line = file.readline().strip()\n            if line:  \n                parts = line.split()\n                atom_type = parts[0]\n                coord = list(map(float, parts[1:]))\n                atom_types.append(atom_type)\n                coordinates.append(coord)\n        \n        # Convert the coordinates list to a NumPy array\n        coordinates = np.array(coordinates)\n    \n    return num_atoms, comment, atom_types, coordinates"
+  },
+  {
+    "objectID": "resources/research.html#multiresolution-analysis",
+    "href": "resources/research.html#multiresolution-analysis",
+    "title": "Research",
+    "section": "Multiresolution Analysis",
+    "text": "Multiresolution Analysis\nLet us assume there is a function f(x)"
+  },
+  {
+    "objectID": "resources/research.html#mutli",
+    "href": "resources/research.html#mutli",
+    "title": "Research",
+    "section": "Mutli",
+    "text": "Mutli"
+  },
+  {
+    "objectID": "resources/research.html#multi",
+    "href": "resources/research.html#multi",
+    "title": "Research",
+    "section": "Multi",
+    "text": "Multi"
+  },
+  {
+    "objectID": "resources/research.html#multi-",
+    "href": "resources/research.html#multi-",
+    "title": "Research",
+    "section": "Multi-",
+    "text": "Multi-"
+  },
+  {
+    "objectID": "resources/research.html#multi-resolution-analysis",
+    "href": "resources/research.html#multi-resolution-analysis",
+    "title": "Research",
+    "section": "Multi-Resolution Analysis()",
+    "text": "Multi-Resolution Analysis()\nOne of the modern ways to solve it is by MRA"
+  },
+  {
+    "objectID": "resources/research.html#multi-resolution-analysismra",
+    "href": "resources/research.html#multi-resolution-analysismra",
+    "title": "Research",
+    "section": "Multi-Resolution Analysis(MRA)",
+    "text": "Multi-Resolution Analysis(MRA)\nOne of the modern ways to solve it is by MRA"
+  },
+  {
+    "objectID": "resources/research.html#multi-resolution-analysis-mra",
+    "href": "resources/research.html#multi-resolution-analysis-mra",
+    "title": "Research",
+    "section": "Multi-Resolution Analysis (MRA)",
+    "text": "Multi-Resolution Analysis (MRA)\nOne of the modern ways to solve it is by MRA. It is a bit straightforward how one can use MRA to solve the partial differential equation at Equation 1. Let us assume the potential energy function in the system of interest is \\(\\hat{V}=V(r)\\) and now we will split the hamiltonian into the follwing parts\n\\[\\begin{align}\n\\hat{H}\\Psi &= E\\Psi \\\\\n\\Rightarrow (\\hat{T} + \\hat{V})\\Psi &= E\\Psi \\\\\n\\Rightarrow (\\hat{T} - E)\\Psi &= -V\\Psi \\\\\n\\Rightarrow \\Psi &= -(\\hat{T} - E)^{-1}V\\Psi \\\\\n\\end{align}\\]\nHence now we have an equation that can be self-consistently solved with a given guess of \\(\\Psi\\). And from the [cite=alpert et al] we know that \\((\\hat{T}-E)^{-1}\\) can be approximated to a bound state helmholtz operator. For more details oe can go through the book chapter written by Florian A. Bischoff[cite=bischoff2012_book], my PhD supervisor."
+  },
+  {
+    "objectID": "resources/research.html",
+    "href": "resources/research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:\n\\[\n\\hat{H}\\Psi = E \\Psi\n\\tag{1}\\]\nApparently it might look very straightforward equation, but trust me it is not analytically solvable for a two electron systems/molecules. So, it is necessary to use relevant approximations to solve the Equation 1. Some of the famous ways to do it is using Hartree-Fock approximation, Density Functional Theory, Plane Wave methods, Finite Element methods etc."
   }
 ]

@@ -2,23 +2,29 @@
 title: Research
 bibliography: reference.bib
 csl: acs.csl
-number-sections: true
+number-sections: false
 ---
 
-## Born-Oppenheimer
 ## Quantum Chemistry and Schroedinger's Equation
-Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word *quantum*[@levine2014quantum]. The word quantum is associated because of the behaviour of the particles is not anymore learnt by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schroedinger equation are synonymous. The equation looks like following:
+Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word **quantum**[@levine2014quantum]. The word **quantum** is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:
 
 $$
-\hat{H}\psi = E \psi
+\hat{H}\Psi = E \Psi
 $${#eq-se}
 
-Apparently it might look very straightforward equation but when one expands the operator, it leads to partial differential equation. And due to unknown nature of the two electron operator one cannot exactly solve it beyond H atom. So, then comes the approximations. And the approximation that I use it in my thesis is the most basic one but the elegant one (personal opinion) called Hartree-Fock Theory[@levine2014quantum].
+Apparently it might look very straightforward equation, but trust me it is not analytically solvable for a two electron systems/molecules. So, it is necessary to use relevant approximations to solve the @eq-se. Some of the famous ways to do it is using Hartree-Fock approximation, Density Functional Theory, Plane Wave methods, Finite Element methods etc.
 
-## Hartree-Fock (HF) Theory
-In @eq-se there are two parts where the approximation can be made - Hamiltonian 
-## Multiresolution Analysis
-Let us assume there is a function f(x)
+## Multi-Resolution Analysis (MRA)
+One of the modern ways to solve it is by MRA. It is a bit straightforward how one can use MRA to solve the partial differential equation at @eq-se. Let us assume the potential energy function in the system of interest is $\hat{V}=V(r)$ and now we will split the hamiltonian into the follwing parts
+
+\begin{align}
+\hat{H}\Psi &= E\Psi \\ 
+\Rightarrow (\hat{T} + \hat{V})\Psi &= E\Psi \\
+\Rightarrow (\hat{T} - E)\Psi &= -V\Psi \\
+\Rightarrow \Psi &= -(\hat{T} - E)^{-1}V\Psi \\
+\end{align}
+
+Hence now we have an equation that can be self-consistently solved with a given guess of $\Psi$. And from the [cite=alpert et al] we know that $(\hat{T}-E)^{-1}$ can be approximated to a bound state helmholtz operator. For more details oe can go through the book chapter written by Florian A. Bischoff[cite=bischoff2012_book], my PhD supervisor.  
 
 ## Molecules in Strong Magnetic Field
 There are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He~2~. If we consider [Molecular Orbital Theory](https://en.wikipedia.org/wiki/Molecular_orbital_theory) we will see that He~2~ does not exist.
