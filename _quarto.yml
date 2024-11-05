@@ -7,7 +7,7 @@ website:
   site-url: https://raunakfarhaz.com
   favicon: images/favicon.svg
   search: false
-  page-footer: $\textcopyright$ made by Raunak Farhaz | Berlin, Germany 2024
+  page-footer: $\textcopyright$ made by Raunak Farhaz with Quarto | Berlin 2024
   navbar:
     title: false
     logo: images/favicon.svg

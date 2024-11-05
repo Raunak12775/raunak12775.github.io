@@ -10,7 +10,37 @@
 <atom:link href="https://raunakfarhaz.com/resources/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 27 Sep 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 31 Oct 2024 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Harmony</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/posts/harmony/harmony.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Nature is very powerful than human beings. If you mess with nature even with a slightest bit, the whole mankind suffers a huge loss. Think about a situation like global warming which is making the headlines for many years now. But I think human-beings are either yet to understand the consequences or they are in denial. So, one of the direct impact that the glaciers melt and the sea level rises maybe by a little amount considering the vastness of the oceans. It can result into a deadly tsunami. Then we have outcries from global west about the climate protests that goes on which are mainly from a neoliberal and privileged classes of people. I feel the protests are a bit non-sensical if the awareness is not spread to the bottom of the societies. With the immense amount of neoliberalisation of economy as well as huge amount of industrialisation, we first created the divide into the societies in regards to access of education. Now with the tech-revolution we are creating a digital divide aka information divide as well. I believe we are lacking the sense of creating awareness among our children how to create a harmonious living within nature. Instead we are creating a pool of new life that are knowing how to artificially create nature around ourselves. Reports have shown that we are already the apex predator of our ecosystem already. The next thing that we are trying to do is also take control of the nature.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/posts/harmony/img/harmony2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
+<p>I believe taking control of the nature for the human-beings is just like driving a car into a busy and crowded streets after getting 10 driving lessons from driving-school. We need to take it slow and patiently. Nature is lot greater and intelligent than us. We need to get long it with the nature’s flow rather than trying to get a grip on it. When in the morning I go for running and after 3 km, I feel a bit exhausted and my walking feels like gliding. At that moment I cross a man made alley of some ling trees that look like eucalyptus but they are not, I feel as if they are telling me something. The silence of the trees are so loud. I open my palms and stretch my fingers apart. The cold breeze flowing through the empty spaces between my fingers are so fulfilling and relaxing. We need to enjoy the nature naturally. But in the moment I see it as a very artificial act.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/posts/harmony/img/harmony1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+</figure>
+</div>
+
+
+
+ ]]></description>
+  <category>philosophy</category>
+  <guid>https://raunakfarhaz.com/resources/posts/harmony/harmony.html</guid>
+  <pubDate>Thu, 31 Oct 2024 23:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Land of Philosophies</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -384,7 +414,6 @@
 
 
 
-<!-- ![](kalia.jpeg){fig-align="center" width="40%"} -->
 <p>It was Noah’s Grain day or in Bengali মুখে ভাত (Mukhe Bhaat), so I thought I would prepare something lesser spicy and fulfiiling and also I can cook it faster. So I prepared this.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Ingredients">
 <div class="callout-header d-flex align-content-center">
@@ -442,6 +471,12 @@ Tip
 </div>
 </div>
 <p>Now put sugar into the hot oil where you already fried the onions. Let it melt and move the spatula in the meantime otherwise the melted sugar would form a lump. Once the sugar gets melted, put red chilli powder and fry it until the intense smell is almost gone. Now it is time to put the marinated chicken into the wok. Cook it in medium to high flame for 15 mins. The chicken would be boiled or tenderized with its own released water. No need to add additional water.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/posts/doi-murgi/doimurgi.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Courtesy: Google Photos</figcaption>
+</figure>
+</div>
 <p>Once the water reduces and the raw smell of garlic is gone, put the flame to low and let it cook covered for 10 more mins or until the oil separates from the gravy. Turn off the heat, let it sit there on the stove for 5 more mins and then enjoy with rice.</p>
 <p>I hope you like it, but Noah really cried even tasting a slight bit of it. I hope he would crave for it once he gets older ;)</p>
 
@@ -476,166 +511,6 @@ Tip
   <category>cooking</category>
   <guid>https://raunakfarhaz.com/resources/posts/rohu_kalia/kalia.html</guid>
   <pubDate>Sun, 15 Sep 2024 22:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Python is for me too</title>
-  <dc:creator>Raunak Farhaz</dc:creator>
-  <link>https://raunakfarhaz.com/resources/posts/python_blog/scripting.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-note callout-titled" title="Disclaimer">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Disclaimer
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Knowledge of <code>python</code> is necessary for the upcoming discussion</p>
-</div>
-</div>
-<p>Being a doctoral student in computational/theoretical chemistry writing script for daily reserarch is an essential part of our work. It can be using <code>bash</code> or <code>python</code> or <code>julia</code>. From my experience in all of these 3 scripting tools I realised that <code>python</code> works the best. Firstly, I will go through some basic functions or code snippets that I needed most of the time, and I hated writing it repeatedly.</p>
-<div class="callout callout-style-simple callout-important no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>Write a python function that can read a <code>.xyz</code> coordinate file of a molecule.</strong></p>
-</div>
-</div>
-</div>
-<p>Let us assume it is H<sub>2</sub> molecule.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">2</span></span>
-<span id="cb1-2"></span>
-<span id="cb1-3"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">H</span> 0. 0. 0.</span>
-<span id="cb1-4"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">H</span> 0. 0. 1.</span></code></pre></div>
-<p>the python function for reading the file and storing the is</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb2-2"></span>
-<span id="cb2-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> read_xyz_file(file_path):</span>
-<span id="cb2-4">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">with</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">open</span>(file_path, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'r'</span>) <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">file</span>:</span>
-<span id="cb2-5">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Read the number of atoms</span></span>
-<span id="cb2-6">        num_atoms <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">file</span>.readline().strip())</span>
-<span id="cb2-7">        </span>
-<span id="cb2-8">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Read the comment line (if any)</span></span>
-<span id="cb2-9">        comment <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">file</span>.readline().strip()</span>
-<span id="cb2-10">        </span>
-<span id="cb2-11">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Initialize lists </span></span>
-<span id="cb2-12">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># to store the atom types and coordinates</span></span>
-<span id="cb2-13">        atom_types <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> []</span>
-<span id="cb2-14">        coordinates <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> []</span>
-<span id="cb2-15">        </span>
-<span id="cb2-16">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> _ <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(num_atoms):</span>
-<span id="cb2-17">            line <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">file</span>.readline().strip()</span>
-<span id="cb2-18">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> line:  </span>
-<span id="cb2-19">                parts <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> line.split()</span>
-<span id="cb2-20">                atom_type <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> parts[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>]</span>
-<span id="cb2-21">                coord <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">list</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">map</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">float</span>, parts[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>:]))</span>
-<span id="cb2-22">                atom_types.append(atom_type)</span>
-<span id="cb2-23">                coordinates.append(coord)</span>
-<span id="cb2-24">        </span>
-<span id="cb2-25">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Convert the coordinates list to a NumPy array</span></span>
-<span id="cb2-26">        coordinates <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.array(coordinates)</span>
-<span id="cb2-27">    </span>
-<span id="cb2-28">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> num_atoms, comment, atom_types, coordinates</span></code></pre></div>
-
-
-
- ]]></description>
-  <category>programming</category>
-  <guid>https://raunakfarhaz.com/resources/posts/python_blog/scripting.html</guid>
-  <pubDate>Wed, 03 Jul 2024 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
