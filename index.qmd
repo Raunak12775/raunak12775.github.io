@@ -2,7 +2,7 @@
 title: "Raunak Farhaz"
 image: "images/profile.jpeg"
 about:
-    template: solana
+    template: jolla
     image-shape: round
     image-width: 15em 
     links:
@@ -10,17 +10,13 @@ about:
           href: mailto:raunak.farhaz@hu-berlin.de
         - icon: github
           href: https://github.com/Raunak12775
-        - icon: twitter-x
-          href: https://twitter.com/Farhazraunak
         - icon: youtube
           href: https://www.youtube.com/@farhazexplains
+        - text: "{{< fa brands bluesky >}}"
+          href: https://bsky.app/profile/raunakfarhaz.bsky.social
+        - icon: twitter-x
+          href: https://twitter.com/Farhazraunak 
 toc: false
 ---
 
-I am doing a PhD in Theoretical Chemistry at Humboldt-Universität zu Berlin. I love computers, mathematics,and a little bit of chemistry. I love music, cooking, and movies. I am trying to write a book which soon maybe get published. Check the [blog](./resources/blog.qmd) to know more about my cooking skills and [research](./resources/research.qmd) to know more about my works. The [learn](./resources/teach.qmd) section is for some of my teaching resources.  
-
-:::{.callout-note icon=true title="Important Updates"}
-
-- blog for my greece trip is live [here](./resources/posts/greece-trip/greece.qmd)
-
-:::
+I am doing my Ph.D. in Theoretical Chemistry at Humboldt-Universität zu Berlin, Germany. My work interest lies in developing methods for Electronic Structure Methods in extreme magnetic fields and pedagogy in Quantum Chemistry. I am trying to write a book which soon maybe will get published. Check the [BLOG](./resources/blog.qmd) to know more about my thoughts and [RESEARCH](./resources/research.qmd) to know more about my research works. The [LEARN](./resources/teach.qmd) section is for some of my teaching resources.

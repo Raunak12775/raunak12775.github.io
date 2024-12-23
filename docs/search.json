@@ -11,14 +11,21 @@
     "href": "resources/teach.html",
     "title": "Digital Computational Chemistry Book",
     "section": "",
-    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nNov 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\n\n\n\n\n\n\n\nNov 5, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "It’s good that nucleus is heavy\n\n\nElectronic Structure Theory Quantum Chemistry\n\n\n\n\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectrons are polygamous\n\n\n\n\n\n\n\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/publication.html",
     "href": "resources/publication.html",
-    "title": "Good days are yet to come . . .",
+    "title": "Raunak Farhaz",
     "section": "",
-    "text": "Good days are yet to come . . ."
+    "text": "Farhaz R., Bischoff F. A., Stopkowicsz S., Blaschke S. Quantification of the basis set error in strong magnetic fields\nSardar R., Banik R., Farhaz R., Ghosh S. The drug induced micelle to super-micelle transition of cetyltrimethylammonium bromide(CTAB) and compares it with acetylenic gemini surfactant: an experimental and DFT study"
+  },
+  {
+    "objectID": "resources/publication.html#in-preparation",
+    "href": "resources/publication.html#in-preparation",
+    "title": "Raunak Farhaz",
+    "section": "",
+    "text": "Farhaz R., Bischoff F. A., Stopkowicsz S., Blaschke S. Quantification of the basis set error in strong magnetic fields\nSardar R., Banik R., Farhaz R., Ghosh S. The drug induced micelle to super-micelle transition of cetyltrimethylammonium bromide(CTAB) and compares it with acetylenic gemini surfactant: an experimental and DFT study"
   },
   {
     "objectID": "resources/posts/rohu_kalia/kalia.html",
@@ -46,7 +53,7 @@
     "href": "index.html",
     "title": "Raunak Farhaz",
     "section": "",
-    "text": "I am doing a PhD in Theoretical Chemistry at Humboldt-Universität zu Berlin. I love computers, mathematics,and a little bit of chemistry. I love music, cooking, and movies. I am trying to write a book which soon maybe get published. Check the blog to know more about my cooking skills and research to know more about my works. The learn section is for some of my teaching resources.\n\n\n\n\n\n\nImportant Updates\n\n\n\n\nblog for my greece trip is live here"
+    "text": "I am doing my Ph.D. in Theoretical Chemistry at Humboldt-Universität zu Berlin, Germany. My work interest lies in developing methods for Electronic Structure Methods in extreme magnetic fields and pedagogy in Quantum Chemistry. I am trying to write a book which soon maybe will get published. Check the BLOG to know more about my thoughts and RESEARCH to know more about my research works. The LEARN section is for some of my teaching resources."
   },
   {
     "objectID": "resources/blog.html",
@@ -58,37 +65,16 @@
   {
     "objectID": "resources/cv.html",
     "href": "resources/cv.html",
-    "title": "Bio",
+    "title": "Raunak Farhaz",
     "section": "",
-    "text": "Mathematics, Computers, Atoms, Music and Food"
-  },
-  {
-    "objectID": "resources/cv.html#in-a-nutshell",
-    "href": "resources/cv.html#in-a-nutshell",
-    "title": "Bio",
-    "section": "",
-    "text": "Mathematics, Computers, Atoms, Music and Food"
-  },
-  {
-    "objectID": "resources/cv.html#education",
-    "href": "resources/cv.html#education",
-    "title": "Bio",
-    "section": "Education",
-    "text": "Education\n\n2000 to 2015 (School)\nSt. Andrew’s High School + Birbhum Zilla School\nSuri, West Bengal, India\n\n\n2015 to 2018 (Bachelors of Science)\nJadavpur University\nKolkata, West Bengal, India\n\n\n2018 to 2020 (Masters of Science)\nJadavpur University\nKolkata, West Bengal, India\n\n\n2020 to 2021 (Covid + Teaching + Social Service)"
-  },
-  {
-    "objectID": "resources/cv.html#research",
-    "href": "resources/cv.html#research",
-    "title": "Bio",
-    "section": "Research",
-    "text": "Research\n\nOct 2021 to “Current Days” (Doctoral Studies)\n\nUniversity : Humboldt-Universität zu Berlin\nSupervisor : PD Dr. Florian A. Bischoff\nFunding : DAAD Research Grants: Doctoral Programmes in Germany 2021/22 (PID: 91803487)\nProject : “Study of Helium Clusters in Extreme Magnetic Fields”"
+    "text": "I love Mathematics, Computers, Atoms, Music and Food\nFor more detailed CV please click the link here"
   },
   {
     "objectID": "resources/cv.html#expertise",
     "href": "resources/cv.html#expertise",
-    "title": "Bio",
+    "title": "Raunak Farhaz",
     "section": "Expertise",
-    "text": "Expertise\n\n\n\nProgrammming\n\nC++\nPython\nWolfram Mathematica\\(\\texttrademark\\)\nJulia\nLaTeX\nTypst\nBash\n\n\n\n\nQuantum Chemistry\n\nMADNESS\nPySCF\nMRChem\nORCA\n\n\n\n\nLanguage\n\nBengali (mother tongue)\nEnglish (fluent)\nGerman (B1)\nHindi (fluent)\n\n\n\n\n\nExtra Curricular\n\nCooking\nMusic (Guitar)\nThinking XD"
+    "text": "Expertise\n\n\n\nProgrammming\n\nC++\nPython\nWolfram Mathematica\\(\\texttrademark\\)\nJulia\nLaTeX\nTypst\nBash\n\n\n\n\nQuantum Chemistry\n\nMADNESS\nPySCF\nMRChem\nORCA\n\n\n\n\nLanguage\n\nBengali (mother tongue)\nEnglish (fluent)\nGerman (B1)\nHindi (fluent)\n\n\n\n\n\nExtra Curricular\n\nOrganizing Scientific Events\nCooking\nMusic"
   },
   {
     "objectID": "resources/posts/greece-trip/greece.html",
@@ -121,28 +107,28 @@
   {
     "objectID": "resources/research.html",
     "href": "resources/research.html",
-    "title": "Research",
+    "title": "What do I work on?",
     "section": "",
     "text": "Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:\n\\[\n\\hat{H}\\Psi = E \\Psi\n\\tag{1}\\]\nApparently it might look very straightforward equation, but trust me it is not analytically solvable for a two electron systems/molecules. So, it is necessary to use relevant approximations to solve the Equation 1. Some of the famous ways to do it is using Hartree-Fock approximation, Density Functional Theory, Plane Wave methods, Finite Element methods etc."
   },
   {
     "objectID": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
     "href": "resources/research.html#quantum-chemistry-and-schroedingers-equation",
-    "title": "Research",
+    "title": "What do I work on?",
     "section": "",
     "text": "Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word quantum1. The word quantum is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:\n\\[\n\\hat{H}\\Psi = E \\Psi\n\\tag{1}\\]\nApparently it might look very straightforward equation, but trust me it is not analytically solvable for a two electron systems/molecules. So, it is necessary to use relevant approximations to solve the Equation 1. Some of the famous ways to do it is using Hartree-Fock approximation, Density Functional Theory, Plane Wave methods, Finite Element methods etc."
   },
   {
     "objectID": "resources/research.html#multi-resolution-analysis-mra",
     "href": "resources/research.html#multi-resolution-analysis-mra",
-    "title": "Research",
+    "title": "What do I work on?",
     "section": "Multi-Resolution Analysis (MRA)",
     "text": "Multi-Resolution Analysis (MRA)\nOne of the modern ways to solve it is by MRA. It is a bit straightforward how one can use MRA to solve the partial differential equation at Equation 1. Let us assume the potential energy function in the system of interest is \\(\\hat{V}=V(r)\\) and now we will split the hamiltonian into the follwing parts\n\\[\\begin{align}\n\\hat{H}\\Psi &= E\\Psi \\\\\n\\Rightarrow (\\hat{T} + \\hat{V})\\Psi &= E\\Psi \\\\\n\\Rightarrow (\\hat{T} - E)\\Psi &= -V\\Psi \\\\\n\\Rightarrow \\Psi &= -(\\hat{T} - E)^{-1}V\\Psi \\\\\n\\end{align}\\]\nHence now we have an equation that can be self-consistently solved with a given guess of \\(\\Psi\\). And from the [cite=alpert et al] we know that \\((\\hat{T}-E)^{-1}\\) can be approximated to a bound state helmholtz operator. For more details oe can go through the book chapter written by Florian A. Bischoff2, my PhD supervisor."
   },
   {
     "objectID": "resources/research.html#molecules-in-strong-magnetic-field",
     "href": "resources/research.html#molecules-in-strong-magnetic-field",
-    "title": "Research",
+    "title": "What do I work on?",
     "section": "Molecules in Strong Magnetic Field",
     "text": "Molecules in Strong Magnetic Field\nThere are some atoms that theoretically and practically do not form bonds in earthly environment. One of the example that we know is helium dimer, i.e. He2. If we consider Molecular Orbital Theory we will see that He2 does not exist. For a mathematical explanation here one can say\n\n\n\n\n\n\nNote\n\n\n\nMO theory says a non-zero number generated by the difference of number of electrons in bonding and non-bonding MOs would assure there is a covalent bonding in the molecular system. For helium dimer this would be\n\\[\n\\mathrm{bond ~ order} = N_{bonding} - N_{anti-bonding} = 2-2 =0\n\\]\nwhich suggests that there is no bonding."
   },

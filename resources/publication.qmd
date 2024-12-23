@@ -3,5 +3,7 @@ Title: "My Publications"
 toc: false
 ---
 
-# Good days are yet to come . . .
+## In Preparation
 
+1.  **Farhaz R.**, Bischoff F. A., Stopkowicsz S., Blaschke S. *Quantification of the basis set error in strong magnetic fields*
+2.  Sardar R., Banik R., **Farhaz R.**, Ghosh S. *The drug induced micelle to super-micelle transition of cetyltrimethylammonium bromide(CTAB) and compares it with acetylenic gemini surfactant: an experimental and DFT study*
