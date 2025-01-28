@@ -1,6 +1,6 @@
 ---
-title: "Tanay's Wedding"
-subtitle: "Travel to India with Charlotte"
+title: "Berlin to Kolkata to Berlin"
+subtitle: "Trip to India with Charlotte and Tanay's Wedding"
 date: 01.29.2025
 categories: [travel]
 ---
