@@ -19,4 +19,4 @@ about:
 toc: false
 ---
 
-I am doing my Ph.D. in Theoretical Chemistry at Humboldt-Universität zu Berlin, Germany. My work interest lies in developing methods for Electronic Structure Methods in extreme magnetic fields and pedagogy in Quantum Chemistry. I am trying to write a book which soon maybe will get published. Check the [BLOG](./resources/blog.qmd) to know more about my thoughts and [RESEARCH](./resources/research.qmd) to know more about my research works. The [LEARN](./resources/teach.qmd) section is for some of my teaching resources.
+I am doing my Ph.D. in Theoretical Chemistry at Humboldt-Universität zu Berlin, Germany. My work interest lies in developing methods for Electronic Structure Methods in extreme magnetic fields and pedagogy in Quantum Chemistry. I am trying to write a book which soon maybe will get published. Check the [Blog](./resources/blog.qmd) to know more about my thoughts and [Research](./resources/research.qmd) to know more about my research works. The [Learn](./resources/teach.qmd) section is for some of my teaching resources.

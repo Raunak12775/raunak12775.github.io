@@ -30,13 +30,13 @@ For more detailed CV please [click the link here](./../data/cv20241223.pdf)
 ::::::: columns
 ::: column
 -   **Programmming**
-    -   `C++`
-    -   `Python`
-    -   `Wolfram Mathematica`$\texttrademark$
-    -   `Julia`
-    -   `LaTeX`
-    -   `Typst`
-    -   `Bash`
+    -   C++
+    -   Python
+    -   Wolfram Mathematica$^\texttrademark$
+    -   Julia
+    -   LaTeX
+    -   Typst
+    -   Bash
 :::
 
 ::: column

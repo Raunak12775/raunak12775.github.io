@@ -1,42 +1,43 @@
 /* css styles */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 // navbar color
 $forest-green: #014421;
+$oxford-blue:#002147;
 // primary background color
 $light-mint-green: #f1f8e9;
+$parchment-paper-color:#f1e9d2;
 //secondary background color
 $pale-green: #e8f5e9;
 // text color
 $dark-green: #1b5e20;
+$rich-burgundy:#6D1A36;
 $near-black: #212121;
+$deep-navy:#1A3A5A;
 // accent color
 $sage-green: #4caf50;
 
 // Colors
-$navbar-bg:$forest-green;        // Forest Green for navbar
-$body-bg:$light-mint-green;          // Light Mint Green for background
-$body-color:$near-black;       // Near Black for text
+$navbar-bg:$oxford-blue;        // Forest Green for navbar
+$body-bg:$parchment-paper-color;          // Light Mint Green for background
+$body-color:$deep-navy;       // Near Black for text
 $link-color:$sage-green;       // Sage Green for links
 
 // Fonts
-$font-family-sans-serif: 'EB Garamond', serif;
-$headings-font-weight: 500;
+$font-family-sans-serif: 'Source Sans 3', sans-serif;
+// $headings-font-weight: 500;
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
-  color:$dark-green;  // Dark Green for headings
+  font-family:'Playfair Display',serif;
+  color:$rich-burgundy;  // Dark Green for headings
 }
 
 .section {
