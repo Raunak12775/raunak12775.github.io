@@ -4,15 +4,13 @@ toc: false
 
 > I love Mathematics, Computers, Atoms, Music and Food
 
-For more detailed CV please [click the link here](./../data/cv20241223.pdf)
-
 ### Oct 2021 to - (Research)
 
 #### Doctoral Research
 
 -   University : Humboldt-Universität zu Berlin
 -   Supervisor : [PD Dr. Florian A. Bischoff](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff/team/florian-bischoff)
--   Funding : DAAD *Research Grants: Doctoral Programmes in Germany 2021/22* (PID: 91803487)
+-   Funding : DAAD *Research Grants: Doctoral Programmes in Germany 2021/22*
 -   Project : "Study of Helium Clusters in Extreme Magnetic Fields"
 
 ### 2015 to 2020 (Academics)
@@ -21,22 +19,22 @@ For more detailed CV please [click the link here](./../data/cv20241223.pdf)
 
 -   Bachelor of Science in Chemistry at **Jadavpur University** - Kolkata, India
 
--   Higher Secondary Education (*Pure Science - Math, Physics, Chemistry, Statistics*) at **Birbhum Zilla School** - Suri, India
+-   12^th^ standard schooling at **Birbhum Zilla School** - Suri, India
 
--   Secondary Education at **St. Andrew's High School** - Suri, India
+-   10^th standard schooling at **St. Andrew's High School** - Suri, India
 
 ## Expertise
 
 ::::::: columns
 ::: column
--   **Programmming**
+-   **Computational Tools**
     -   C++
     -   Python
     -   Wolfram Mathematica$^\texttrademark$
     -   Julia
     -   LaTeX
     -   Typst
-    -   Bash
+    -   Linux
 :::
 
 ::: column
@@ -45,6 +43,8 @@ For more detailed CV please [click the link here](./../data/cv20241223.pdf)
     -   PySCF
     -   MRChem
     -   ORCA
+    - MRCPP
+    - MRChem
 :::
 
 ::: column
@@ -52,7 +52,7 @@ For more detailed CV please [click the link here](./../data/cv20241223.pdf)
     -   Bengali (mother tongue)
     -   English (fluent)
     -   German (B1)
-    -   Hindi (fluent)\
+    -   Hindi (fluent)
 :::
 
 ::: column

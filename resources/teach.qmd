@@ -1,7 +1,9 @@
 ---
 title: Digital Computational Chemistry Book
-listing:
-    type: grid
-    contents: teach
-    sort: "date desc"
+# listing:
+#     type: grid
+#     contents: teach
+#     sort: "date desc"
 ---
+
+Page under construction . . .

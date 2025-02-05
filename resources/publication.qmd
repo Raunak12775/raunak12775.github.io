@@ -7,3 +7,5 @@ toc: false
 
 1.  **Farhaz R.**, Bischoff F. A., Stopkowicsz S., Blaschke S. *Quantification of the basis set error in strong magnetic fields*
 2.  Sardar R., Banik R., **Farhaz R.**, Ghosh S. *The drug induced micelle to super-micelle transition of cetyltrimethylammonium bromide(CTAB) and compares it with acetylenic gemini surfactant: an experimental and DFT study*
+3. **Farhaz R.**, Rickert C., Bischoff F. A. *Helium Dimers and Trimers in Extreme Magnetic Fields : A
+Geometry Optimization Study*

@@ -1,12 +1,5 @@
 [
   {
-    "listing": "/resources/teach.html",
-    "items": [
-      "/resources/teach/mo-theory.html",
-      "/resources/teach/bo-approx.html"
-    ]
-  },
-  {
     "listing": "/resources/blog.html",
     "items": [
       "/resources/posts/fraCcuFra/kolkata-blog.html",
