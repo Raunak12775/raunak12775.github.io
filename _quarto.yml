@@ -23,8 +23,9 @@ website:
       - text: "Learn"
         href: resources/teach.qmd
       - text: "Blog"
-        href: resources/blog.qmd   
-      
+        href: resources/blog.qmd
+      - text: "CV"
+        href: data/cv20250206.pdf
 
 format:
   html:
