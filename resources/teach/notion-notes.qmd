@@ -1,0 +1,14 @@
+---
+title: "My Notion Notes"
+description: ""
+date: 02.26.2025
+image: "notionlogo.png"
+toc: false
+---
+
+Here are my notion notes that I collected while I learnt a topic and stored them. I would be very happy to share it.
+
+|Link| Description|Updated|
+|:------------:|:----------------------------------------------|----------:|
+|[Deep Learning Notes](https://hot-emu-c29.notion.site/Deep-Learning-1280450675d8809bbe24d9f3a5f06c8b?pvs=4)|Deep learning notes using [Understanding Deep Learning - Simon J D Prince](https://udlbook.github.io/udlbook/) |Feb 2025|
+

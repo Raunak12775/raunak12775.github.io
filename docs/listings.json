@@ -9,5 +9,11 @@
       "/resources/posts/doi-murgi/yoghurt-chicken.html",
       "/resources/posts/rohu_kalia/kalia.html"
     ]
+  },
+  {
+    "listing": "/resources/teach.html",
+    "items": [
+      "/resources/teach/notion-notes.html"
+    ]
   }
 ]
