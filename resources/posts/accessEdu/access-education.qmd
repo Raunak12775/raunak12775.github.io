@@ -1,0 +1,18 @@
+---
+title: "Accessibility is More Fundamental"
+subtitle: "The impact of an unaffordable education to the society"
+date: "04.09.2025"
+categories: [philosophy]
+---
+
+![](./header.png){fig-align="center" width="75%"}
+
+I have grown up in a middle class family in West Bengal, India. The concept of private schools was not an alien thing, even at the remotest place I was born. My parents were not even middle class when I was born. But the anglicization of the education pushed my parents and also globalized psychology made them admit me into an English medium school. But the fees were very nominal because it was the only school in my town. So, my parents could afford it when I was young. Then, in 12^th^ I went to a public school, after that, I went into a public university where the fees were even more negligible. I never had to carry the burden of high fees and that kind of stuff. And today I enjoyed that liberty and landed in a German public university for a doctoral study. The reason I am ranting about it is that I am not happy with the current situation that I see around the world about the affordability of education.
+
+The worst of all is how the socialists, the liberals and the nationalist, all think that giving free education is like giving the public a free ride and looking at it as a loss for the government's economy. That is completely garbage. Just think about all the great thinkers and the scientists of the previous age. They all are the product of the free public education. Some of them were also coming from a very poor background. The fees these days of most of the universities in India is skyrocketing and creating a divide for the whole society into 2 parts - one getting the education because of rich parents and other ones not getting education at all because of the economic condition they are trapped in. The latter condition has nothing the individuals are responsible of. Let's look at the most celebrated degree of India and it's total tuition fees in the prestigious institutes of India, the Indian Institute Technologies (IIT).
+
+![Bars representing the total tuition fees for IITs in a regular BTech degree. The numbers are only applicable to general category students.](btech-tuition-total.svg){width="95%"}
+
+The outrageous fees like one in IIT Guwahati which is 1,200,000 for 4 years, 300,000 per annum, 25,000 per month. Please someone tell me how a aspiring kid from an economically backward society manage this amount of huge money for the tuition fees. Let's do a simple *Gedankenexperiment* (thought experiment). Assume, on an economic perspective, there are 100 rich students and 100 poor students. Out of 100 in each category, there are 50 meritorious and 50 of the students that need help. Now, while in an idealistic world, this segregation does not matter, because we have excellent motivating teachers. They would probably build everyone equally, irrespective of the merit of the student. But in this hyper-capitalistic society, where our only goal is to shove degrees into the throat of the students, we will talk in language of efficient students. That equates to including only meritorious students into the class through a very complicated and unnecessary entrance examination to filter out the best. That exactly resembles Indian education system. Now, let's say this exam is the perfect system to filter out the best out of total 200 students. This would result in 100 meritorious students from both rich and poor background. Wonderful, right?
+
+Sorry to say, NO! Because, there is an additional filter called "counselling" and a stupid threshold called cut-off number, where the so called non-meritorious student lay behind the line, for the case I say 50 out of the 100 non-meritorious students
