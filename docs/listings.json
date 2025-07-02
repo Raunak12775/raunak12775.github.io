@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/resources/teach.html",
+    "items": [
+      "/resources/teach/plotting-story.html",
+      "/resources/teach/notion-notes.html"
+    ]
+  },
+  {
     "listing": "/resources/blog.html",
     "items": [
       "/resources/posts/accessEdu/access-education.html",
@@ -7,14 +14,7 @@
       "/resources/posts/flashback_2024/flashback.html",
       "/resources/posts/harmony/harmony.html",
       "/resources/posts/greece-trip/greece.html",
-      "/resources/posts/doi-murgi/yoghurt-chicken.html",
-      "/resources/posts/rohu_kalia/kalia.html"
-    ]
-  },
-  {
-    "listing": "/resources/teach.html",
-    "items": [
-      "/resources/teach/notion-notes.html"
+      "/resources/posts/doi-murgi/yoghurt-chicken.html"
     ]
   }
 ]
