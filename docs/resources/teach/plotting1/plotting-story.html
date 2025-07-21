@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Raunak Farhaz">
-<meta name="dcterms.date" content="2025-01-29">
+<meta name="dcterms.date" content="2025-07-02">
 
-<title>Berlin to Kolkata to Berlin – Raunak Farhaz</title>
+<title>My Plotting Story - I – Raunak Farhaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -37,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-8316b1d8242d1ec733bc960b460d4f06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-e65a0691fa7401f865765f28ed3195c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -54,6 +88,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -105,31 +142,27 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/cv.html"> 
-<span class="menu-text">Bio</span></a>
+<span class="menu-text">BIO</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/research.html"> 
-<span class="menu-text">Research</span></a>
+<span class="menu-text">RESEARCH</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/publication.html"> 
-<span class="menu-text">Publications</span></a>
+<span class="menu-text">PUBLICATIONS</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/teach.html"> 
-<span class="menu-text">Learn</span></a>
+<span class="menu-text">LEARN</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../data/cv20250206.pdf"> 
-<span class="menu-text">CV</span></a>
+<span class="menu-text">BLOG</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -142,12 +175,9 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Berlin to Kolkata to Berlin</h1>
-            <p class="subtitle lead">Trip to India with Charlotte and Tanay’s Wedding</p>
-                                <div class="quarto-categories">
-                <div class="quarto-category">travel</div>
-              </div>
-                  </div>
+      <h1 class="title">My Plotting Story - I</h1>
+            <p class="subtitle lead">This is how I learned to plot</p>
+                      </div>
   </div>
     
   
@@ -163,7 +193,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 29, 2025</p>
+        <p class="date">July 2, 2025</p>
       </div>
     </div>
     
@@ -179,16 +209,23 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#berlin-to-frankfurt" id="toc-berlin-to-frankfurt" class="nav-link active" data-scroll-target="#berlin-to-frankfurt">Berlin to Frankfurt</a></li>
-  <li><a href="#frankfurt-to-kolkata" id="toc-frankfurt-to-kolkata" class="nav-link" data-scroll-target="#frankfurt-to-kolkata">Frankfurt to Kolkata</a></li>
-  <li><a href="#kolkata" id="toc-kolkata" class="nav-link" data-scroll-target="#kolkata">Kolkata</a>
+  <li><a href="#the-hard-way" id="toc-the-hard-way" class="nav-link active" data-scroll-target="#the-hard-way">The Hard Way</a></li>
+  <li><a href="#the-struggle" id="toc-the-struggle" class="nav-link" data-scroll-target="#the-struggle">The Struggle</a>
   <ul class="collapse">
-  <li><a href="#toilet" id="toc-toilet" class="nav-link" data-scroll-target="#toilet">Toilet</a></li>
-  <li><a href="#people" id="toc-people" class="nav-link" data-scroll-target="#people">People</a></li>
-  <li><a href="#food" id="toc-food" class="nav-link" data-scroll-target="#food">Food</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#marriage" id="toc-marriage" class="nav-link" data-scroll-target="#marriage">Marriage</a></li>
+  <li><a href="#plots-from-julia" id="toc-plots-from-julia" class="nav-link" data-scroll-target="#plots-from-julia">Plots from Julia</a>
+  <ul class="collapse">
+  <li><a href="#pros" id="toc-pros" class="nav-link" data-scroll-target="#pros">Pros</a></li>
+  <li><a href="#cons" id="toc-cons" class="nav-link" data-scroll-target="#cons">Cons</a></li>
+  <li><a href="#concluding-remarks" id="toc-concluding-remarks" class="nav-link" data-scroll-target="#concluding-remarks">Concluding remarks</a></li>
   </ul></li>
+  <li><a href="#wolfram-mathematica" id="toc-wolfram-mathematica" class="nav-link" data-scroll-target="#wolfram-mathematica">Wolfram Mathematica</a>
+  <ul class="collapse">
+  <li><a href="#concluding-remarks-1" id="toc-concluding-remarks-1" class="nav-link" data-scroll-target="#concluding-remarks-1">Concluding remarks</a></li>
+  </ul></li>
+  <li><a href="#gnuplot" id="toc-gnuplot" class="nav-link" data-scroll-target="#gnuplot">Gnuplot</a></li>
+  <li><a href="#libreoffice" id="toc-libreoffice" class="nav-link" data-scroll-target="#libreoffice">Libreoffice</a></li>
+  </ul></li>
+  <li><a href="#the-winner-matplotlib" id="toc-the-winner-matplotlib" class="nav-link" data-scroll-target="#the-winner-matplotlib">The Winner : Matplotlib</a></li>
   </ul>
 </nav>
     </div>
@@ -199,53 +236,105 @@ window.Quarto = {
 
 
 
-<div class="quarto-figure quarto-figure-center">
+<section id="the-hard-way" class="level1">
+<h1>The Hard Way</h1>
+<p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
+<ol type="1">
+<li>Conceptualization</li>
+<li>Experimentation</li>
+<li>Data Curation</li>
+<li>Analysis</li>
+</ol>
+<p>The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the <code>Analysis</code> part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.</p>
+</section>
+<section id="the-struggle" class="level1">
+<h1>The Struggle</h1>
+<p>There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the <code>matplotlib</code> a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A[TOOL] --&gt; B(Matplotlib from python)
+    A --&gt; C(Plots from julia)
+    A --&gt; D(Wolfram Mathematica)
+    A --&gt; E(Gnuplot)
+    A --&gt; F(Libreoffice)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="plots-from-julia" class="level2">
+<h2 class="anchored" data-anchor-id="plots-from-julia">Plots from Julia</h2>
+<p>Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fu">collect</span>(<span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fu">sin</span>.(x)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,xlab<span class="op">=</span><span class="st">"x"</span>,ylab<span class="op">=</span><span class="st">"sin(x)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="julia-sample.svg" class="img-fluid"></p>
+<section id="pros" class="level3">
+<h3 class="anchored" data-anchor-id="pros">Pros</h3>
+<ul>
+<li>It is really intuitive and simple.</li>
+<li>It has a good documentation for most kind of plots see the link <a href="https://docs.juliaplots.org/latest/tutorial/" class="uri">https://docs.juliaplots.org/latest/tutorial/</a></li>
+<li>It has a huge amount of out of the box styles to be used for your particular purposes</li>
+</ul>
+</section>
+<section id="cons" class="level3">
+<h3 class="anchored" data-anchor-id="cons">Cons</h3>
+<ul>
+<li><p>Although the issue of ttfp has been addressed well in <code>v1.9</code> and even more in <code>v1.10</code> but it is in news that <code>v1.11</code> is doing again worse in terms of ttfp compared to the older versions. So you can see it is a bit of a reliability issue.</p></li>
+<li><p>The package for loading dataframes or in plain english simply data from let’s say <code>excel</code> or <code>csv</code> files is called <code>DataFrames</code>. As we speak, I feel the package is not mature enough compared to the equivalent ones in <code>python</code>.</p></li>
+</ul>
+</section>
+<section id="concluding-remarks" class="level3">
+<h3 class="anchored" data-anchor-id="concluding-remarks">Concluding remarks</h3>
+<p>If you are using <code>julia</code> for a simulation or an algorithm and you also want to plot some outcomes while running the simulation. Then I would say go for it. Because it would anyways take time so why not just use a functionality that is already given in the programming environment. But if you want it as a standalone data analysis tool then you might feel things are a bit slower.</p>
+</section>
+</section>
+<section id="wolfram-mathematica" class="level2">
+<h2 class="anchored" data-anchor-id="wolfram-mathematica">Wolfram Mathematica</h2>
+<p>This is meant for a visual and computeresque mathematical tool made by a brilliant physicist Stephen Wolfram in 90s for symbolic computation (which basically means to have a translation of mathematics done in pen and paper to the computer screen). It became a bit of popular tool. But the worst part for the students is it is licensed and not open-source. Recent news although says how <code>wolfram</code> is giving free licenses for academic usage but only the headless environment. So basically the strength of mathematica lies in the notebook environment according to me. But if one does not get to use the notebook then it is a bit of a pity. So I would rather skip this section of syntax completely because the price might be a bit of a hurdle for the students.</p>
+<section id="concluding-remarks-1" class="level3">
+<h3 class="anchored" data-anchor-id="concluding-remarks-1">Concluding remarks</h3>
+<p>I also plotted initially many of my research paper plots in mathematica. But sooner I realised scripting with wolfram is a bit of a hurdle especially when you need to plot many of them.</p>
+</section>
+</section>
+<section id="gnuplot" class="level2">
+<h2 class="anchored" data-anchor-id="gnuplot">Gnuplot</h2>
+<p>Gnuplot has nothing to do with <code>GNU</code> (those who are familiar with <code>linux</code> or <code>unix</code>). It is a complete terminal based plotter. It is quite powerful. But the learning curve can be a bit high. I tried it in my masters and then also tried to use it in my PhD. Still it bothers me and always makes me google things which is a bit of a pain. I mean its okay to google things, but not okay to look into google to make even smaller stuffs. But it is definitely powerful but I feel it is outdated. I will skip this too.</p>
+</section>
+<section id="libreoffice" class="level2">
+<h2 class="anchored" data-anchor-id="libreoffice">Libreoffice</h2>
+<p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
+</section>
+</section>
+<section id="the-winner-matplotlib" class="level1">
+<h1>The Winner : Matplotlib</h1>
+<p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
+<div id="ae4744f2" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.1</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>np.sin(x)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"x"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="bzs.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<p><img src="plotting-story_files/figure-html/cell-2-output-1.png" width="600" height="429" class="figure-img"></p>
 </figure>
 </div>
-<section id="berlin-to-frankfurt" class="level2">
-<h2 class="anchored" data-anchor-id="berlin-to-frankfurt">Berlin to Frankfurt</h2>
-<p>Charlotte is sleeping and I am typing down this memory into an obsidian note app. This is a good app and for the first time I got something that can typeset equation with my android tablet. Pretty good. We are reaching Hildesheim, let’s see where the journey takes us. The future is unsure and in which I am going to put my steps on. I also did the same things before in my life but still I am optimistic as always.</p>
-</section>
-<section id="frankfurt-to-kolkata" class="level2">
-<h2 class="anchored" data-anchor-id="frankfurt-to-kolkata">Frankfurt to Kolkata</h2>
-<p>The flight from Frankfurt to Dubai was really smooth. But I was a bit worried because the carrier was from Boeing 777 and from the recent incidents of South Korea and Azerbaijan airlines. But touchwood we flew well. There was a few turbulence but the overall flight was enjoyable. We watched a movie “Star Wars: rogue one” and played chinese checkers. Now we landed in Dubai and now we are on board flight to Kolkata. Very soon we will reach Kolkata when probably me and Charlotte might be sleeping on the cloudy laps.</p>
-<p>I am looking forward to meet Maa, Abbu and Ridh and also everyone in Suri.</p>
-</section>
-<section id="kolkata" class="level2">
-<h2 class="anchored" data-anchor-id="kolkata">Kolkata</h2>
-<section id="toilet" class="level3">
-<h3 class="anchored" data-anchor-id="toilet">Toilet</h3>
-<p>It had been 78 years since Indian independence, but still we cannot resolve the situation with personal hygiene. We talk about how we developed personal hygiene standards on medieval times, which becomes the standard personal beauty care economy in modern world. But still the situation has worsened in India. It is so pathetic to see that we with the current government shouting about how we have become <em>Vishwa-Guru</em> but still we cannot provide clean toilets for the women in our modern trains and even any kind of long distance trains. Shame on us!</p>
-<p>I felt it but never questioned it before when I was a kid. My mother, my sisters and even my father and brothers faced the same problem all throughout their life. And shame on me that it required to have a non-Indian partner to realise this issue. I was in Sealdah station where Charlotte has to go for toilet and then an employee from KFC told us that there is a toilet in first floor. I took her there and I was waiting for her to return. I was scared the whole time if she would return with a crying face. I mean I have seen the disgusting gent’s toilets in Howrah railway station. So I know what can be an obvious reaction to any kinds of public toilets in India. But fortunately she got a dried western toilet although she complained the floor was very dirty which I anticipated.</p>
-</section>
-<section id="people" class="level3">
-<h3 class="anchored" data-anchor-id="people">People</h3>
-<p>I have lived in West Bengal for 25 years of my life but I realised that I have no clue of my state as a whole, we can leave India out of discussion altogether. But what I am now more observant in this trip about the people here is they are like bunch of sticks tightly bound by a rope. The advantage of this kind of intertwined society is that if one individual falls, the others are so firmly holding that one does not fall completely but rather stay hung by a thread. Whereas the society in west is so individualistic that if one falls they go on descending on a free fall. But not everything is floral. The intertwined Bengali society does not at all give the people their individual free private space. And this can lead to conflicts and tension once an individual becomes adult and gets the sense of self-responsibility. So this showed me the dichotomy within me because until now I did not care or I did care but I was so far away with all the freedom that I need which never made me feel being observed or snatched away my privacy while I was vacationing in India. But this time it was different as it was with my partner. I felt it more.</p>
-</section>
-<section id="food" class="level3">
-<h3 class="anchored" data-anchor-id="food">Food</h3>
-<p>I always knew that food is a big thing in our Bengali culture. We talk about the last time’s food when we eat currently something. So one can see the obsession. But it is sometimes like bombardment. Once I have the breakfast, immediately I am called for lunch. After 15 mins I am again called for tiffin and again for something. This is crazy sometimes. Liking is good but obsession? I do not know. Maybe the ignorance of the reply to the question is due to me being Bengali.</p>
-</section>
-<section id="education" class="level3">
-<h3 class="anchored" data-anchor-id="education">Education</h3>
-<p>So one of my primary goal for this trip other than Tanay’s wedding is to visit Visvabharati University(VBU) and especially to meet Prof.&nbsp;Pranab Sarkar. He is the computational chemist in VBU. We went there and thought about meeting him. Unfortunately the university was closed due to Sunday. But after some time due to the help of abbu and Charlotte we saw one employee eating orange in front of the department. We got to know from him that PS sir upstairs and we visited him and it was a full 3 hours of useful discussions and nice conversations. I expressed him my interest to give a talk in the department once I am back to India next time when I am done with the defense.</p>
-<p>But the sad part here was that even VBU being a central university the funding is so less and the less is very very less. I am astonished even with that few resources the students are publishing quality research. Kudos! We also talked to some PhD students about their feedback but they said ‘cannot complain’. This makes sense because as my friend Sujon Mandal says “you start to complain about things when you have a clear idea what things one is not getting”. The students at VBU or any other under funded universities in India do not even have an idea what their governments are not providing and what more it can provide. Like last time this time I also heard about the rising of the new private Universities like Ashoka and all. But I am really against this. The only reason is it will restrict the access the education to an average Indian student with not so good economic condition. Things won’t go in a good direction from here usually. Look at US.</p>
-</section>
-<section id="marriage" class="level3">
-<h3 class="anchored" data-anchor-id="marriage">Marriage</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="marriage.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
 </div>
-<p>So now we are at Tanay’s wedding ceremony. We could not attend the first 2 days because Charlotte became very sick. But we attended the wedding. I attended the Haldi ceremony too. It is a lavish wedding with no lack of resources. I enjoyed it I must say. I met all my old fellows, Sayantan, Ruchira and Anushka. Sreeja was there as well. I met some new people like Udit, Shreya, Ahana, Upashana and Shirsha. Most of them are corporate class people. But they are fun people. The environment of money was all around. But this is also true that without it one could not have this much fun. This pleasure maybe binds all of us into the Darwinism trap. Anyways I am waiting very much to take the flight back to Berlin as I have so much to do once I reach there.</p>
-<p>I stop my journal here so that I enjoy the rest of the trip without any thoughts lingering behind my head. This trip came with many surprises, revelations, changes, exhaustion, sadness and happiness. But this trip would be a very memorable chapter in my life I believe.</p>
-<p>Tschuss!</p>
+</div>
+<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

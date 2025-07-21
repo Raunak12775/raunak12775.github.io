@@ -2,63 +2,17 @@
 toc: false
 ---
 
-> I love Mathematics, Computers, Atoms, Music and Food
+# Education
+- **Humboldt-Universität zu Berlin, Germany** - Ph.D. | supervisor : *[PD Dr. Florian A. Bischoff](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff/team/florian-bischoff)* (*ongoing | funded by Deutscher Akademischer Austauschdienst*)
+- **Jadavpur University, Department of Chemistry, India** - M.Sc. (*specialization in Physical Chemistry*) (*2020*)
+- **Jadavpur University, Department of Chemistry, India** - B.Sc. (*2018*)
+- **Birbhum Zilla School, India** - Higher Secondary Examination (*2015*)
+- **St. Andrew's High School, India** - Secondary Examination (*2013*)
 
-### Oct 2021 to - (Research)
+# Hobbies
 
-#### Doctoral Research
+- Music
+- Cooking
+- Writing
 
--   University : Humboldt-Universität zu Berlin
--   Supervisor : [PD Dr. Florian A. Bischoff](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff/team/florian-bischoff)
--   Funding : DAAD *Research Grants: Doctoral Programmes in Germany 2021/22*
--   Project : "Study of Helium Clusters in Extreme Magnetic Fields"
-
-### 2015 to 2020 (Academics)
-
--   Master of Science in Chemistry (*specialization in Physical Chemistry*) at **Jadavpur University** - Kolkata, India
-
--   Bachelor of Science in Chemistry at **Jadavpur University** - Kolkata, India
-
--   12^th^ standard schooling at **Birbhum Zilla School** - Suri, India
-
--   10^th standard schooling at **St. Andrew's High School** - Suri, India
-
-## Expertise
-
-::::::: columns
-::: column
--   **Computational Tools**
-    -   C++
-    -   Python
-    -   Wolfram Mathematica$^\texttrademark$
-    -   Julia
-    -   LaTeX
-    -   Typst
-    -   Linux
-:::
-
-::: column
--   **Quantum Chemistry**
-    -   MADNESS
-    -   PySCF
-    -   MRChem
-    -   ORCA
-    - MRCPP
-    - MRChem
-:::
-
-::: column
--   **Language**
-    -   Bengali (mother tongue)
-    -   English (fluent)
-    -   German (B1)
-    -   Hindi (fluent)
-:::
-
-::: column
--   **Extra Curricular**
-    -   Organizing Scientific Events
-    -   Cooking
-    -   Music
-:::
-:::::::
+For full CV [download here the PDF](./../data/cv20250206.pdf)

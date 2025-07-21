@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8316b1d8242d1ec733bc960b460d4f06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e65a0691fa7401f865765f28ed3195c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -63,9 +63,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-subtitle','listing-reading-time','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -114,7 +114,7 @@ window.Quarto = {
 };
 </script>
 
-</head>
+<link rel="alternate" type="application/rss+xml" title="Raunak Farhaz" href="teach.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
@@ -134,31 +134,27 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/cv.html"> 
-<span class="menu-text">Bio</span></a>
+<span class="menu-text">BIO</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/research.html"> 
-<span class="menu-text">Research</span></a>
+<span class="menu-text">RESEARCH</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/publication.html"> 
-<span class="menu-text">Publications</span></a>
+<span class="menu-text">PUBLICATIONS</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../resources/teach.html" aria-current="page"> 
-<span class="menu-text">Learn</span></a>
+<span class="menu-text">LEARN</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../data/cv20250206.pdf"> 
-<span class="menu-text">CV</span></a>
+<span class="menu-text">BLOG</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -168,14 +164,14 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -185,24 +181,46 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-listing-date-sort="1751407200000" data-listing-file-modified-sort="1751443279080" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1068">
-<a href="../resources/teach/plotting-story.html" class="quarto-grid-link">
+<a href="../resources/teach/plotting1/plotting-story.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../resources/teach/julia-sample.svg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../resources/teach/plotting1/julia-sample.svg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 My Plotting Story - I
 </h5>
-<div class="card-text listing-description">
-In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:
+<div class="card-subtitle listing-subtitle">
+This is how I learned to plot
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
+<div class="listing-reading-time card-text text-muted">
+6 min
 </div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Jul 2, 2025
 </div>

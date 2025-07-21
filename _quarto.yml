@@ -12,20 +12,18 @@ website:
     title: false
     logo: images/favicon.svg
     right:
-      - text: "Home"
+      - text: "HOME"
         href: index.qmd
-      - text: "Bio"
+      - text: "BIO"
         href: resources/cv.qmd
-      - text: "Research"
+      - text: "RESEARCH"
         href: resources/research.qmd
-      - text: "Publications"
+      - text: "PUBLICATIONS"
         href: resources/publication.qmd
-      - text: "Learn"
+      - text: "LEARN"
         href: resources/teach.qmd
-      - text: "Blog"
+      - text: "BLOG"
         href: resources/blog.qmd
-      - text: "CV"
-        href: data/cv20250206.pdf
 
 format:
   html:

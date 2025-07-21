@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Raunak Farhaz</title>
+<link>https://raunakfarhaz.com/resources/teach.html</link>
+<atom:link href="https://raunakfarhaz.com/resources/teach.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Tue, 01 Jul 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>My Plotting Story - I</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/plotting1/plotting-story.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-hard-way" class="level1">
+<h1>The Hard Way</h1>
+<p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
+<ol type="1">
+<li>Conceptualization</li>
+<li>Experimentation</li>
+<li>Data Curation</li>
+<li>Analysis</li>
+</ol>
+<p>The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the <code>Analysis</code> part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.</p>
+</section>
+<section id="the-struggle" class="level1">
+<h1>The Struggle</h1>
+<p>There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the <code>matplotlib</code> a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A[TOOL] --&gt; B(Matplotlib from python)
+    A --&gt; C(Plots from julia)
+    A --&gt; D(Wolfram Mathematica)
+    A --&gt; E(Gnuplot)
+    A --&gt; F(Libreoffice)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="plots-from-julia" class="level2">
+<h2 class="anchored" data-anchor-id="plots-from-julia">Plots from Julia</h2>
+<p>Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">using</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">Plots</span></span>
+<span id="cb1-2">x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">collect</span>(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-3">y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sin</span>.(x)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(x,y,xlab<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"x"</span>,ylab<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sin(x)"</span>)</span></code></pre></div>
+<p><img src="https://raunakfarhaz.com/resources/teach/plotting1/julia-sample.svg" class="img-fluid"></p>
+<section id="pros" class="level3">
+<h3 class="anchored" data-anchor-id="pros">Pros</h3>
+<ul>
+<li>It is really intuitive and simple.</li>
+<li>It has a good documentation for most kind of plots see the link <a href="https://docs.juliaplots.org/latest/tutorial/" class="uri">https://docs.juliaplots.org/latest/tutorial/</a></li>
+<li>It has a huge amount of out of the box styles to be used for your particular purposes</li>
+</ul>
+</section>
+<section id="cons" class="level3">
+<h3 class="anchored" data-anchor-id="cons">Cons</h3>
+<ul>
+<li><p>Although the issue of ttfp has been addressed well in <code>v1.9</code> and even more in <code>v1.10</code> but it is in news that <code>v1.11</code> is doing again worse in terms of ttfp compared to the older versions. So you can see it is a bit of a reliability issue.</p></li>
+<li><p>The package for loading dataframes or in plain english simply data from let’s say <code>excel</code> or <code>csv</code> files is called <code>DataFrames</code>. As we speak, I feel the package is not mature enough compared to the equivalent ones in <code>python</code>.</p></li>
+</ul>
+</section>
+<section id="concluding-remarks" class="level3">
+<h3 class="anchored" data-anchor-id="concluding-remarks">Concluding remarks</h3>
+<p>If you are using <code>julia</code> for a simulation or an algorithm and you also want to plot some outcomes while running the simulation. Then I would say go for it. Because it would anyways take time so why not just use a functionality that is already given in the programming environment. But if you want it as a standalone data analysis tool then you might feel things are a bit slower.</p>
+</section>
+</section>
+<section id="wolfram-mathematica" class="level2">
+<h2 class="anchored" data-anchor-id="wolfram-mathematica">Wolfram Mathematica</h2>
+<p>This is meant for a visual and computeresque mathematical tool made by a brilliant physicist Stephen Wolfram in 90s for symbolic computation (which basically means to have a translation of mathematics done in pen and paper to the computer screen). It became a bit of popular tool. But the worst part for the students is it is licensed and not open-source. Recent news although says how <code>wolfram</code> is giving free licenses for academic usage but only the headless environment. So basically the strength of mathematica lies in the notebook environment according to me. But if one does not get to use the notebook then it is a bit of a pity. So I would rather skip this section of syntax completely because the price might be a bit of a hurdle for the students.</p>
+<section id="concluding-remarks-1" class="level3">
+<h3 class="anchored" data-anchor-id="concluding-remarks-1">Concluding remarks</h3>
+<p>I also plotted initially many of my research paper plots in mathematica. But sooner I realised scripting with wolfram is a bit of a hurdle especially when you need to plot many of them.</p>
+</section>
+</section>
+<section id="gnuplot" class="level2">
+<h2 class="anchored" data-anchor-id="gnuplot">Gnuplot</h2>
+<p>Gnuplot has nothing to do with <code>GNU</code> (those who are familiar with <code>linux</code> or <code>unix</code>). It is a complete terminal based plotter. It is quite powerful. But the learning curve can be a bit high. I tried it in my masters and then also tried to use it in my PhD. Still it bothers me and always makes me google things which is a bit of a pain. I mean its okay to google things, but not okay to look into google to make even smaller stuffs. But it is definitely powerful but I feel it is outdated. I will skip this too.</p>
+</section>
+<section id="libreoffice" class="level2">
+<h2 class="anchored" data-anchor-id="libreoffice">Libreoffice</h2>
+<p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
+</section>
+</section>
+<section id="the-winner-matplotlib" class="level1">
+<h1>The Winner : Matplotlib</h1>
+<p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
+<div id="ae4744f2" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb2-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb2-3">x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.arange(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>)</span>
+<span id="cb2-4">y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.sin(x)</span>
+<span id="cb2-5">plt.plot(x,y)</span>
+<span id="cb2-6">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"x"</span>)</span>
+<span id="cb2-7">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sin(x)"</span>)</span>
+<span id="cb2-8">plt.show()</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/plotting1/plotting-story_files/figure-html/cell-2-output-1.png" width="600" height="429" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://raunakfarhaz.com/resources/teach/plotting1/plotting-story.html</guid>
+  <pubDate>Tue, 01 Jul 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/plotting1/julia-sample.svg" medium="image" type="image/svg+xml"/>
+</item>
+</channel>
+</rss>

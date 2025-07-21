@@ -3,7 +3,6 @@
     "listing": "/resources/blog.html",
     "items": [
       "/resources/posts/accessEdu/access-education.html",
-      "/resources/posts/fraCcuFra/kolkata-blog.html",
       "/resources/posts/flashback_2024/flashback.html",
       "/resources/posts/harmony/harmony.html",
       "/resources/posts/greece-trip/greece.html",
@@ -13,7 +12,7 @@
   {
     "listing": "/resources/teach.html",
     "items": [
-      "/resources/teach/plotting-story.html"
+      "/resources/teach/plotting1/plotting-story.html"
     ]
   }
 ]

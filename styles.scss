@@ -30,13 +30,14 @@ $body-color:$deep-navy;       // Near Black for text
 $link-color:$sage-green;       // Sage Green for links
 
 // Fonts
-$font-family-sans-serif: 'Source Sans 3', sans-serif;
+$font-family-sans-serif: 'DM Sans', sans-serif;
+
 // $headings-font-weight: 500;
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Playfair Display',serif;
+  font-family:'DM Sans',sans-serif;
   color:$rich-burgundy;  // Dark Green for headings
 }
 
