@@ -12,3 +12,12 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+### Note
+
+All the articles are categorised into 3 groups - brownpaper, whitepaper and bluepaper. Every article has a link on the top-right section, pressing which one can download the articles in `PDF` file format. The explanation of different kinds of papers are as follows
+
+1. **brownpaper** - these are tutorials or lecture notes for computational/theoretical chemistry and related topics
+2. **whitepaper** - nowadays, big-tech companies use this as a term for research papers, I like it, so it would be mainly related to modern day research
+3. **bluepaper** - these are notes and updates related to programming and related computational tools
+
