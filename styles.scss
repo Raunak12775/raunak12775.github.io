@@ -1,79 +1,42 @@
 /* css styles */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-// navbar color
-$forest-green: #014421;
-$oxford-blue:#002147;
-// primary background color
-$light-mint-green: #f1f8e9;
-$parchment-paper-color:#f1e9d2;
-//secondary background color
-$pale-green: #e8f5e9;
-// text color
-$dark-green: #1b5e20;
-$rich-burgundy:#6D1A36;
+
+// Source Serif 4
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+// Work Sans
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+// color-variables
+$chalk-white:#F9F7F4;
+$putty-beige:#D7CEC7;
+$charcoal-wood:#5F5C57;
 $near-black: #212121;
-$deep-navy:#1A3A5A;
-// accent color
-$sage-green: #4caf50;
-
+$ragin-beige: #fff5d7;
+$link-pink: #ff3a22;
+$sleuthe-yellow: #feb300;
 // Colors
-$navbar-bg:$oxford-blue;        // Forest Green for navbar
-$body-bg:$parchment-paper-color;          // Light Mint Green for background
-$body-color:$deep-navy;       // Near Black for text
-$link-color:$sage-green;       // Sage Green for links
-
-// Fonts
-$font-family-sans-serif: 'DM Sans', sans-serif;
-
-// $headings-font-weight: 500;
+$navbar-bg:$charcoal-wood;
+$body-bg:$ragin-beige;
+$link-color:$link-pink;
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'DM Sans',sans-serif;
-  color:$rich-burgundy;  // Dark Green for headings
+  font-family:'Source Serif 4', serif;
+  color:$near-black;
+  weight: 900;
 }
 
-.section {
-  background-color:$sage-green;  // Pale Green for sections
-  padding: 20px;
-  margin-bottom: 20px;
+body {
+  background-color:$body-bg;  // Light Mint Green for body background
+  color:$near-black;          // Near Black for body text
+  font-family:'Work Sans', sans-serif;
+  text-align: justify;
 }
 
 /*-- scss:rules --*/
 
-// Navbar link hover effect
 .navbar-nav .nav-item .nav-link {
-    position: relative;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-nav .nav-item .nav-link:hover {
-    background-color: rgba(1, 68, 33, 0.1); // Light green background, adjust alpha for transparency
-    border-radius: 20px; // Rounded corners
-    padding: 5px 15px; // Adjust padding to create space around text
-  }
-  
-  // Optional: Add a subtle animation
-  .navbar-nav .nav-item .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color:$light-mint-green;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-nav .nav-item .nav-link:hover::after {
-    width: 100%;
-    left: 0;
-  }
+    font-family: "Work Sans", sans-serif;
+    color: $chalk-white;
+}
+

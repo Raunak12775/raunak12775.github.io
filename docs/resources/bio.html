@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>cv – Raunak Farhaz</title>
+<title>bio – Raunak Farhaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,14 +29,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fe76597a32f7c463f294d3d6719bfba7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c0de73dcfd66c84b0f4d8a385332c278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -68,7 +69,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -94,37 +95,36 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/favicon.svg" alt="" class="navbar-logo">
+    <img src="../images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">HOME</span></a>
+<span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../resources/cv.html" aria-current="page"> 
-<span class="menu-text">BIO</span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../resources/research.html"> 
-<span class="menu-text">RESEARCH</span></a>
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/publication.html"> 
-<span class="menu-text">PUBLICATIONS</span></a>
+    <a class="nav-link active" href="../resources/bio.html" aria-current="page"> 
+<span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/teach.html"> 
-<span class="menu-text">LEARN</span></a>
+    <a class="nav-link" href="../resources/learn.html"> 
+<span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/blog.html"> 
-<span class="menu-text">BLOG</span></a>
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -154,16 +154,24 @@ window.Quarto = {
 <li><strong>St.&nbsp;Andrew’s High School, India</strong> - Secondary Examination (<em>2013</em>)</li>
 </ul>
 </section>
-<section id="hobbies" class="level1">
-<h1>Hobbies</h1>
-<ul>
-<li>Music</li>
-<li>Cooking</li>
-<li>Writing</li>
-</ul>
-<p>For full CV <a href="./../data/cv20250206.pdf">download here the PDF</a></p>
+<section id="publications" class="level1">
+<h1>Publications</h1>
+<section id="published-articles" class="level2">
+<h2 class="anchored" data-anchor-id="published-articles">Published Articles</h2>
+<ol type="1">
+<li><strong>Farhaz R.</strong>, Bischoff F. A., Stopkowicsz S., Blaschke S. (2025) <em>Quantification of the basis set error for molecules in strong magnetic fields and general orientation.</em> <strong>Journal of Chemical Physics</strong> [<a href="https://doi.org/10.1063/5.0274736">DOI</a>] [<a href="https://doi.org/10.26434/chemrxiv-2025-zw2bz">ChemRxiv Preprint</a>]</li>
+</ol>
+</section>
+<section id="in-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="in-preparation">In Preparation</h2>
+<ol type="1">
+<li>Sardar R., Banik R., <strong>Farhaz R.</strong>, Ghosh S. <em>The drug induced micelle to super-micelle transition of cetyltrimethylammonium bromide(CTAB) and compares it with acetylenic gemini surfactant: an experimental and DFT study</em></li>
+<li><strong>Farhaz R.</strong>, Rickert C., Bischoff F. A. <em>Helium Dimers and Trimers in Extreme Magnetic Fields : A Geometry Optimization Study</em></li>
+</ol>
+<p><a href="./../data/cv20250206.pdf">Download a complete CV here (<code>PDF</code>)</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -218,13 +226,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -573,7 +582,7 @@ window.Quarto = {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz with Quarto | Berlin 2025</p>
+<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2025</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

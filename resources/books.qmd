@@ -1,8 +1,0 @@
----
-title: "Books I have written"
----
-
-The following links are links to the gitbook and quarto-books I have written for myself at the beginning but love to share it among others.
-
-- **Computational Chemistry : Julian Approach**[Click Here for the book link](https://www.google.co.in)
-- **Data Analysis for Computational Chemists** [Coming Soon]()

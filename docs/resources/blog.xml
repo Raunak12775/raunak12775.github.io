@@ -9,7 +9,7 @@
 <link>https://raunakfarhaz.com/resources/blog.html</link>
 <atom:link href="https://raunakfarhaz.com/resources/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Thu, 21 Aug 2025 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Daddy Trump</title>
@@ -505,7 +505,7 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Ingredients
+<span class="screen-reader-only">Note</span>Ingredients
 </div>
 </div>
 <div class="callout-body-container callout-body">

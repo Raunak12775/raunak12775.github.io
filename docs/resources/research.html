@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -49,14 +49,15 @@ div.csl-indent {
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fe76597a32f7c463f294d3d6719bfba7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c0de73dcfd66c84b0f4d8a385332c278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -88,7 +89,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -114,37 +115,36 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/favicon.svg" alt="" class="navbar-logo">
+    <img src="../images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">HOME</span></a>
+<span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../resources/cv.html"> 
-<span class="menu-text">BIO</span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="../resources/research.html" aria-current="page"> 
-<span class="menu-text">RESEARCH</span></a>
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/publication.html"> 
-<span class="menu-text">PUBLICATIONS</span></a>
+    <a class="nav-link" href="../resources/bio.html"> 
+<span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/teach.html"> 
-<span class="menu-text">LEARN</span></a>
+    <a class="nav-link" href="../resources/learn.html"> 
+<span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/blog.html"> 
-<span class="menu-text">BLOG</span></a>
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -162,8 +162,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quantum-chemistry-and-schrödingers-equation" id="toc-quantum-chemistry-and-schrödingers-equation" class="nav-link active" data-scroll-target="#quantum-chemistry-and-schrödingers-equation">Quantum Chemistry and Schrödinger’s Equation</a></li>
-  <li><a href="#multi-resolution-analysis" id="toc-multi-resolution-analysis" class="nav-link" data-scroll-target="#multi-resolution-analysis">Multi-Resolution Analysis</a></li>
+  <li><a href="#multi-resolution-analysis" id="toc-multi-resolution-analysis" class="nav-link active" data-scroll-target="#multi-resolution-analysis">Multi-Resolution Analysis</a></li>
+  <li><a href="#perpendicular-paramagnetic-bonding" id="toc-perpendicular-paramagnetic-bonding" class="nav-link" data-scroll-target="#perpendicular-paramagnetic-bonding">Perpendicular Paramagnetic Bonding</a>
+  <ul class="collapse">
+  <li><a href="#limitations-of-gaussian-basis-functions" id="toc-limitations-of-gaussian-basis-functions" class="nav-link" data-scroll-target="#limitations-of-gaussian-basis-functions">Limitations of Gaussian basis functions</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -173,37 +176,53 @@ window.Quarto = {
 
 
 
-<section id="quantum-chemistry-and-schrödingers-equation" class="level1">
-<h1>Quantum Chemistry and Schrödinger’s Equation</h1>
-<p>Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word <strong>quantum</strong><span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span>. The word <strong>quantum</strong> is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:</p>
-<p><span id="eq-se"><span class="math display">\[
-\hat{H}\Psi = E \Psi
-\tag{1}\]</span></span></p>
-<p>Apparently it might look very straightforward equation, but trust me it is proven to be computationally intractable and analytically unsolvable once it goes beyond the H atom. So, it is necessary to use relevant approximations to solve the <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a>. Some of the ways to do it is using basis set expansion using atom-centred gaussians, Plane Wave methods, Finite Element methods or numerical tensor based methods.</p>
-</section>
 <section id="multi-resolution-analysis" class="level1">
 <h1>Multi-Resolution Analysis</h1>
-<p>One of the ways that my research is interested in, is to solve <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> is using Multiresolution Analysis (MRA). MRA is a real space numerical method to project functions and operators with arbitrary precision.</p>
+<p>Multiresolution Analysis (MRA) brings an effective way to solve Schrödinger equation.</p>
+<p><span id="eq-se"><span class="math display">\[
+\hat{H}\Psi=E\Psi
+\tag{1}\]</span></span></p>
+<p>It is a real space numerical method used to project functions and operators with arbitrary precision given by the following formula.</p>
 <p><span class="math display">\[
-F(x)= \sum_{n,l} \sum_{k=0}^{k_{\mathrm{max}} - 1} \phi^n_{k,l}(x) s^n_{k,l}
-\]</span></p>
-<p>where <span class="math inline">\(\phi^n_{k,l}(x)\)</span> is the function under consideration and <span class="math inline">\(s^n_{k,l}\)</span> are the scaling coefficients obtained from Legendre Polynomials. For details one can refer <a href="https://doi.org/10.1016/bs.aiq.2019.04.003">the book chapter from Bischoff, F. A.</a></p>
-<p>How can one use MRA to solve the <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a>? It is pretty straightforward in the language of MRA. Let us assume the potential energy function in the system of interest is <span class="math inline">\(\hat{V}=V(r)\)</span> and now we will rearrange the <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> as following</p>
+f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
+\]</span>{eq-function-projection}</p>
+<p>where <span class="math inline">\(f^n (x)\)</span> is the function resolved at <span class="math inline">\(n^{th}\)</span> level, <span class="math inline">\(\phi^n_{kl}(x)\)</span> are the scaling functions and <span class="math inline">\(s^n_{kl}\)</span> are the scaling coefficients. The scaling or basis functions are derived from Legendre Polynomials. For a detailed overview, book chapter written by Bischoff<span class="citation" data-cites="bischoff2019"><sup><a href="#ref-bischoff2019" role="doc-biblioref">1</a></sup></span> is a good starting point. Assuming the potential energy function in the system of interest is <span class="math inline">\(\hat{V}=V(r)\)</span> and the rearrangement of <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> will give the following expression</p>
 <p><span class="math display">\[\begin{align}
 \hat{H}\Psi &amp;= E\Psi \\
 \Rightarrow (\hat{T} + \hat{V})\Psi &amp;= E\Psi \\
 \Rightarrow (\hat{T} - E)\Psi &amp;= -V\Psi \\
 \Rightarrow \Psi &amp;= -(\hat{T} - E)^{-1}V\Psi \\
 \end{align}\]</span></p>
-<p>Point to be noted here is that <span class="math inline">\(V(r)\)</span> can be any form of potential - particle in a box, simple harmonic oscillator, hydrogen atom, coulomb and exchange from Hartree-Fock method etc. Hence, using variational principle<span class="citation" data-cites="levine2014quantum"><sup><a href="#ref-levine2014quantum" role="doc-biblioref">1</a></sup></span> now we have an equation that is algorithmically a fixed point iteration. It can be self-consistently solved with a given guess of <span class="math inline">\(\Psi\)</span> in a complete basis set limit. In that regard, it is a basis set incompleteness error free technique.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Point to be noted here is that <span class="math inline">\(V(r)\)</span> can be any form of potential - Particle in a box, Simple harmonic oscillator, Hydrogen atom, Coulomb and Exchange from Hartree-Fock method etc.</p>
+</div>
+</div>
+<p>The resulting equation above can be algorithmically considered to be a fixed point iteration problem. It can be self-consistently solved with a given good guess of <span class="math inline">\(\Psi\)</span>. At the end, MRA would produce results in complete basis set (CBS) limit being a real space grid based method.</p>
+</section>
+<section id="perpendicular-paramagnetic-bonding" class="level1">
+<h1>Perpendicular Paramagnetic Bonding</h1>
+<p>Besides covalent and ionic bonding, there exists a third kind of distinct bonding which occurs primarily in presence of strong magnetic fields. There is a rehybridization of antibonding orbitals in the systems which are non-bonded in ambient atmospheres. For example, singlet He<sub>2</sub>, it does not have a primary binding interaction according to Molecular Orbital Theory (MOT). But it shows strong primary binding interaction with the increase in <span class="math inline">\(\mathbf{B}\)</span> values.</p>
+<section id="limitations-of-gaussian-basis-functions" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-of-gaussian-basis-functions">Limitations of Gaussian basis functions</h2>
+<p>In this particular scenario MRA wavelets are much better suited for strong <span class="math inline">\(\mathbf{B}\)</span> calculations, as it do not require subtle handwork which one needs to do in case of atom centered Gaussian basis functions. The wavefunction in <span class="math inline">\(\mathbf{B}\)</span> is not gauge-invariant which makes them meaningless entities. To overcome it, one needs to make them gauge-invariant, which in practise done using LONDON orbitals. But MRA does not have these problems as it is a real space grid based approach.</p>
 
 
 
 </section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-levine2014quantum" class="csl-entry" role="listitem">
-<div class="csl-left-margin">(1) </div><div class="csl-right-inline">Levine, I. N. <em><a href="https://books.google.de/books?id=ht6jMQEACAAJ">Quantum Chemistry</a></em>; Pearson advanced chemistry series; Pearson, 2014.</div>
+<div id="ref-bischoff2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">(1) </div><div class="csl-right-inline">Bischoff, F. A. <a href="https://linkinghub.elsevier.com/retrieve/pii/S006532761930019X">Computing Accurate Molecular Properties in Real Space Using Multiresolution Analysis</a>; Elsevier, 2019; Vol. 79, pp 3–52.</div>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -257,13 +276,14 @@ F(x)= \sum_{n,l} \sum_{k=0}^{k_{\mathrm{max}} - 1} \phi^n_{k,l}(x) s^n_{k,l}
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -612,7 +632,7 @@ F(x)= \sum_{n,l} \sum_{k=0}^{k_{\mathrm{max}} - 1} \phi^n_{k,l}(x) s^n_{k,l}
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz with Quarto | Berlin 2025</p>
+<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2025</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

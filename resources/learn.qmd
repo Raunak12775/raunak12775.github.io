@@ -3,11 +3,11 @@ title: ""
 listing: 
     contents: teach/**/*.qmd
     sort: "date desc"
-    type: grid
+    type: table
     categories: true
     sort-ui: true
     filter-ui: true
-    fields: [date, title, subtitle, reading-time, categories, image]
+    fields: [date, title, subtitle, categories]
     feed: true
 page-layout: full
 title-block-banner: false

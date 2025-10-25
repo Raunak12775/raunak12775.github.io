@@ -6,10 +6,10 @@
       version="2.0">
 <channel>
 <title>Raunak Farhaz</title>
-<link>https://raunakfarhaz.com/resources/teach.html</link>
-<atom:link href="https://raunakfarhaz.com/resources/teach.xml" rel="self" type="application/rss+xml"/>
+<link>https://raunakfarhaz.com/resources/learn.html</link>
+<atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Tue, 01 Jul 2025 22:00:00 GMT</lastBuildDate>
 <item>
   <title>My Plotting Story - I</title>
@@ -55,7 +55,7 @@
 <section id="plots-from-julia" class="level2">
 <h2 class="anchored" data-anchor-id="plots-from-julia">Plots from Julia</h2>
 <p>Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">using</span> <span class="bu" style="color: null;
 background-color: null;
@@ -92,7 +92,7 @@ font-style: inherit;">"x"</span>,ylab<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"sin(x)"</span>)</span></code></pre></div>
+font-style: inherit;">"sin(x)"</span>)</span></code></pre></div></div>
 <p><img src="https://raunakfarhaz.com/resources/teach/plotting1/julia-sample.svg" class="img-fluid"></p>
 <section id="pros" class="level3">
 <h3 class="anchored" data-anchor-id="pros">Pros</h3>
@@ -135,7 +135,7 @@ font-style: inherit;">"sin(x)"</span>)</span></code></pre></div>
 <h1>The Winner : Matplotlib</h1>
 <p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
 <div id="ae4744f2" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -166,7 +166,7 @@ font-style: inherit;">"x"</span>)</span>
 <span id="cb2-7">plt.ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"sin(x)"</span>)</span>
-<span id="cb2-8">plt.show()</span></code></pre></div>
+<span id="cb2-8">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">

@@ -1,5 +1,5 @@
 ---
-title: "Raunak Farhaz"
+title: "**Raunak Farhaz**"
 image: "images/profile.jpeg"
 about:
     template: jolla
@@ -7,14 +7,18 @@ about:
     image-width: 15em 
     links:
         - icon: envelope
-          href: mailto:farhazraunak@proton.me
+          href: mailto:raunak.farhaz@hu-berlin.de
         - icon: github
           href: https://github.com/Raunak12775
         - text: "{{< fa brands bluesky >}}"
           href: https://bsky.app/profile/raunakfarhaz.bsky.social
         - icon: twitter-x
-          href: https://twitter.com/Farhazraunak 
+          href: https://twitter.com/Farhazraunak
 toc: false
 ---
 
-I am doing my Ph.D. in Theoretical Chemistry at **Humboldt-Universität zu Berlin, Germany**. My work interest lies in *understanding chemical bonding in extreme magnetic fields* using numerical electronic structure methods namely **Multiresolution Analysis**. I love to write **pedagogic quantum chemistry lecture notes**. I am trying to write a book which soon make it to the desk of a publisher (if I manage to finish it XD). Currently stationed in **Berlin**. For collaborations or fun-projects hit me up at my email.
+I am currently a Ph.D. student of Theoretical Chemistry at **Humboldt-Universität zu Berlin, Germany**. For full research and academic profile look into my [Bio](resources/bio.qmd). I have expertise in using **Multiresolution Analysis for studying molecules in strong magnetic fields**. For a detailed  overview of my research look into my [Research](resources/research.qmd). My research interest is primarily concerned with the understanding of chemical bonding and its philosophical aspects.  I love writing **pedagogic articles/essays on quantum chemistry** (_look into_ [Learn](resources/learn.qmd)).
+
+For peeping ;) into my opinions look into my [Blog](resources/blog.qmd). For collaborations or queries send me an [email](mailto:raunak.farhaz@hu-berlin.de).
+
+

@@ -7,28 +7,27 @@ website:
   site-url: https://raunakfarhaz.com
   favicon: images/favicon.svg
   search: false
-  page-footer: $\textcopyright$ made by Raunak Farhaz with Quarto | Berlin 2025
+  page-footer: $\textcopyright$ Raunak Farhaz | Berlin 2025
   navbar:
     title: false
     logo: images/favicon.svg
+    left:
+      - icon: ""
+      - href: index.qmd
     right:
-      - text: "HOME"
-        href: index.qmd
-      - text: "BIO"
-        href: resources/cv.qmd
-      - text: "RESEARCH"
+      - text: "Research"
         href: resources/research.qmd
-      - text: "PUBLICATIONS"
-        href: resources/publication.qmd
-      - text: "LEARN"
-        href: resources/teach.qmd
-      - text: "BLOG"
+      - text: "Bio"
+        href: resources/bio.qmd
+      - text: "Learn"
+        href: resources/learn.qmd
+      - text: "Blog"
         href: resources/blog.qmd
 
 format:
   html:
     theme:
-        - default
+        - simple
         - styles.scss
     toc: true
     toc-location: right

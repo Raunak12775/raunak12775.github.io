@@ -5,27 +5,22 @@ csl: acs.csl
 number-sections: false
 ---
 
-# Quantum Chemistry and Schrödinger's Equation
-
-Materials having one or more dimensions especially below 20 nm shows observable changes in optical, electronic, chemical and other properties than the material in bulk. These materials are prefixed with the word **quantum**[@levine2014quantum]. The word **quantum** is associated because of the behaviour of the particles is not anymore understood by classical mechanics. Quantum mechanics is the answer for them. Quantum mechanics and Schrödinger equation are synonymous. The time-indepedent non-relativistic form of the equation looks like following:
-
-$$
-\hat{H}\Psi = E \Psi
-$$ {#eq-se}
-
-Apparently it might look very straightforward equation, but trust me it is proven to be computationally intractable and analytically unsolvable once it goes beyond the H atom. So, it is necessary to use relevant approximations to solve the @eq-se. Some of the ways to do it is using basis set expansion using atom-centred gaussians, Plane Wave methods, Finite Element methods or numerical tensor based methods.
 
 # Multi-Resolution Analysis
 
-One of the ways that my research is interested in, is to solve @eq-se is using Multiresolution Analysis (MRA). MRA is a real space numerical method to project functions and operators with arbitrary precision.
+Multiresolution Analysis (MRA) brings an effective way to solve Schrödinger equation.
 
 $$
-F(x)= \sum_{n,l} \sum_{k=0}^{k_{\mathrm{max}} - 1} \phi^n_{k,l}(x) s^n_{k,l}
+\hat{H}\Psi=E\Psi
+$${#eq-se}
+
+It is a real space numerical method used to project functions and operators with arbitrary precision given by the following formula.
+
 $$
+f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
+$${eq-function-projection}
 
-where $\phi^n_{k,l}(x)$ is the function under consideration and $s^n_{k,l}$ are the scaling coefficients obtained from Legendre Polynomials. For details one can refer [the book chapter from Bischoff, F. A.](https://doi.org/10.1016/bs.aiq.2019.04.003)
-
-How can one use MRA to solve the @eq-se? It is pretty straightforward in the language of MRA. Let us assume the potential energy function in the system of interest is $\hat{V}=V(r)$ and now we will rearrange the @eq-se as following
+where $f^n (x)$ is the function resolved at $n^{th}$ level, $\phi^n_{kl}(x)$ are the scaling functions and $s^n_{kl}$ are the scaling coefficients. The scaling or basis functions are derived from Legendre Polynomials. For a detailed overview, book chapter written by Bischoff @bischoff2019 is a good starting point. Assuming the potential energy function in the system of interest is $\hat{V}=V(r)$ and the rearrangement of @eq-se will give the following expression
 
 \begin{align}
 \hat{H}\Psi &= E\Psi \\ 
@@ -34,4 +29,17 @@ How can one use MRA to solve the @eq-se? It is pretty straightforward in the lan
 \Rightarrow \Psi &= -(\hat{T} - E)^{-1}V\Psi \\
 \end{align}
 
-Point to be noted here is that $V(r)$ can be any form of potential - particle in a box, simple harmonic oscillator, hydrogen atom, coulomb and exchange from Hartree-Fock method etc. Hence, using variational principle[@levine2014quantum] now we have an equation that is algorithmically a fixed point iteration. It can be self-consistently solved with a given guess of $\Psi$ in a complete basis set limit. In that regard, it is a basis set incompleteness error free technique.
+::: {.callout-warning icon=false}
+## Note
+Point to be noted here is that $V(r)$ can be any form of potential - Particle in a box, Simple harmonic oscillator, Hydrogen atom, Coulomb and Exchange from Hartree-Fock method etc.
+:::
+
+The resulting equation above can be algorithmically considered to be a fixed point iteration problem. It can be self-consistently solved with a given good guess of $\Psi$. At the end, MRA would produce results in complete basis set (CBS)  limit being a real space grid based method.
+
+# Perpendicular Paramagnetic Bonding
+
+Besides covalent and ionic bonding, there exists a third kind of distinct bonding which occurs primarily in presence of strong magnetic fields. There is a rehybridization of antibonding orbitals in the systems which are non-bonded in ambient atmospheres. For example, singlet He~2~, it does not have a primary binding interaction according to Molecular Orbital Theory (MOT). But it shows strong primary binding interaction with the increase in $\mathbf{B}$ values.
+
+## Limitations of Gaussian basis functions
+
+In this particular scenario MRA wavelets are much better suited for strong $\mathbf{B}$ calculations, as it do not require subtle handwork which one needs to do in case of atom centered Gaussian basis functions. The wavefunction in $\mathbf{B}$ is not gauge-invariant which makes them meaningless entities. To overcome it, one needs to make them gauge-invariant, which in practise done using LONDON orbitals. But MRA does not have these problems as it is a real space grid based approach.

@@ -1,0 +1,25 @@
+---
+toc: false
+---
+
+# Education
+- **Humboldt-Universität zu Berlin, Germany** - Ph.D. | supervisor : *[PD Dr. Florian A. Bischoff](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff/team/florian-bischoff)* (*ongoing | funded by Deutscher Akademischer Austauschdienst*)
+- **Jadavpur University, Department of Chemistry, India** - M.Sc. (*specialization in Physical Chemistry*) (*2020*)
+- **Jadavpur University, Department of Chemistry, India** - B.Sc. (*2018*)
+- **Birbhum Zilla School, India** - Higher Secondary Examination (*2015*)
+- **St. Andrew's High School, India** - Secondary Examination (*2013*)
+
+# Publications
+
+## Published Articles
+
+1.  **Farhaz R.**, Bischoff F. A., Stopkowicsz S., Blaschke S. (2025) *Quantification of the basis set error for molecules in strong magnetic fields and general orientation.* **Journal of Chemical Physics** [[DOI](https://doi.org/10.1063/5.0274736)] [[ChemRxiv Preprint](https://doi.org/10.26434/chemrxiv-2025-zw2bz)]
+
+## In Preparation
+
+1.  Sardar R., Banik R., **Farhaz R.**, Ghosh S. *The drug induced micelle to super-micelle transition of cetyltrimethylammonium bromide(CTAB) and compares it with acetylenic gemini surfactant: an experimental and DFT study*
+2. **Farhaz R.**, Rickert C., Bischoff F. A. *Helium Dimers and Trimers in Extreme Magnetic Fields : A
+Geometry Optimization Study*
+
+
+[Download a complete CV here (`PDF`)](./../data/cv20250206.pdf)

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Raunak Farhaz</title>
+<title>Raunak Farhaz – Raunak Farhaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,13 +29,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fe76597a32f7c463f294d3d6719bfba7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c0de73dcfd66c84b0f4d8a385332c278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -69,7 +70,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -95,37 +96,36 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/favicon.svg" alt="" class="navbar-logo">
+    <img src="./images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="./images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">HOME</span></a>
+<span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./resources/cv.html"> 
-<span class="menu-text">BIO</span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./resources/research.html"> 
-<span class="menu-text">RESEARCH</span></a>
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources/publication.html"> 
-<span class="menu-text">PUBLICATIONS</span></a>
+    <a class="nav-link" href="./resources/bio.html"> 
+<span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources/teach.html"> 
-<span class="menu-text">LEARN</span></a>
+    <a class="nav-link" href="./resources/learn.html"> 
+<span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resources/blog.html"> 
-<span class="menu-text">BLOG</span></a>
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -145,18 +145,19 @@ window.Quarto = {
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Raunak Farhaz</h1>
+<h1 class="title"><strong>Raunak Farhaz</strong></h1>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-<p>I am doing my Ph.D.&nbsp;in Theoretical Chemistry at <strong>Humboldt-Universität zu Berlin, Germany</strong>. My work interest lies in <em>understanding chemical bonding in extreme magnetic fields</em> using numerical electronic structure methods namely <strong>Multiresolution Analysis</strong>. I love to write <strong>pedagogic quantum chemistry lecture notes</strong>. I am trying to write a book which soon make it to the desk of a publisher (if I manage to finish it XD). Currently stationed in <strong>Berlin</strong>. For collaborations or fun-projects hit me up at my email.</p>
+<p>I am currently a Ph.D.&nbsp;student of Theoretical Chemistry at <strong>Humboldt-Universität zu Berlin, Germany</strong>. For full research and academic profile look into my <a href="./resources/bio.html">Bio</a>. I have expertise in using <strong>Multiresolution Analysis for studying molecules in strong magnetic fields</strong>. For a detailed overview of my research look into my <a href="./resources/research.html">Research</a>. My research interest is primarily concerned with the understanding of chemical bonding and its philosophical aspects. I love writing <strong>pedagogic articles/essays on quantum chemistry</strong> (<em>look into</em> <a href="./resources/learn.html">Learn</a>).</p>
+<p>For peeping ;) into my opinions look into my <a href="./resources/blog.html">Blog</a>. For collaborations or queries send me an <a href="mailto:raunak.farhaz@hu-berlin.de">email</a>.</p>
 
 
 </main> 
   <hr class="about-sep">
    <div class="about-links">
-  <a href="mailto:farhazraunak@proton.me" class="about-link" rel="" target="">
+  <a href="mailto:raunak.farhaz@hu-berlin.de" class="about-link" rel="" target="">
     <i class="bi bi-envelope"></i>
      <span class="about-link-text"></span>
   </a>
@@ -218,13 +219,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -573,7 +575,7 @@ window.Quarto = {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz with Quarto | Berlin 2025</p>
+<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2025</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

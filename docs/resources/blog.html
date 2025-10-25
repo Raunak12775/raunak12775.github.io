@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,14 +31,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fe76597a32f7c463f294d3d6719bfba7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c0de73dcfd66c84b0f4d8a385332c278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -64,9 +65,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle','listing-reading-time','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-subtitle','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -99,7 +100,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -125,37 +126,36 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/favicon.svg" alt="" class="navbar-logo">
+    <img src="../images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">HOME</span></a>
+<span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../resources/cv.html"> 
-<span class="menu-text">BIO</span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../resources/research.html"> 
-<span class="menu-text">RESEARCH</span></a>
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/publication.html"> 
-<span class="menu-text">PUBLICATIONS</span></a>
+    <a class="nav-link" href="../resources/bio.html"> 
+<span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/teach.html"> 
-<span class="menu-text">LEARN</span></a>
+    <a class="nav-link" href="../resources/learn.html"> 
+<span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../resources/blog.html" aria-current="page"> 
-<span class="menu-text">BLOG</span></a>
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -190,16 +190,13 @@ window.Quarto = {
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
       <option value="listing-date-sort" data-direction="asc">
         Date - Oldest
       </option>
@@ -213,158 +210,106 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1755813600000" data-listing-file-modified-sort="1755875836614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="560">
-<a href="../resources/posts/ukraineEU/ukraine-eu.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/ukraineEU/darthvader.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daddy Trump
-</h5>
-<div class="card-subtitle listing-subtitle">
-The consequences of trusting the dark side to eliminate another dark side
-</div>
-<div class="listing-reading-time card-text text-muted">3 min</div>
-<div class="listing-categories">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cGhpbG9zb3BoeQ=='); return false;">philosophy</div>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1744149600000" data-listing-file-modified-sort="1755766087047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="852">
-<a href="../resources/posts/accessEdu/access-education.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/accessEdu/header.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Accessibility is More Fundamental
-</h5>
-<div class="card-subtitle listing-subtitle">
-The impact of an unaffordable education to the society
-</div>
-<div class="listing-reading-time card-text text-muted">5 min</div>
-<div class="listing-categories">
+<th>
+Subtitle
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cGhpbG9zb3BoeQ=='); return false;">philosophy</div>
+<th>
+Categories
+</th>
 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 9, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1736031600000" data-listing-file-modified-sort="1755766087053" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
-<a href="../resources/posts/flashback_2024/flashback.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/flashback_2024/img.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-My Flashback of 2024
-</h5>
-<div class="card-subtitle listing-subtitle">
-It might be a long monologue, so beware!
-</div>
-<div class="listing-reading-time card-text text-muted">3 min</div>
-<div class="listing-categories">
+</tr>
+</thead>
+<tbody class="list">
 
-<div class="listing-category" onclick="window.quartoListingCategory('cGhpbG9zb3BoeQ=='); return false;">philosophy</div>
+<tr data-index="0" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1755813600000" data-listing-file-modified-sort="1761392287738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="560" data-listing-title-sort="Daddy Trump" data-listing-filename-sort="ukraine-eu.qmd">
+<td>
+<span class="listing-date">Aug 22, 2025</span>
+</td>
+<td>
+<span class="listing-subtitle">The consequences of trusting the dark side to eliminate another dark side</span>
+</td>
+<td>
+<span class="listing-categories">philosophy</span>
+</td>
 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 5, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1730415600000" data-listing-file-modified-sort="1755766087109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
-<a href="../resources/posts/harmony/harmony.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/harmony/img/harmony2.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Harmony
-</h5>
-<div class="card-subtitle listing-subtitle">
-Why are we having so many problems with natural calamities?
-</div>
-<div class="listing-reading-time card-text text-muted">3 min</div>
-<div class="listing-categories">
+</tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cGhpbG9zb3BoeQ=='); return false;">philosophy</div>
+<tr data-index="1" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1744149600000" data-listing-file-modified-sort="1761392287660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="852" data-listing-title-sort="Accessibility is More Fundamental" data-listing-filename-sort="access-education.qmd">
+<td>
+<span class="listing-date">Apr 9, 2025</span>
+</td>
+<td>
+<span class="listing-subtitle">The impact of an unaffordable education to the society</span>
+</td>
+<td>
+<span class="listing-categories">philosophy</span>
+</td>
 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="dHJhdmVs" data-listing-date-sort="1727474400000" data-listing-file-modified-sort="1755766087054" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2022">
-<a href="../resources/posts/greece-trip/greece.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/greece-trip/img/trip_start.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Land of Philosophies
-</h5>
-<div class="card-subtitle listing-subtitle">
-Travel to Greece (Santorini, Naxos, Mykonos and Athens)
-</div>
-<div class="listing-reading-time card-text text-muted">11 min</div>
-<div class="listing-categories">
+</tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhdmVs'); return false;">travel</div>
+<tr data-index="2" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1736031600000" data-listing-file-modified-sort="1761392287669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512" data-listing-title-sort="My Flashback of 2024" data-listing-filename-sort="flashback.qmd">
+<td>
+<span class="listing-date">Jan 5, 2025</span>
+</td>
+<td>
+<span class="listing-subtitle">It might be a long monologue, so beware!</span>
+</td>
+<td>
+<span class="listing-categories">philosophy</span>
+</td>
 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 28, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="Y29va2luZw==" data-listing-date-sort="1727128800000" data-listing-file-modified-sort="1755766087053" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="369">
-<a href="../resources/posts/doi-murgi/yoghurt-chicken.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/doi-murgi/doimurgi.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Nantu’s Kitchen
-</h5>
-<div class="card-subtitle listing-subtitle">
-Supriya Devi’s Yoghurt Chicken(দই মুরগি)
-</div>
-<div class="listing-reading-time card-text text-muted">2 min</div>
-<div class="listing-categories">
+</tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y29va2luZw=='); return false;">cooking</div>
+<tr data-index="3" data-categories="cGhpbG9zb3BoeQ==" data-listing-date-sort="1730415600000" data-listing-file-modified-sort="1761392287730" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="418" data-listing-title-sort="Harmony" data-listing-filename-sort="harmony.qmd">
+<td>
+<span class="listing-date">Nov 1, 2024</span>
+</td>
+<td>
+<span class="listing-subtitle">Why are we having so many problems with natural calamities?</span>
+</td>
+<td>
+<span class="listing-categories">philosophy</span>
+</td>
 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 24, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
+</tr>
+
+<tr data-index="4" data-categories="dHJhdmVs" data-listing-date-sort="1727474400000" data-listing-file-modified-sort="1761392287670" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2022" data-listing-title-sort="Land of Philosophies" data-listing-filename-sort="greece.qmd">
+<td>
+<span class="listing-date">Sep 28, 2024</span>
+</td>
+<td>
+<span class="listing-subtitle">Travel to Greece (Santorini, Naxos, Mykonos and Athens)</span>
+</td>
+<td>
+<span class="listing-categories">travel</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="Y29va2luZw==" data-listing-date-sort="1727128800000" data-listing-file-modified-sort="1761392287669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="369" data-listing-title-sort="Nantu's Kitchen" data-listing-filename-sort="yoghurt-chicken.qmd">
+<td>
+<span class="listing-date">Sep 24, 2024</span>
+</td>
+<td>
+<span class="listing-subtitle">Supriya Devi’s Yoghurt Chicken(দই মুরগি)</span>
+</td>
+<td>
+<span class="listing-categories">cooking</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -418,13 +363,14 @@ Sep 24, 2024
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -773,7 +719,7 @@ Sep 24, 2024
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> made by Raunak Farhaz with Quarto | Berlin 2025</p>
+<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2025</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
