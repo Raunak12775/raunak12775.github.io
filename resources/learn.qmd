@@ -1,23 +1,30 @@
 ---
-title: ""
+title: "Learning Resources"
 listing: 
     contents: teach/**/*.qmd
     sort: "date desc"
-    type: table
+    type: grid
     categories: true
     sort-ui: true
     filter-ui: true
-    fields: [date, title, subtitle, categories]
+    fields: [date, title, subtitle, image, categories]
     feed: true
 page-layout: full
 title-block-banner: false
+toc: false
 ---
 
-### Note
+## How to navigate?
 
-All the articles are categorised into 3 groups - brownpaper, whitepaper and bluepaper. Every article has a link on the top-right section, pressing which one can download the articles in `PDF` file format. The explanation of different kinds of papers are as follows
+### Big Book
 
-1. **brownpaper** - these are tutorials or lecture notes for computational/theoretical chemistry and related topics
-2. **whitepaper** - nowadays, big-tech companies use this as a term for research papers, I like it, so it would be mainly related to modern day research
-3. **bluepaper** - these are notes and updates related to programming and related computational tools
+The category **big-book** is like a dynamic book where I add stuffs in a continuous manner, and not in discrete articles.  
+
+### Brownpapers, Greenpapers and Bluepapers
+
+All the article type posts are categorised into 3 groups - brownpaper, whitepaper and bluepaper. Every article is in `PDF` file format. The explanation of different kinds of paper are as follows
+
+1. **brownpapers** - these are tutorials or lecture notes for computational/theoretical chemistry and related topics
+2. **greenpapers** - these would be mainly related to modern day research - basically my paper reading thoughts (**Opinions Warning!**)
+3. **bluepapers** - these are notes from topics that are applied in computational chemistry
 

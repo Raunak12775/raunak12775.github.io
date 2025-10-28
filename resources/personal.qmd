@@ -1,0 +1,16 @@
+---
+title: "Personal Notes"
+listing: 
+    contents: mynotes/*.qmd
+    sort: "date desc"
+    type: table
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    fields: [title, categories]
+    feed: true
+page-layout: article
+title-block-banner: true
+toc: false
+---
+

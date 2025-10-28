@@ -23,6 +23,8 @@ website:
         href: resources/learn.qmd
       - text: "Blog"
         href: resources/blog.qmd
+      - text: "Personal"
+        href: resources/personal.qmd
 
 format:
   html:

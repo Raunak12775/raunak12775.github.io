@@ -2,7 +2,7 @@
 title: "Nantu's Kitchen"
 subtitle: "Supriya Devi's Yoghurt Chicken(দই মুরগি)"
 date: "09.24.2024"
-categories: [cooking]
+categories: [food]
 ---
 
 It was Noah's Grain day or in Bengali মুখে ভাত (Mukhe Bhaat), so I thought I would prepare something lesser spicy and fulfiiling and also I can cook it faster. So I prepared this.

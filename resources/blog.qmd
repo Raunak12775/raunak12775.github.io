@@ -1,17 +1,18 @@
 ---
-title: ""
+title: "Blog"
 listing: 
     contents: posts/**/*.qmd
     sort: "date desc"
-    type: table
+    type: default
     categories: true
     sort-ui: true
     filter-ui: true
-    fields: [date, subtitle, categories]
+    fields: [date, title, categories, subtitle]
     feed: true
 page-layout: full
 title-block-banner: false
+toc: false
 ---
 
-# Farhaz's Food, Science and Philosophy
+
 

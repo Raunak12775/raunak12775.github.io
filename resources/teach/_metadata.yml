@@ -1,5 +1,5 @@
 # freeze computational output
-freeze: true
+# freeze: false
 
 # Enable banner style title blocks
 title-block-banner: true

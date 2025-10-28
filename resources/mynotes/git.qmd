@@ -1,0 +1,160 @@
+---
+title : "Notes on Git Version Control"
+categories: [computer]
+---
+
+### Getting Started
+To start with we have to configure the git in our own machines. To check whether git is installed or not we shall test it with following command:
+
+```
+$ git --version
+```
+
+This would give you some number as an output, if not then install git in your machine.
+
+*Configure your git config file:*
+
+```
+$ git config --global user.name "Raunak Farhaz"
+$ git config --global user.email "rubbish@gmail.com"
+$ git config --global core.editor nano
+$ git config --global init.defaultBranch main
+```
+
+And now to check your git config type
+
+```
+$ git config --list
+```
+
+### Initialize a git Branch
+
+Want to create a git repository?
+
+```
+$ git init -b main
+```
+
+> Always check the status of your git repository in every actions
+
+```
+$ git status
+```
+
+### Adding stuff for git to track
+
+There are following selection of commands that one can use for adding files to be tracked by git. 
+
+```
+$ git add [filename]
+$ git add .
+```
+
+The second command will add everything in the folder.
+
+::: {.callout-note}
+if you added something before and then added to `.gitignore` file to ignore, then it would still be tracked. Now in this kind of scenario one should remove the gitcache completely and add everything without that particular file to get a clean untracking.
+:::
+
+### Committing stuff
+
+Once added for tracking you have to commit to create a certain timestamp, use the
+following command
+
+```
+$ git commit -m "creative commit message"
+```
+
+If you use the `git commit` command without the `-m` flag you would be eventually redirected to the git-default text editor to input a commit message.
+
+> In that case even if you keep it empty and save the file it will be an empty commit message for that timestamp.
+
+### Checking the commits
+
+Once committed you need to see the timestamps, every timestamp has a unique hash-code. 
+
+::: {.callout-note}
+first 7 characters of hash is enough for uniqueness
+:::
+
+The command for checking the timestamps is `git log`, the following commands can be useful.
+
+```
+$ git log --stat
+$ git log --oneline
+```
+
+The first one gives long info and the other one is self-explanatory.
+
+To check the timestamps one can create an alias called `git graph` which I use often for my 
+machine. 
+
+::: {.callout-tip}
+## Creating an Alias
+`git config --global alias.creative "creative command"`
+:::
+
+To create the `git graph` alias in your machine type the following:
+
+```
+$ git config --global alias.graph "log --all --graph --decorate --oneline"
+```
+
+::: {.callout-caution}
+**What not to track?**\
+Try to avoid tracking binary files, for eg. `.jpeg`, `.png`, `.docx` etc. Text files are always preferable.
+
+*Example* : In $\LaTeX$ files, `.tex` has to be version controlled only but not the `.pdf` files.
+:::   
+
+
+### Branching git repositories
+
+Want to `git branch` a repo that you like to edit but do not want to mess with the original? Use the branching commands
+
+```
+$ git branch branch_name main
+$ git branch branch_name master
+```
+
+::: {.callout-note}
+The name `master` to the original branch is an old convention, the modern one is `main`. 
+:::
+
+
+#### List all the branches
+
+```
+$ git branch
+```
+
+#### Switching branches
+
+```
+$ git switch branch_name
+```
+
+#### Merging branches
+
+```
+$ git merge branch_name
+```
+
+It branches with the branch node it was branched from.
+
+#### Deleting branches
+
+```
+$ git branch -d branch_name
+```
+
+::: {.callout-caution}
+`-D` flag instead of `-d` deletes unmerged branches
+:::
+
+::: {.callout-note}
+If you remove the `.git` folder, you lose everything tracked in your local machine.
+:::
+
+<!-- ## Git and GitHub -->
+

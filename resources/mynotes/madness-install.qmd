@@ -1,0 +1,97 @@
+---
+title: MADNESS installation in HPC
+categories: [computer]
+---
+
+## Instructions : Ubuntu 22.04 : bra16 
+
+Assuming you are in `/user/home/projects/madness` directory with LibXC located at `/user/home/libxc`   
+
+```bash
+user@host ~/projects/madness $ ssh rigi
+user@host ~/projects/madness $ ssh node28
+user@host ~/projects/madness $ mkdir dirbuild
+user@host ~/projects/madness $ mkdir dirinstall
+user@host ~/projects/madness $ cd dirbuild
+user@host ~/projects/madness/dirbuild $ module load GNU-9
+user@host ~/projects/madness/dirbuild $ module load compiler
+user@host ~/projects/madness/dirbuild $ module load mkl
+user@host ~/projects/madness/dirbuild $ module load mpi
+user@host ~/projects/madness/dirbuild $ module load tbb
+user@host ~/projects/madness/dirbuild $ cmake -DLIBXC_LIBRARIES=/user/home/libxc/lib/libxc.a -DLIBXC_INCLUDE_DIRS=/user/home/libxc/include -DCMAKE_INSTALL_PREFIX=../dirinstall ../madness
+user@host ~/projects/madness/dirbuild $ make -j 12 applications
+user@host ~/projects/madness/dirbuild $ make -j 12 install
+```
+
+Follow these steps and you will be successful   
+
+## Writing a module for loading MADNESS into environment to compute molecules   
+
+One write the module files in `lua` language. The new one that I wrote is   
+
+```lua
+#%Module######################################################################
+##
+##       MADNESS environment modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "Sets up the paths you need to use the installed version of MADNESS."
+}
+module-whatis   "MADNESS :: Multiwavelet Quantum Chemistry Package"
+module-whatis "Date  :: 19 June, 2023"
+
+module load MADNESS/madness-compilers
+module load libxc
+
+setenv  MADROOT         /huge/rafa/devel/apps/install/madness-install
+set     MADROOT         $env(MADROOT)
+
+prepend-path    PATH            .:${MADROOT}/bin
+prepend-path    LD_LIBRARY_PATH ${MADROOT}/lib
+
+setenv  MRA_DATA_DIR    ${MADROOT}/share/madness/0.10.1/data
+setenv  MAD_DATA_DIR    ${MADROOT}/share/madness/0.10.1/data
+
+module load MADNESS/madness-environment
+```
+
+To enable `LibXC` to work with it.   
+
+```bash
+$ cmake -DENABLE_LIBXC=ON -DLIBXC_LIBRARIES=/huge/rafa/devel/apps/install/libxc/lib/libxc.a -DLIBXC_INCLUDE_DIRS=/huge/rafa/devel/apps/install/libxc/include -DCMAKE_INSTALL_PREFIX=/huge/rafa/devel/apps/install/madness-beta ../madness
+```
+
+## Running the submad.sh script to submit jobs 
+
+```bash
+$ submad.sh -t znemo -n 16 -s hawaii -v 0.3 testrun
+```
+
+`-t` = type of the job - nemo/cis/znemo etc.   
+
+`-n` = cpu number   
+
+`-s` = server name - hawaii or rigi   
+
+`-v` = version number    
+
+## Final Wrap-Up to update the madness in bra16  
+
+```bash
+#!/usr/bin/bash
+ssh rigi
+ssh node28
+cd /huge/rafa/devel/apps/madness-latest
+mkdir build
+cd madness
+git pull
+cd ../build
+# load modules
+module load GNU-9
+module load compiler
+module load mkl
+module load mpi
+module load tbb
+# build and install
+```
+

@@ -9,20 +9,20 @@
 <link>https://raunakfarhaz.com/resources/learn.html</link>
 <atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Tue, 01 Jul 2025 22:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.24</generator>
+<lastBuildDate>Tue, 28 Oct 2025 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>My Plotting Story - I</title>
+  <title>Scientific Plotting</title>
   <dc:creator>Raunak Farhaz</dc:creator>
-  <link>https://raunakfarhaz.com/resources/teach/plotting1/plotting-story.html</link>
+  <link>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</link>
   <description><![CDATA[ 
 
 
 
 
 
-<section id="the-hard-way" class="level1">
-<h1>The Hard Way</h1>
+<section id="chapter-1---the-hard-way" class="level1">
+<h1>Chapter 1 - The Hard Way</h1>
 <p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
 <ol type="1">
 <li>Conceptualization</li>
@@ -31,9 +31,6 @@
 <li>Analysis</li>
 </ol>
 <p>The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the <code>Analysis</code> part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.</p>
-</section>
-<section id="the-struggle" class="level1">
-<h1>The Struggle</h1>
 <p>There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the <code>matplotlib</code> a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -52,9 +49,9 @@
 </div>
 </div>
 </div>
-<section id="plots-from-julia" class="level2">
-<h2 class="anchored" data-anchor-id="plots-from-julia">Plots from Julia</h2>
-<p>Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
+<section id="julia" class="level2">
+<h2 class="anchored" data-anchor-id="julia">Julia</h2>
+<p>Here is the thing Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">using</span> <span class="bu" style="color: null;
@@ -93,7 +90,7 @@ background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"sin(x)"</span>)</span></code></pre></div></div>
-<p><img src="https://raunakfarhaz.com/resources/teach/plotting1/julia-sample.svg" class="img-fluid"></p>
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/julia-sample.svg" class="img-fluid"></p>
 <section id="pros" class="level3">
 <h3 class="anchored" data-anchor-id="pros">Pros</h3>
 <ul>
@@ -130,12 +127,10 @@ font-style: inherit;">"sin(x)"</span>)</span></code></pre></div></div>
 <h2 class="anchored" data-anchor-id="libreoffice">Libreoffice</h2>
 <p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
 </section>
-</section>
-<section id="the-winner-matplotlib" class="level1">
-<h1>The Winner : Matplotlib</h1>
+<section id="the-winner-matplotlib" class="level2">
+<h2 class="anchored" data-anchor-id="the-winner-matplotlib">The Winner : Matplotlib</h2>
 <p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
-<div id="ae4744f2" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -167,23 +162,140 @@ font-style: inherit;">"x"</span>)</span>
 background-color: null;
 font-style: inherit;">"sin(x)"</span>)</span>
 <span id="cb2-8">plt.show()</span></code></pre></div></div>
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/python.png" class="img-fluid"></p>
+<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
+</section>
+</section>
+<section id="chapter-2---strong-start" class="level1">
+<h1>Chapter 2 - Strong Start</h1>
+<p>There are innumerous ways to waste time during your first year of Ph.D.</p>
+<ul>
+<li>How would I produce very beautiful looking plots?</li>
+<li>What tools are the best?</li>
+<li>Do you have any script that you use to generate plots?</li>
+</ul>
+<p>These questions drove me crazy in my first year and I wasted so much time as there were overwhelming amount of information on these things in internet. But I would have been extremely happy if there was one single workflow that generates</p>
+<ol type="1">
+<li>a high resolution image, preferably in PDF</li>
+<li>font family that blends well with <em>New Computer Modern</em> font (default font in <img src="https://latex.codecogs.com/png.latex?%5CLaTeX">)</li>
+<li>it would be even great that there are already presets for different standard journals</li>
+<li>renders mathematical formulas well</li>
+</ol>
+<section id="scienceplots-will-save-your-day" class="level2">
+<h2 class="anchored" data-anchor-id="scienceplots-will-save-your-day">Scienceplots will save your day</h2>
+<p>There is a package in both <code>conda-forge</code> as well as <code>pip</code> repositories called <code>scienceplots</code>. And it solved all of my desires and it will also solve yours too. It basically contains global style settings for matplotlib library so one kind of presets for many standard journals. It also has color-blind friendly palettes. All the functions of matplotlib can be used as it is. So just install and use it. I will go through it one by one through examples. But first let’s install it. There are 3 ways of doing it, do whatever suits you.</p>
+<ul>
+<li><em>conda</em></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> conda install conda-forge::scienceplots</span></code></pre></div></div>
+<ul>
+<li><em>pip</em></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> pip install scienceplots</span></code></pre></div></div>
+<ul>
+<li><em>uv</em></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> uv add scienceplots</span></code></pre></div></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>uv</code> is a modern python package manager that is written using <code>rust</code> and the installations are blazingly fast compared to <code>conda</code> and <code>pip</code>.</p>
+</div>
+</div>
+<p>The last <code>python</code> example using matplotlib looked very unprofessional and without anything. Now we will take the same plot and use the scienceplots style backend and generate the plot and we will see how it makes pretty plots effortlessly.</p>
+<div id="8fb80833" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> scienceplots</span>
+<span id="cb6-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb6-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb6-4">plt.style.use([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"science"</span>])</span>
+<span id="cb6-5">x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.arange(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>)</span>
+<span id="cb6-6">y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.sin(x)</span>
+<span id="cb6-7">plt.plot(x,y)</span>
+<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"x"</span>)</span>
+<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sin(x)"</span>)</span>
+<span id="cb6-10">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://raunakfarhaz.com/resources/teach/plotting1/plotting-story_files/figure-html/cell-2-output-1.png" width="600" height="429" class="figure-img"></p>
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/plotting-story_files/figure-html/cell-2-output-1.png" width="321" height="237" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
+<p>Hence one can see that it has <code>tex</code> fonts rendered within the plot by default “science” style.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One should be aware that the <img src="https://latex.codecogs.com/png.latex?%5CLaTeX"> should be installed in the machine so that it can use the <code>tex</code> fonts. Otherwise it would throw error.</p>
+</div>
+</div>
+<p>The amazing part about this package is that one does not need to think about fontfamily, fontsize, color-palletes etc. It kills a lot of time. And at the same time it is customizable and one can change components what they do not like. The next chapter will discuss about the detail of the <code>scienceplots</code> package and other styles. Once you are happy with the plot, export it into a <code>pdf</code> file by the following syntax.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">plt.savefig(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"filename.pdf"</span>, bbox_inches<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
+<p>The <code>bbox_inches='tight'</code> keeps the whitespaces to be minimum. Enjoy your first plot already ready to put in your presentation, papers, notes, and wherever you want.</p>
 
 
 </section>
+</section>
 
  ]]></description>
-  <guid>https://raunakfarhaz.com/resources/teach/plotting1/plotting-story.html</guid>
-  <pubDate>Tue, 01 Jul 2025 22:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/plotting1/julia-sample.svg" medium="image" type="image/svg+xml"/>
+  <category>the-big-book</category>
+  <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
+  <pubDate>Tue, 28 Oct 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" medium="image" type="image/svg+xml"/>
 </item>
 </channel>
 </rss>

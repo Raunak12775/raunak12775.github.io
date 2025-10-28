@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Raunak Farhaz</title>
+<link>https://raunakfarhaz.com/resources/personal.html</link>
+<atom:link href="https://raunakfarhaz.com/resources/personal.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.8.24</generator>
+<lastBuildDate>Tue, 28 Oct 2025 23:42:06 GMT</lastBuildDate>
+<item>
+  <title>Notes on Git Version Control</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/mynotes/git.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started">Getting Started</h3>
+<p>To start with we have to configure the git in our own machines. To check whether git is installed or not we shall test it with following command:</p>
+<pre><code>$ git --version</code></pre>
+<p>This would give you some number as an output, if not then install git in your machine.</p>
+<p><em>Configure your git config file:</em></p>
+<pre><code>$ git config --global user.name "Raunak Farhaz"
+$ git config --global user.email "rubbish@gmail.com"
+$ git config --global core.editor nano
+$ git config --global init.defaultBranch main</code></pre>
+<p>And now to check your git config type</p>
+<pre><code>$ git config --list</code></pre>
+</section>
+<section id="initialize-a-git-branch" class="level3">
+<h3 class="anchored" data-anchor-id="initialize-a-git-branch">Initialize a git Branch</h3>
+<p>Want to create a git repository?</p>
+<pre><code>$ git init -b main</code></pre>
+<blockquote class="blockquote">
+<p>Always check the status of your git repository in every actions</p>
+</blockquote>
+<pre><code>$ git status</code></pre>
+</section>
+<section id="adding-stuff-for-git-to-track" class="level3">
+<h3 class="anchored" data-anchor-id="adding-stuff-for-git-to-track">Adding stuff for git to track</h3>
+<p>There are following selection of commands that one can use for adding files to be tracked by git.</p>
+<pre><code>$ git add [filename]
+$ git add .</code></pre>
+<p>The second command will add everything in the folder.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>if you added something before and then added to <code>.gitignore</code> file to ignore, then it would still be tracked. Now in this kind of scenario one should remove the gitcache completely and add everything without that particular file to get a clean untracking.</p>
+</div>
+</div>
+</section>
+<section id="committing-stuff" class="level3">
+<h3 class="anchored" data-anchor-id="committing-stuff">Committing stuff</h3>
+<p>Once added for tracking you have to commit to create a certain timestamp, use the following command</p>
+<pre><code>$ git commit -m "creative commit message"</code></pre>
+<p>If you use the <code>git commit</code> command without the <code>-m</code> flag you would be eventually redirected to the git-default text editor to input a commit message.</p>
+<blockquote class="blockquote">
+<p>In that case even if you keep it empty and save the file it will be an empty commit message for that timestamp.</p>
+</blockquote>
+</section>
+<section id="checking-the-commits" class="level3">
+<h3 class="anchored" data-anchor-id="checking-the-commits">Checking the commits</h3>
+<p>Once committed you need to see the timestamps, every timestamp has a unique hash-code.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>first 7 characters of hash is enough for uniqueness</p>
+</div>
+</div>
+<p>The command for checking the timestamps is <code>git log</code>, the following commands can be useful.</p>
+<pre><code>$ git log --stat
+$ git log --oneline</code></pre>
+<p>The first one gives long info and the other one is self-explanatory.</p>
+<p>To check the timestamps one can create an alias called <code>git graph</code> which I use often for my machine.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Creating an Alias
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>git config --global alias.creative "creative command"</code></p>
+</div>
+</div>
+<p>To create the <code>git graph</code> alias in your machine type the following:</p>
+<pre><code>$ git config --global alias.graph "log --all --graph --decorate --oneline"</code></pre>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>What not to track?</strong><br>
+Try to avoid tracking binary files, for eg. <code>.jpeg</code>, <code>.png</code>, <code>.docx</code> etc. Text files are always preferable.</p>
+<p><em>Example</em> : In <img src="https://latex.codecogs.com/png.latex?%5CLaTeX"> files, <code>.tex</code> has to be version controlled only but not the <code>.pdf</code> files.</p>
+</div>
+</div>
+</section>
+<section id="branching-git-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="branching-git-repositories">Branching git repositories</h3>
+<p>Want to <code>git branch</code> a repo that you like to edit but do not want to mess with the original? Use the branching commands</p>
+<pre><code>$ git branch branch_name main
+$ git branch branch_name master</code></pre>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The name <code>master</code> to the original branch is an old convention, the modern one is <code>main</code>.</p>
+</div>
+</div>
+<section id="list-all-the-branches" class="level4">
+<h4 class="anchored" data-anchor-id="list-all-the-branches">List all the branches</h4>
+<pre><code>$ git branch</code></pre>
+</section>
+<section id="switching-branches" class="level4">
+<h4 class="anchored" data-anchor-id="switching-branches">Switching branches</h4>
+<pre><code>$ git switch branch_name</code></pre>
+</section>
+<section id="merging-branches" class="level4">
+<h4 class="anchored" data-anchor-id="merging-branches">Merging branches</h4>
+<pre><code>$ git merge branch_name</code></pre>
+<p>It branches with the branch node it was branched from.</p>
+</section>
+<section id="deleting-branches" class="level4">
+<h4 class="anchored" data-anchor-id="deleting-branches">Deleting branches</h4>
+<pre><code>$ git branch -d branch_name</code></pre>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>-D</code> flag instead of <code>-d</code> deletes unmerged branches</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you remove the <code>.git</code> folder, you lose everything tracked in your local machine.</p>
+</div>
+</div>
+<!-- ## Git and GitHub -->
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>computer</category>
+  <guid>https://raunakfarhaz.com/resources/mynotes/git.html</guid>
+  <pubDate>Tue, 28 Oct 2025 23:42:06 GMT</pubDate>
+</item>
+<item>
+  <title>MADNESS installation in HPC</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/mynotes/madness-install.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="instructions-ubuntu-22.04-bra16" class="level2">
+<h2 class="anchored" data-anchor-id="instructions-ubuntu-22.04-bra16">Instructions : Ubuntu 22.04 : bra16</h2>
+<p>Assuming you are in <code>/user/home/projects/madness</code> directory with LibXC located at <code>/user/home/libxc</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness $ ssh rigi</span>
+<span id="cb1-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness $ ssh node28</span>
+<span id="cb1-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness $ mkdir dirbuild</span>
+<span id="cb1-4"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness $ mkdir dirinstall</span>
+<span id="cb1-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness $ cd dirbuild</span>
+<span id="cb1-6"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ module load GNU-9</span>
+<span id="cb1-7"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ module load compiler</span>
+<span id="cb1-8"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ module load mkl</span>
+<span id="cb1-9"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ module load mpi</span>
+<span id="cb1-10"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ module load tbb</span>
+<span id="cb1-11"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ cmake <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DLIBXC_LIBRARIES</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>/user/home/libxc/lib/libxc.a <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DLIBXC_INCLUDE_DIRS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>/user/home/libxc/include <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DCMAKE_INSTALL_PREFIX</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>../dirinstall ../madness</span>
+<span id="cb1-12"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ make <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-j</span> 12 applications</span>
+<span id="cb1-13"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">user@host</span> ~/projects/madness/dirbuild $ make <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-j</span> 12 install</span></code></pre></div></div>
+<p>Follow these steps and you will be successful</p>
+</section>
+<section id="writing-a-module-for-loading-madness-into-environment-to-compute-molecules" class="level2">
+<h2 class="anchored" data-anchor-id="writing-a-module-for-loading-madness-into-environment-to-compute-molecules">Writing a module for loading MADNESS into environment to compute molecules</h2>
+<p>One write the module files in <code>lua</code> language. The new one that I wrote is</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode lua code-with-copy"><code class="sourceCode lua"><span id="cb2-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#%</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">Module</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">######################################################################</span></span>
+<span id="cb2-2"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">##</span></span>
+<span id="cb2-3"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">##</span>       <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADNESS</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">environment</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">modulefile</span></span>
+<span id="cb2-4"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">##</span></span>
+<span id="cb2-5"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">proc</span> ModulesHelp <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span></span>
+<span id="cb2-6">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">puts</span> stderr <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sets up the paths you need to use the installed version of MADNESS."</span></span>
+<span id="cb2-7"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-8"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">module</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>whatis   <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"MADNESS :: Multiwavelet Quantum Chemistry Package"</span></span>
+<span id="cb2-9"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">module</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>whatis <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date  :: 19 June, 2023"</span></span>
+<span id="cb2-10"></span>
+<span id="cb2-11"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">module</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADNESS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">madness</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">compilers</span></span>
+<span id="cb2-12"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">module</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">libxc</span></span>
+<span id="cb2-13"></span>
+<span id="cb2-14"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">setenv</span>  <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span>         <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">huge</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">rafa</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">devel</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">apps</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">install</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">madness</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">install</span></span>
+<span id="cb2-15"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">set</span>     <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span>         $env<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb2-16"></span>
+<span id="cb2-17"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">prepend</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">path</span>    <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">PATH</span>            <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.:</span>$<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">bin</span></span>
+<span id="cb2-18"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">prepend</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">path</span>    <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">LD_LIBRARY_PATH</span> $<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">lib</span></span>
+<span id="cb2-19"></span>
+<span id="cb2-20"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">setenv</span>  <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MRA_DATA_DIR</span>    $<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">share</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">madness</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.10.1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">data</span></span>
+<span id="cb2-21"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">setenv</span>  <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MAD_DATA_DIR</span>    $<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADROOT</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">share</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">madness</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.10.1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">data</span></span>
+<span id="cb2-22"></span>
+<span id="cb2-23"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">module</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">MADNESS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">madness</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">environment</span></span></code></pre></div></div>
+<p>To enable <code>LibXC</code> to work with it.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> cmake <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DENABLE_LIBXC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ON <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DLIBXC_LIBRARIES</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>/huge/rafa/devel/apps/install/libxc/lib/libxc.a <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DLIBXC_INCLUDE_DIRS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>/huge/rafa/devel/apps/install/libxc/include <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-DCMAKE_INSTALL_PREFIX</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>/huge/rafa/devel/apps/install/madness-beta ../madness</span></code></pre></div></div>
+</section>
+<section id="running-the-submad.sh-script-to-submit-jobs" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-submad.sh-script-to-submit-jobs">Running the submad.sh script to submit jobs</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> submad.sh <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-t</span> znemo <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-n</span> 16 <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-s</span> hawaii <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-v</span> 0.3 testrun</span></code></pre></div></div>
+<p><code>-t</code> = type of the job - nemo/cis/znemo etc.</p>
+<p><code>-n</code> = cpu number</p>
+<p><code>-s</code> = server name - hawaii or rigi</p>
+<p><code>-v</code> = version number</p>
+</section>
+<section id="final-wrap-up-to-update-the-madness-in-bra16" class="level2">
+<h2 class="anchored" data-anchor-id="final-wrap-up-to-update-the-madness-in-bra16">Final Wrap-Up to update the madness in bra16</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#!/usr/bin/bash</span></span>
+<span id="cb5-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ssh</span> rigi</span>
+<span id="cb5-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ssh</span> node28</span>
+<span id="cb5-4"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> /huge/rafa/devel/apps/madness-latest</span>
+<span id="cb5-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mkdir</span> build</span>
+<span id="cb5-6"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> madness</span>
+<span id="cb5-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> pull</span>
+<span id="cb5-8"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> ../build</span>
+<span id="cb5-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># load modules</span></span>
+<span id="cb5-10"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load GNU-9</span>
+<span id="cb5-11"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load compiler</span>
+<span id="cb5-12"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load mkl</span>
+<span id="cb5-13"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load mpi</span>
+<span id="cb5-14"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load tbb</span>
+<span id="cb5-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># build and install</span></span></code></pre></div></div>
+
+
+</section>
+
+ ]]></description>
+  <category>computer</category>
+  <guid>https://raunakfarhaz.com/resources/mynotes/madness-install.html</guid>
+  <pubDate>Tue, 28 Oct 2025 23:42:06 GMT</pubDate>
+</item>
+<item>
+  <title>SSH Notes</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/mynotes/ssh.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="passwordless-ssh-login" class="level2">
+<h2 class="anchored" data-anchor-id="passwordless-ssh-login">Passwordless ssh login</h2>
+<p>First open terminal and check whether you have a ssh key in your local laptop/desktop by checking ~/.ssh folder. And then if not then follow the steps:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> ssh-keygen <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-t</span> rsa</span></code></pre></div></div>
+<p>this will generate two files id_pub and id_pub.rsa</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the passphrase is kept empty, <strong>recommended</strong> is to give a password to secure the ssh key.</p>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> ssh-copy-id <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-i</span> ~/.ssh/id_rsa.pub username@hostname</span></code></pre></div></div>
+<p>type the password for the hostmachine login and probably it should be done. Last but least check that the contents of id_pub.rsa has copied the same content in the ~/.ssh/authorized_keys file in your remote host.</p>
+</section>
+<section id="github-or-gitlab-ssh-keys" class="level2">
+<h2 class="anchored" data-anchor-id="github-or-gitlab-ssh-keys">Github or Gitlab ssh keys</h2>
+<p>For passwordless logins and git push and pulls one can copy+paste the contents of id_pub.rsa into the github or gitlab authorization places to push and pull without password</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>ssh</code> cloning is much better than <code>http</code></p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>computer</category>
+  <guid>https://raunakfarhaz.com/resources/mynotes/ssh.html</guid>
+  <pubDate>Tue, 28 Oct 2025 23:42:06 GMT</pubDate>
+</item>
+</channel>
+</rss>

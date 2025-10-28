@@ -1,15 +1,16 @@
 ---
-title: "My Plotting Story - I"
-subtitle: This is how I learned to plot
+title: "Scientific Plotting"
+subtitle: Learning how to plot for publication from Day 1 of research 
 description: ""
-date: 07.02.2025
-image: "./julia-sample.svg"
+date: today
+image: "./main-image.svg"
+categories: [the-big-book]
 toc: true
 toc-depth: 3
 code-fold: false
 ---
 
-# The Hard Way
+# Chapter 1 - The Hard Way
 
 In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:
 
@@ -19,8 +20,6 @@ In research there are 3 sequential processes that go through most of the time. T
 4.  Analysis
 
 The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the `Analysis` part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.
-
-# The Struggle
 
 There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the `matplotlib` a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.
 
@@ -33,9 +32,9 @@ graph LR
     A --> F(Libreoffice)
 ```
 
-## Plots from Julia
+## Julia
 
-Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern `julia` versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is `julia` being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in `julia` Plots library please have a look into the blogpost by the `julia` developer himself see <https://viralinstruction.com/posts/latency/>
+Here is the thing Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern `julia` versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is `julia` being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in `julia` Plots library please have a look into the blogpost by the `julia` developer himself see <https://viralinstruction.com/posts/latency/>
 
 ``` julia
 using Plots
@@ -78,11 +77,11 @@ Gnuplot has nothing to do with `GNU` (those who are familiar with `linux` or `un
 
 It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.
 
-# The Winner : Matplotlib
+## The Winner : Matplotlib
 
 After testing all of these from above I found out that `matplotlib` is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.
 
-```{python}
+``` python
 import numpy as np
 import matplotlib.pyplot as plt
 x=np.arange(-1,1,0.1)
@@ -93,4 +92,77 @@ plt.ylabel("sin(x)")
 plt.show()
 ```
 
+![](./python.png)
+
 So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of `matplotlib` of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.
+
+# Chapter 2 - Strong Start
+
+There are innumerous ways to waste time during your first year of Ph.D.
+
+- How would I produce very beautiful looking plots?
+- What tools are the best?
+- Do you have any script that you use to generate plots?
+
+These questions drove me crazy in my first year and I wasted so much time as there were overwhelming amount of information on these things in internet. But I would have been extremely happy if there was one single workflow that generates 
+
+1. a high resolution image, preferably in PDF
+2. font family that blends well with *New Computer Modern* font (default font in $\LaTeX$)
+3. it would be even great that there are already presets for different standard journals
+4. renders mathematical formulas well
+
+## Scienceplots will save your day
+
+There is a package in both `conda-forge` as well as `pip` repositories called `scienceplots`. And it solved all of my desires and it will also solve yours too. It basically contains global style settings for matplotlib library so one kind of presets for many standard journals. It also has color-blind friendly palettes. All the functions of matplotlib can be used as it is. So just install and use it. I will go through it one by one through examples. But first let's install it. There are 3 ways of doing it, do whatever suits you.
+
+- *conda*
+
+```bash
+$ conda install conda-forge::scienceplots
+```
+
+- *pip*
+
+```bash
+$ pip install scienceplots
+```
+
+- *uv*
+
+```bash
+$ uv add scienceplots
+```
+
+::: {.callout-note}
+`uv` is a modern python package manager that is written using `rust` and the installations are blazingly fast compared to `conda` and `pip`.
+:::
+
+The last `python` example using matplotlib looked very unprofessional and without anything. Now we will take the same plot and use the scienceplots style backend and generate the plot and we will see how it makes pretty plots effortlessly.
+
+```{python}
+import scienceplots
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use(["science"])
+x=np.arange(-1,1,0.1)
+y=np.sin(x)
+plt.plot(x,y)
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.show()
+```
+
+Hence one can see that it has `tex` fonts rendered within the plot by default "science" style. 
+
+::: {.callout-warning}
+One should be aware that the $\LaTeX$ should be installed in the machine so that it can use the `tex` fonts. Otherwise it would throw error.
+::: 
+
+The amazing part about this package is that one does not need to think about fontfamily, fontsize, color-palletes etc. It kills a lot of time. And at the same time it is customizable and one can change components what they do not like. The next chapter will discuss about the detail of the `scienceplots` package and other styles. Once you are happy with the plot, export it into a `pdf` file by the following syntax.
+
+```python
+plt.savefig("filename.pdf", bbox_inches='tight')
+```
+
+The `bbox_inches='tight'` keeps the whitespaces to be minimum. Enjoy your first plot already ready to put in your presentation, papers, notes, and wherever you want.
+  

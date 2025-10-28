@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Raunak Farhaz">
 
-<title>research – Raunak Farhaz</title>
+<title>MADNESS installation in HPC – Raunak Farhaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,44 +21,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../images/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-30fbb763efc86374ce62f132f97dc15d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../images/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-30fbb763efc86374ce62f132f97dc15d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -114,9 +130,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/favicon.svg" alt="" class="navbar-logo light-content">
-    <img src="../images/favicon.svg" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../../images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -125,29 +141,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../resources/research.html" aria-current="page"> 
+    <a class="nav-link" href="../../resources/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/bio.html"> 
+    <a class="nav-link" href="../../resources/bio.html"> 
 <span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/learn.html"> 
+    <a class="nav-link" href="../../resources/learn.html"> 
 <span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/blog.html"> 
+    <a class="nav-link" href="../../resources/blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/personal.html"> 
+    <a class="nav-link" href="../../resources/personal.html"> 
 <span class="menu-text">Personal</span></a>
   </li>  
 </ul>
@@ -166,69 +182,121 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#multi-resolution-analysis" id="toc-multi-resolution-analysis" class="nav-link active" data-scroll-target="#multi-resolution-analysis">Multi-Resolution Analysis</a></li>
-  <li><a href="#perpendicular-paramagnetic-bonding" id="toc-perpendicular-paramagnetic-bonding" class="nav-link" data-scroll-target="#perpendicular-paramagnetic-bonding">Perpendicular Paramagnetic Bonding</a>
-  <ul class="collapse">
-  <li><a href="#limitations-of-gaussian-basis-functions" id="toc-limitations-of-gaussian-basis-functions" class="nav-link" data-scroll-target="#limitations-of-gaussian-basis-functions">Limitations of Gaussian basis functions</a></li>
-  </ul></li>
+  <li><a href="#instructions-ubuntu-22.04-bra16" id="toc-instructions-ubuntu-22.04-bra16" class="nav-link active" data-scroll-target="#instructions-ubuntu-22.04-bra16">Instructions : Ubuntu 22.04 : bra16</a></li>
+  <li><a href="#writing-a-module-for-loading-madness-into-environment-to-compute-molecules" id="toc-writing-a-module-for-loading-madness-into-environment-to-compute-molecules" class="nav-link" data-scroll-target="#writing-a-module-for-loading-madness-into-environment-to-compute-molecules">Writing a module for loading MADNESS into environment to compute molecules</a></li>
+  <li><a href="#running-the-submad.sh-script-to-submit-jobs" id="toc-running-the-submad.sh-script-to-submit-jobs" class="nav-link" data-scroll-target="#running-the-submad.sh-script-to-submit-jobs">Running the submad.sh script to submit jobs</a></li>
+  <li><a href="#final-wrap-up-to-update-the-madness-in-bra16" id="toc-final-wrap-up-to-update-the-madness-in-bra16" class="nav-link" data-scroll-target="#final-wrap-up-to-update-the-madness-in-bra16">Final Wrap-Up to update the madness in bra16</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">MADNESS installation in HPC</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">computer</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="multi-resolution-analysis" class="level1">
-<h1>Multi-Resolution Analysis</h1>
-<p>Multiresolution Analysis (MRA) brings an effective way to solve Schrödinger equation.</p>
-<p><span id="eq-se"><span class="math display">\[
-\hat{H}\Psi=E\Psi
-\tag{1}\]</span></span></p>
-<p>It is a real space numerical method used to project functions and operators with arbitrary precision given by the following formula.</p>
-<p><span class="math display">\[
-f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
-\]</span>{eq-function-projection}</p>
-<p>where <span class="math inline">\(f^n (x)\)</span> is the function resolved at <span class="math inline">\(n^{th}\)</span> level, <span class="math inline">\(\phi^n_{kl}(x)\)</span> are the scaling functions and <span class="math inline">\(s^n_{kl}\)</span> are the scaling coefficients. The scaling or basis functions are derived from Legendre Polynomials. For a detailed overview, book chapter written by Bischoff<span class="citation" data-cites="bischoff2019"><sup><a href="#ref-bischoff2019" role="doc-biblioref">1</a></sup></span> is a good starting point. Assuming the potential energy function in the system of interest is <span class="math inline">\(\hat{V}=V(r)\)</span> and the rearrangement of <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> will give the following expression</p>
-<p><span class="math display">\[\begin{align}
-\hat{H}\Psi &amp;= E\Psi \\
-\Rightarrow (\hat{T} + \hat{V})\Psi &amp;= E\Psi \\
-\Rightarrow (\hat{T} - E)\Psi &amp;= -V\Psi \\
-\Rightarrow \Psi &amp;= -(\hat{T} - E)^{-1}V\Psi \\
-\end{align}\]</span></p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Point to be noted here is that <span class="math inline">\(V(r)\)</span> can be any form of potential - Particle in a box, Simple harmonic oscillator, Hydrogen atom, Coulomb and Exchange from Hartree-Fock method etc.</p>
-</div>
-</div>
-<p>The resulting equation above can be algorithmically considered to be a fixed point iteration problem. It can be self-consistently solved with a given good guess of <span class="math inline">\(\Psi\)</span>. At the end, MRA would produce results in complete basis set (CBS) limit being a real space grid based method.</p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Raunak Farhaz </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="instructions-ubuntu-22.04-bra16" class="level2">
+<h2 class="anchored" data-anchor-id="instructions-ubuntu-22.04-bra16">Instructions : Ubuntu 22.04 : bra16</h2>
+<p>Assuming you are in <code>/user/home/projects/madness</code> directory with LibXC located at <code>/user/home/libxc</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness $ ssh rigi</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness $ ssh node28</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness $ mkdir dirbuild</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness $ mkdir dirinstall</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness $ cd dirbuild</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ module load GNU-9</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ module load compiler</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ module load mkl</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ module load mpi</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ module load tbb</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ cmake <span class="at">-DLIBXC_LIBRARIES</span><span class="op">=</span>/user/home/libxc/lib/libxc.a <span class="at">-DLIBXC_INCLUDE_DIRS</span><span class="op">=</span>/user/home/libxc/include <span class="at">-DCMAKE_INSTALL_PREFIX</span><span class="op">=</span>../dirinstall ../madness</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ make <span class="at">-j</span> 12 applications</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">user@host</span> ~/projects/madness/dirbuild $ make <span class="at">-j</span> 12 install</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Follow these steps and you will be successful</p>
 </section>
-<section id="perpendicular-paramagnetic-bonding" class="level1">
-<h1>Perpendicular Paramagnetic Bonding</h1>
-<p>Besides covalent and ionic bonding, there exists a third kind of distinct bonding which occurs primarily in presence of strong magnetic fields. There is a rehybridization of antibonding orbitals in the systems which are non-bonded in ambient atmospheres. For example, singlet He<sub>2</sub>, it does not have a primary binding interaction according to Molecular Orbital Theory (MOT). But it shows strong primary binding interaction with the increase in <span class="math inline">\(\mathbf{B}\)</span> values.</p>
-<section id="limitations-of-gaussian-basis-functions" class="level2">
-<h2 class="anchored" data-anchor-id="limitations-of-gaussian-basis-functions">Limitations of Gaussian basis functions</h2>
-<p>In this particular scenario MRA wavelets are much better suited for strong <span class="math inline">\(\mathbf{B}\)</span> calculations, as it do not require subtle handwork which one needs to do in case of atom centered Gaussian basis functions. The wavefunction in <span class="math inline">\(\mathbf{B}\)</span> is not gauge-invariant which makes them meaningless entities. To overcome it, one needs to make them gauge-invariant, which in practise done using LONDON orbitals. But MRA does not have these problems as it is a real space grid based approach.</p>
-
+<section id="writing-a-module-for-loading-madness-into-environment-to-compute-molecules" class="level2">
+<h2 class="anchored" data-anchor-id="writing-a-module-for-loading-madness-into-environment-to-compute-molecules">Writing a module for loading MADNESS into environment to compute molecules</h2>
+<p>One write the module files in <code>lua</code> language. The new one that I wrote is</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode lua code-with-copy"><code class="sourceCode lua"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">#%</span><span class="va">Module</span><span class="op">######################################################################</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">##</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">##</span>       <span class="cn">MADNESS</span> <span class="va">environment</span> <span class="va">modulefile</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">##</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">proc</span> ModulesHelp <span class="op">{</span> <span class="op">}</span> <span class="op">{</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">puts</span> stderr <span class="st">"Sets up the paths you need to use the installed version of MADNESS."</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="va">module</span><span class="op">-</span>whatis   <span class="st">"MADNESS :: Multiwavelet Quantum Chemistry Package"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="va">module</span><span class="op">-</span>whatis <span class="st">"Date  :: 19 June, 2023"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="va">module</span> <span class="fu">load</span> <span class="cn">MADNESS</span><span class="op">/</span><span class="va">madness</span><span class="op">-</span><span class="va">compilers</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="va">module</span> <span class="fu">load</span> <span class="va">libxc</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="va">setenv</span>  <span class="cn">MADROOT</span>         <span class="op">/</span><span class="va">huge</span><span class="op">/</span><span class="va">rafa</span><span class="op">/</span><span class="va">devel</span><span class="op">/</span><span class="va">apps</span><span class="op">/</span><span class="va">install</span><span class="op">/</span><span class="va">madness</span><span class="op">-</span><span class="va">install</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="va">set</span>     <span class="cn">MADROOT</span>         $env<span class="op">(</span><span class="cn">MADROOT</span><span class="op">)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="va">prepend</span><span class="op">-</span><span class="va">path</span>    <span class="cn">PATH</span>            <span class="op">.:</span>$<span class="op">{</span><span class="cn">MADROOT</span><span class="op">}/</span><span class="va">bin</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="va">prepend</span><span class="op">-</span><span class="va">path</span>    <span class="cn">LD_LIBRARY_PATH</span> $<span class="op">{</span><span class="cn">MADROOT</span><span class="op">}/</span><span class="va">lib</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="va">setenv</span>  <span class="cn">MRA_DATA_DIR</span>    $<span class="op">{</span><span class="cn">MADROOT</span><span class="op">}/</span><span class="va">share</span><span class="op">/</span><span class="va">madness</span><span class="op">/</span><span class="dv">0.10.1</span><span class="op">/</span><span class="va">data</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="va">setenv</span>  <span class="cn">MAD_DATA_DIR</span>    $<span class="op">{</span><span class="cn">MADROOT</span><span class="op">}/</span><span class="va">share</span><span class="op">/</span><span class="va">madness</span><span class="op">/</span><span class="dv">0.10.1</span><span class="op">/</span><span class="va">data</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="va">module</span> <span class="fu">load</span> <span class="cn">MADNESS</span><span class="op">/</span><span class="va">madness</span><span class="op">-</span><span class="va">environment</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To enable <code>LibXC</code> to work with it.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cmake <span class="at">-DENABLE_LIBXC</span><span class="op">=</span>ON <span class="at">-DLIBXC_LIBRARIES</span><span class="op">=</span>/huge/rafa/devel/apps/install/libxc/lib/libxc.a <span class="at">-DLIBXC_INCLUDE_DIRS</span><span class="op">=</span>/huge/rafa/devel/apps/install/libxc/include <span class="at">-DCMAKE_INSTALL_PREFIX</span><span class="op">=</span>/huge/rafa/devel/apps/install/madness-beta ../madness</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="running-the-submad.sh-script-to-submit-jobs" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-submad.sh-script-to-submit-jobs">Running the submad.sh script to submit jobs</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> submad.sh <span class="at">-t</span> znemo <span class="at">-n</span> 16 <span class="at">-s</span> hawaii <span class="at">-v</span> 0.3 testrun</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-t</code> = type of the job - nemo/cis/znemo etc.</p>
+<p><code>-n</code> = cpu number</p>
+<p><code>-s</code> = server name - hawaii or rigi</p>
+<p><code>-v</code> = version number</p>
+</section>
+<section id="final-wrap-up-to-update-the-madness-in-bra16" class="level2">
+<h2 class="anchored" data-anchor-id="final-wrap-up-to-update-the-madness-in-bra16">Final Wrap-Up to update the madness in bra16</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/bash</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> rigi</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> node28</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /huge/rafa/devel/apps/madness-latest</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> build</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> madness</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../build</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># load modules</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load GNU-9</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load compiler</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load mkl</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load mpi</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load tbb</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># build and install</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
-</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-bischoff2019" class="csl-entry" role="listitem">
-<div class="csl-left-margin">(1) </div><div class="csl-right-inline">Bischoff, F. A. <a href="https://linkinghub.elsevier.com/retrieve/pii/S006532761930019X">Computing Accurate Molecular Properties in Real Space Using Multiresolution Analysis</a>; Elsevier, 2019; Vol. 79, pp 3–52.</div>
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -647,5 +715,5 @@ f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

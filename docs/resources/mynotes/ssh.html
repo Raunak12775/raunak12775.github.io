@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Raunak Farhaz">
-<meta name="dcterms.date" content="2025-07-02">
 
-<title>My Plotting Story - I – Raunak Farhaz</title>
+<title>SSH Notes – Raunak Farhaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,21 +59,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../../../images/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-c0de73dcfd66c84b0f4d8a385332c278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../images/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-30fbb763efc86374ce62f132f97dc15d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -91,9 +90,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -130,13 +126,13 @@ window.Quarto = {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../images/favicon.svg" alt="" class="navbar-logo light-content">
-    <img src="../../../images/favicon.svg" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../../images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -145,26 +141,30 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../resources/research.html"> 
+    <a class="nav-link" href="../../resources/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../resources/bio.html"> 
+    <a class="nav-link" href="../../resources/bio.html"> 
 <span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../resources/learn.html"> 
+    <a class="nav-link" href="../../resources/learn.html"> 
 <span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../resources/blog.html"> 
+    <a class="nav-link" href="../../resources/blog.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources/personal.html"> 
+<span class="menu-text">Personal</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -174,36 +174,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Plotting Story - I</h1>
-            <p class="subtitle lead">This is how I learned to plot</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Raunak Farhaz </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">July 2, 2025</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -211,130 +182,79 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-hard-way" id="toc-the-hard-way" class="nav-link active" data-scroll-target="#the-hard-way">The Hard Way</a></li>
-  <li><a href="#the-struggle" id="toc-the-struggle" class="nav-link" data-scroll-target="#the-struggle">The Struggle</a>
-  <ul class="collapse">
-  <li><a href="#plots-from-julia" id="toc-plots-from-julia" class="nav-link" data-scroll-target="#plots-from-julia">Plots from Julia</a>
-  <ul class="collapse">
-  <li><a href="#pros" id="toc-pros" class="nav-link" data-scroll-target="#pros">Pros</a></li>
-  <li><a href="#cons" id="toc-cons" class="nav-link" data-scroll-target="#cons">Cons</a></li>
-  <li><a href="#concluding-remarks" id="toc-concluding-remarks" class="nav-link" data-scroll-target="#concluding-remarks">Concluding remarks</a></li>
-  </ul></li>
-  <li><a href="#wolfram-mathematica" id="toc-wolfram-mathematica" class="nav-link" data-scroll-target="#wolfram-mathematica">Wolfram Mathematica</a>
-  <ul class="collapse">
-  <li><a href="#concluding-remarks-1" id="toc-concluding-remarks-1" class="nav-link" data-scroll-target="#concluding-remarks-1">Concluding remarks</a></li>
-  </ul></li>
-  <li><a href="#gnuplot" id="toc-gnuplot" class="nav-link" data-scroll-target="#gnuplot">Gnuplot</a></li>
-  <li><a href="#libreoffice" id="toc-libreoffice" class="nav-link" data-scroll-target="#libreoffice">Libreoffice</a></li>
-  </ul></li>
-  <li><a href="#the-winner-matplotlib" id="toc-the-winner-matplotlib" class="nav-link" data-scroll-target="#the-winner-matplotlib">The Winner : Matplotlib</a></li>
+  <li><a href="#passwordless-ssh-login" id="toc-passwordless-ssh-login" class="nav-link active" data-scroll-target="#passwordless-ssh-login">Passwordless ssh login</a></li>
+  <li><a href="#github-or-gitlab-ssh-keys" id="toc-github-or-gitlab-ssh-keys" class="nav-link" data-scroll-target="#github-or-gitlab-ssh-keys">Github or Gitlab ssh keys</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SSH Notes</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">computer</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Raunak Farhaz </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
-<section id="the-hard-way" class="level1">
-<h1>The Hard Way</h1>
-<p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
-<ol type="1">
-<li>Conceptualization</li>
-<li>Experimentation</li>
-<li>Data Curation</li>
-<li>Analysis</li>
-</ol>
-<p>The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the <code>Analysis</code> part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.</p>
-</section>
-<section id="the-struggle" class="level1">
-<h1>The Struggle</h1>
-<p>There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the <code>matplotlib</code> a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-    A[TOOL] --&gt; B(Matplotlib from python)
-    A --&gt; C(Plots from julia)
-    A --&gt; D(Wolfram Mathematica)
-    A --&gt; E(Gnuplot)
-    A --&gt; F(Libreoffice)
-</pre>
+</header>
+
+
+<section id="passwordless-ssh-login" class="level2">
+<h2 class="anchored" data-anchor-id="passwordless-ssh-login">Passwordless ssh login</h2>
+<p>First open terminal and check whether you have a ssh key in your local laptop/desktop by checking ~/.ssh folder. And then if not then follow the steps:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh-keygen <span class="at">-t</span> rsa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>this will generate two files id_pub and id_pub.rsa</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p></p></figure><p></p>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-</div>
-<section id="plots-from-julia" class="level2">
-<h2 class="anchored" data-anchor-id="plots-from-julia">Plots from Julia</h2>
-<p>Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fu">collect</span>(<span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fu">sin</span>.(x)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,xlab<span class="op">=</span><span class="st">"x"</span>,ylab<span class="op">=</span><span class="st">"sin(x)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><img src="julia-sample.svg" class="img-fluid"></p>
-<section id="pros" class="level3">
-<h3 class="anchored" data-anchor-id="pros">Pros</h3>
-<ul>
-<li>It is really intuitive and simple.</li>
-<li>It has a good documentation for most kind of plots see the link <a href="https://docs.juliaplots.org/latest/tutorial/" class="uri">https://docs.juliaplots.org/latest/tutorial/</a></li>
-<li>It has a huge amount of out of the box styles to be used for your particular purposes</li>
-</ul>
-</section>
-<section id="cons" class="level3">
-<h3 class="anchored" data-anchor-id="cons">Cons</h3>
-<ul>
-<li><p>Although the issue of ttfp has been addressed well in <code>v1.9</code> and even more in <code>v1.10</code> but it is in news that <code>v1.11</code> is doing again worse in terms of ttfp compared to the older versions. So you can see it is a bit of a reliability issue.</p></li>
-<li><p>The package for loading dataframes or in plain english simply data from let’s say <code>excel</code> or <code>csv</code> files is called <code>DataFrames</code>. As we speak, I feel the package is not mature enough compared to the equivalent ones in <code>python</code>.</p></li>
-</ul>
-</section>
-<section id="concluding-remarks" class="level3">
-<h3 class="anchored" data-anchor-id="concluding-remarks">Concluding remarks</h3>
-<p>If you are using <code>julia</code> for a simulation or an algorithm and you also want to plot some outcomes while running the simulation. Then I would say go for it. Because it would anyways take time so why not just use a functionality that is already given in the programming environment. But if you want it as a standalone data analysis tool then you might feel things are a bit slower.</p>
-</section>
-</section>
-<section id="wolfram-mathematica" class="level2">
-<h2 class="anchored" data-anchor-id="wolfram-mathematica">Wolfram Mathematica</h2>
-<p>This is meant for a visual and computeresque mathematical tool made by a brilliant physicist Stephen Wolfram in 90s for symbolic computation (which basically means to have a translation of mathematics done in pen and paper to the computer screen). It became a bit of popular tool. But the worst part for the students is it is licensed and not open-source. Recent news although says how <code>wolfram</code> is giving free licenses for academic usage but only the headless environment. So basically the strength of mathematica lies in the notebook environment according to me. But if one does not get to use the notebook then it is a bit of a pity. So I would rather skip this section of syntax completely because the price might be a bit of a hurdle for the students.</p>
-<section id="concluding-remarks-1" class="level3">
-<h3 class="anchored" data-anchor-id="concluding-remarks-1">Concluding remarks</h3>
-<p>I also plotted initially many of my research paper plots in mathematica. But sooner I realised scripting with wolfram is a bit of a hurdle especially when you need to plot many of them.</p>
-</section>
-</section>
-<section id="gnuplot" class="level2">
-<h2 class="anchored" data-anchor-id="gnuplot">Gnuplot</h2>
-<p>Gnuplot has nothing to do with <code>GNU</code> (those who are familiar with <code>linux</code> or <code>unix</code>). It is a complete terminal based plotter. It is quite powerful. But the learning curve can be a bit high. I tried it in my masters and then also tried to use it in my PhD. Still it bothers me and always makes me google things which is a bit of a pain. I mean its okay to google things, but not okay to look into google to make even smaller stuffs. But it is definitely powerful but I feel it is outdated. I will skip this too.</p>
-</section>
-<section id="libreoffice" class="level2">
-<h2 class="anchored" data-anchor-id="libreoffice">Libreoffice</h2>
-<p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
-</section>
-</section>
-<section id="the-winner-matplotlib" class="level1">
-<h1>The Winner : Matplotlib</h1>
-<p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
-<div id="ae4744f2" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.1</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>np.sin(x)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"x"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="plotting-story_files/figure-html/cell-2-output-1.png" width="600" height="429" class="figure-img"></p>
-</figure>
+<div class="callout-body-container callout-body">
+<p>If the passphrase is kept empty, <strong>recommended</strong> is to give a password to secure the ssh key.</p>
 </div>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh-copy-id <span class="at">-i</span> ~/.ssh/id_rsa.pub username@hostname</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>type the password for the hostmachine login and probably it should be done. Last but least check that the contents of id_pub.rsa has copied the same content in the ~/.ssh/authorized_keys file in your remote host.</p>
+</section>
+<section id="github-or-gitlab-ssh-keys" class="level2">
+<h2 class="anchored" data-anchor-id="github-or-gitlab-ssh-keys">Github or Gitlab ssh keys</h2>
+<p>For passwordless logins and git push and pulls one can copy+paste the contents of id_pub.rsa into the github or gitlab authorization places to push and pull without password</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>ssh</code> cloning is much better than <code>http</code></p>
+</div>
+</div>
 
 
 </section>
@@ -758,5 +678,5 @@ window.Quarto = {
 
 
 
-<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

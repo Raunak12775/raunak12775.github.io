@@ -1,0 +1,31 @@
+---
+title: SSH Notes
+categories: [computer]
+---
+
+## Passwordless ssh login
+
+First open terminal and check whether you have a ssh key in your local laptop/desktop by checking ~/.ssh folder. And then if not then follow the steps:
+
+```bash
+$ ssh-keygen -t rsa
+```
+this will generate two files id_pub and id_pub.rsa
+
+::: {.callout-note}
+If the passphrase is kept empty, **recommended** is to give a password to secure the ssh key.
+:::
+
+```bash
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub username@hostname
+```
+
+type the password for the hostmachine login and probably it should be done. Last but least check that the contents of id_pub.rsa has copied the same content in the ~/.ssh/authorized_keys file in your remote host.
+
+## Github or Gitlab ssh keys
+
+For passwordless logins and git push and pulls one can copy+paste the contents of id_pub.rsa into the github or gitlab authorization places to push and pull without password
+
+::: {.callout-tip}
+`ssh` cloning is much better than `http` 
+:::
