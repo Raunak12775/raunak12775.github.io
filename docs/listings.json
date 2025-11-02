@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/resources/personal.html",
-    "items": [
-      "/resources/mynotes/git.html",
-      "/resources/mynotes/madness-install.html",
-      "/resources/mynotes/ssh.html"
-    ]
-  },
-  {
     "listing": "/resources/blog.html",
     "items": [
       "/resources/posts/pdfInTyp/pdf-in-typst.html",
@@ -20,9 +12,20 @@
     ]
   },
   {
+    "listing": "/resources/personal.html",
+    "items": [
+      "/resources/mynotes/git.html",
+      "/resources/mynotes/madness-install.html",
+      "/resources/mynotes/ssh.html"
+    ]
+  },
+  {
     "listing": "/resources/learn.html",
     "items": [
-      "/resources/teach/sciplots/plotting-story.html"
+      "/resources/teach/sciplots/plotting-story.html",
+      "/resources/teach/paramagneticBonding/lange.html",
+      "/resources/teach/particleInABox/particle-box.html",
+      "/resources/teach/vectorMatrices/vectors.html"
     ]
   }
 ]

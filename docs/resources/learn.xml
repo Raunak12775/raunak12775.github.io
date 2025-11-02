@@ -10,7 +10,7 @@
 <atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.24</generator>
-<lastBuildDate>Tue, 28 Oct 2025 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 02 Nov 2025 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Scientific Plotting</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -216,7 +216,7 @@ Note
 </div>
 </div>
 <p>The last <code>python</code> example using matplotlib looked very unprofessional and without anything. Now we will take the same plot and use the scienceplots style backend and generate the plot and we will see how it makes pretty plots effortlessly.</p>
-<div id="8fb80833" class="cell" data-execution_count="1">
+<div id="e196cca3" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> scienceplots</span>
@@ -294,8 +294,77 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
  ]]></description>
   <category>the-big-book</category>
   <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
-  <pubDate>Tue, 28 Oct 2025 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 02 Nov 2025 23:00:00 GMT</pubDate>
   <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Perpendicular Paramagnetic Bonding Mechanism</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/paramagneticBonding/lange.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Page Under Construction</p>
+
+
+</section>
+
+ ]]></description>
+  <category>greenpaper</category>
+  <guid>https://raunakfarhaz.com/resources/teach/paramagneticBonding/lange.html</guid>
+  <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/paramagneticBonding/card-image.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Particle in a Box</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/particleInABox/particle-box.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>This is about teaching particle in a box. I would like to emphasize that</p>
+
+
+</section>
+
+ ]]></description>
+  <category>brownpaper</category>
+  <guid>https://raunakfarhaz.com/resources/teach/particleInABox/particle-box.html</guid>
+  <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/particleInABox/card-image.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Vectors and Matrices</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/vectorMatrices/vectors.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Page Under Construction</p>
+
+
+</section>
+
+ ]]></description>
+  <category>bluepaper</category>
+  <guid>https://raunakfarhaz.com/resources/teach/vectorMatrices/vectors.html</guid>
+  <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/vectorMatrices/card-image.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

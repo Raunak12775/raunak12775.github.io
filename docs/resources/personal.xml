@@ -10,7 +10,7 @@
 <atom:link href="https://raunakfarhaz.com/resources/personal.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.24</generator>
-<lastBuildDate>Tue, 28 Oct 2025 23:42:06 GMT</lastBuildDate>
+<lastBuildDate>Sun, 02 Nov 2025 23:21:38 GMT</lastBuildDate>
 <item>
   <title>Notes on Git Version Control</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -192,7 +192,7 @@ Note
  ]]></description>
   <category>computer</category>
   <guid>https://raunakfarhaz.com/resources/mynotes/git.html</guid>
-  <pubDate>Tue, 28 Oct 2025 23:42:06 GMT</pubDate>
+  <pubDate>Sun, 02 Nov 2025 23:21:38 GMT</pubDate>
 </item>
 <item>
   <title>MADNESS installation in HPC</title>
@@ -584,7 +584,7 @@ font-style: inherit;"># build and install</span></span></code></pre></div></div>
  ]]></description>
   <category>computer</category>
   <guid>https://raunakfarhaz.com/resources/mynotes/madness-install.html</guid>
-  <pubDate>Tue, 28 Oct 2025 23:42:06 GMT</pubDate>
+  <pubDate>Sun, 02 Nov 2025 23:21:38 GMT</pubDate>
 </item>
 <item>
   <title>SSH Notes</title>
@@ -647,7 +647,7 @@ Tip
  ]]></description>
   <category>computer</category>
   <guid>https://raunakfarhaz.com/resources/mynotes/ssh.html</guid>
-  <pubDate>Tue, 28 Oct 2025 23:42:06 GMT</pubDate>
+  <pubDate>Sun, 02 Nov 2025 23:21:38 GMT</pubDate>
 </item>
 </channel>
 </rss>

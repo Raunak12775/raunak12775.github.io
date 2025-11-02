@@ -2,70 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raunakfarhaz.com/index.html</loc>
-    <lastmod>2025-10-25T21:39:03.601Z</lastmod>
+    <lastmod>2025-11-02T22:55:27.878Z</lastmod>
   </url>
   <url>
     <loc>https://raunakfarhaz.com/resources/mynotes/git.html</loc>
-    <lastmod>2025-10-28T23:40:39.743Z</lastmod>
+    <lastmod>2025-11-02T22:55:27.880Z</lastmod>
   </url>
   <url>
     <loc>https://raunakfarhaz.com/resources/mynotes/ssh.html</loc>
-    <lastmod>2025-10-28T23:40:25.423Z</lastmod>
+    <lastmod>2025-11-02T22:55:27.880Z</lastmod>
   </url>
   <url>
-    <loc>https://raunakfarhaz.com/resources/bio.html</loc>
-    <lastmod>2025-10-25T20:43:40.567Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/research.html</loc>
-    <lastmod>2025-10-25T20:43:40.567Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/accessEdu/access-education.html</loc>
-    <lastmod>2025-10-25T00:59:18.875Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/harmony/harmony.html</loc>
-    <lastmod>2025-10-25T00:59:18.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/flashback_2024/flashback.html</loc>
-    <lastmod>2025-10-28T23:05:53.395Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/personal.html</loc>
-    <lastmod>2025-10-28T23:39:09.535Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/ukraineEU/ukraine-eu.html</loc>
-    <lastmod>2025-10-25T00:59:18.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/pdfInTyp/pdf-in-typst.html</loc>
-    <lastmod>2025-10-28T21:11:34.123Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/doi-murgi/yoghurt-chicken.html</loc>
-    <lastmod>2025-10-28T23:10:37.174Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/posts/greece-trip/greece.html</loc>
-    <lastmod>2025-10-25T00:59:18.883Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raunakfarhaz.com/resources/blog.html</loc>
-    <lastmod>2025-10-28T22:05:47.830Z</lastmod>
+    <loc>https://raunakfarhaz.com/resources/teach/paramagneticBonding/lange.html</loc>
+    <lastmod>2025-11-02T23:18:01.449Z</lastmod>
   </url>
   <url>
     <loc>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</loc>
-    <lastmod>2025-10-28T23:00:40.468Z</lastmod>
+    <lastmod>2025-11-02T22:55:27.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/blog.html</loc>
+    <lastmod>2025-11-02T22:55:27.879Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/greece-trip/greece.html</loc>
+    <lastmod>2025-11-02T22:55:27.890Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/doi-murgi/yoghurt-chicken.html</loc>
+    <lastmod>2025-11-02T22:55:27.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/pdfInTyp/pdf-in-typst.html</loc>
+    <lastmod>2025-11-02T22:55:27.949Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/ukraineEU/ukraine-eu.html</loc>
+    <lastmod>2025-11-02T22:55:27.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/personal.html</loc>
+    <lastmod>2025-11-02T22:55:27.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/flashback_2024/flashback.html</loc>
+    <lastmod>2025-11-02T22:55:27.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/harmony/harmony.html</loc>
+    <lastmod>2025-11-02T22:55:27.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/posts/accessEdu/access-education.html</loc>
+    <lastmod>2025-11-02T22:55:27.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/research.html</loc>
+    <lastmod>2025-11-02T22:55:27.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/bio.html</loc>
+    <lastmod>2025-11-02T22:55:27.879Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/teach/particleInABox/particle-box.html</loc>
+    <lastmod>2025-11-02T23:17:42.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raunakfarhaz.com/resources/teach/vectorMatrices/vectors.html</loc>
+    <lastmod>2025-11-02T23:21:12.591Z</lastmod>
   </url>
   <url>
     <loc>https://raunakfarhaz.com/resources/mynotes/madness-install.html</loc>
-    <lastmod>2025-10-28T23:40:58.301Z</lastmod>
+    <lastmod>2025-11-02T22:55:27.880Z</lastmod>
   </url>
   <url>
     <loc>https://raunakfarhaz.com/resources/learn.html</loc>
-    <lastmod>2025-10-28T23:19:28.783Z</lastmod>
+    <lastmod>2025-11-02T22:55:27.879Z</lastmod>
   </url>
 </urlset>

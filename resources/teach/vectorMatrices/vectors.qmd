@@ -1,0 +1,23 @@
+---
+title: Vectors and Matrices
+subtitle: "Understanding vectors and matrices computationally"
+paper-type: "bluepaper"
+date: "01.11.2025"
+image: "./card-image.png"
+categories: [bluepaper]
+toc: true
+toc-depth: 3
+format:
+  html:
+    title-block-banner: '#0062AB'
+    title-block-banner-color: white
+  typst:
+    toc: true
+    template-partials: 
+      - ./../typst-template.typ
+      - ./../typst-show.typ  
+---
+
+
+# Introduction
+Page Under Construction

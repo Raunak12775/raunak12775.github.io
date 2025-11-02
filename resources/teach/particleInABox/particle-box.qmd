@@ -1,0 +1,23 @@
+---
+title: Particle in a Box
+subtitle: "A computational introduction to particle in a 1-3D box"
+paper-type: "brownpaper"
+date: "01.11.2025"
+image: "./card-image.png"
+categories: [brownpaper]
+toc: true
+toc-depth: 3
+format:
+  html:
+    title-block-banner: '#73593A'
+    title-block-banner-color: white
+  typst:
+    toc: true
+    template-partials: 
+      - ./../typst-template.typ
+      - ./../typst-show.typ  
+---
+
+
+# Introduction
+This is about teaching particle in a box. I would like to emphasize that 
