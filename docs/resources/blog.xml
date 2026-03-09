@@ -9,7 +9,7 @@
 <link>https://raunakfarhaz.com/resources/blog.html</link>
 <atom:link href="https://raunakfarhaz.com/resources/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.24</generator>
+<generator>quarto-1.8.26</generator>
 <lastBuildDate>Sat, 25 Oct 2025 22:00:00 GMT</lastBuildDate>
 <item>
   <title>PDF images in typst</title>

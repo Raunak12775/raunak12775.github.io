@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/resources/blog.html",
-    "items": [
-      "/resources/posts/pdfInTyp/pdf-in-typst.html",
-      "/resources/posts/ukraineEU/ukraine-eu.html",
-      "/resources/posts/accessEdu/access-education.html",
-      "/resources/posts/flashback_2024/flashback.html",
-      "/resources/posts/harmony/harmony.html",
-      "/resources/posts/greece-trip/greece.html",
-      "/resources/posts/doi-murgi/yoghurt-chicken.html"
-    ]
-  },
-  {
     "listing": "/resources/personal.html",
     "items": [
       "/resources/mynotes/git.html",
@@ -26,6 +14,18 @@
       "/resources/teach/paramagneticBonding/lange.html",
       "/resources/teach/particleInABox/particle-box.html",
       "/resources/teach/vectorMatrices/vectors.html"
+    ]
+  },
+  {
+    "listing": "/resources/blog.html",
+    "items": [
+      "/resources/posts/pdfInTyp/pdf-in-typst.html",
+      "/resources/posts/ukraineEU/ukraine-eu.html",
+      "/resources/posts/accessEdu/access-education.html",
+      "/resources/posts/flashback_2024/flashback.html",
+      "/resources/posts/harmony/harmony.html",
+      "/resources/posts/greece-trip/greece.html",
+      "/resources/posts/doi-murgi/yoghurt-chicken.html"
     ]
   }
 ]
