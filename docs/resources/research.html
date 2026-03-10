@@ -54,10 +54,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5a65f6d6a6cb2564d1aec56f7fed0acc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-98a67b88a7b2ebdb42c90a796d5a2df1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-39f2d56453089a4e50486a07f4ddd0e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -131,12 +131,16 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href=".././data/cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="../resources/research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/bio.html"> 
-<span class="menu-text">Bio</span></a>
+    <a class="nav-link" href="../resources/pubs.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/learn.html"> 
@@ -148,7 +152,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources/personal.html"> 
-<span class="menu-text">Personal</span></a>
+<span class="menu-text">Internal</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -166,7 +170,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#multi-resolution-analysis" id="toc-multi-resolution-analysis" class="nav-link active" data-scroll-target="#multi-resolution-analysis">Multi-Resolution Analysis</a></li>
+  <li><a href="#multiresolution-analysis" id="toc-multiresolution-analysis" class="nav-link active" data-scroll-target="#multiresolution-analysis">Multiresolution Analysis</a></li>
   <li><a href="#perpendicular-paramagnetic-bonding" id="toc-perpendicular-paramagnetic-bonding" class="nav-link" data-scroll-target="#perpendicular-paramagnetic-bonding">Perpendicular Paramagnetic Bonding</a>
   <ul class="collapse">
   <li><a href="#limitations-of-gaussian-basis-functions" id="toc-limitations-of-gaussian-basis-functions" class="nav-link" data-scroll-target="#limitations-of-gaussian-basis-functions">Limitations of Gaussian basis functions</a></li>
@@ -180,16 +184,16 @@ window.Quarto = {
 
 
 
-<section id="multi-resolution-analysis" class="level1">
-<h1>Multi-Resolution Analysis</h1>
+<section id="multiresolution-analysis" class="level1">
+<h1>Multiresolution Analysis</h1>
 <p>Multiresolution Analysis (MRA) brings an effective way to solve Schrödinger equation.</p>
 <p><span id="eq-se"><span class="math display">\[
 \hat{H}\Psi=E\Psi
 \tag{1}\]</span></span></p>
 <p>It is a real space numerical method used to project functions and operators with arbitrary precision given by the following formula.</p>
-<p><span class="math display">\[
+<p><span id="eq-function-projection"><span class="math display">\[
 f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
-\]</span>{eq-function-projection}</p>
+\tag{2}\]</span></span></p>
 <p>where <span class="math inline">\(f^n (x)\)</span> is the function resolved at <span class="math inline">\(n^{th}\)</span> level, <span class="math inline">\(\phi^n_{kl}(x)\)</span> are the scaling functions and <span class="math inline">\(s^n_{kl}\)</span> are the scaling coefficients. The scaling or basis functions are derived from Legendre Polynomials. For a detailed overview, book chapter written by Bischoff<span class="citation" data-cites="bischoff2019"><sup><a href="#ref-bischoff2019" role="doc-biblioref">1</a></sup></span> is a good starting point. Assuming the potential energy function in the system of interest is <span class="math inline">\(\hat{V}=V(r)\)</span> and the rearrangement of <a href="#eq-se" class="quarto-xref">Equation&nbsp;1</a> will give the following expression</p>
 <p><span class="math display">\[\begin{align}
 \hat{H}\Psi &amp;= E\Psi \\
@@ -197,13 +201,13 @@ f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
 \Rightarrow (\hat{T} - E)\Psi &amp;= -V\Psi \\
 \Rightarrow \Psi &amp;= -(\hat{T} - E)^{-1}V\Psi \\
 \end{align}\]</span></p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Note
+<span class="screen-reader-only">Note</span>Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -636,7 +640,7 @@ f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2025</p>
+<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2026</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

@@ -6,7 +6,7 @@ number-sections: false
 ---
 
 
-# Multi-Resolution Analysis
+# Multiresolution Analysis
 
 Multiresolution Analysis (MRA) brings an effective way to solve Schrödinger equation.
 
@@ -18,7 +18,7 @@ It is a real space numerical method used to project functions and operators with
 
 $$
 f^n (x)= \sum_k \sum_l  s^n_{kl} ~ \phi^n_{kl}(x)
-$${eq-function-projection}
+$${#eq-function-projection}
 
 where $f^n (x)$ is the function resolved at $n^{th}$ level, $\phi^n_{kl}(x)$ are the scaling functions and $s^n_{kl}$ are the scaling coefficients. The scaling or basis functions are derived from Legendre Polynomials. For a detailed overview, book chapter written by Bischoff @bischoff2019 is a good starting point. Assuming the potential energy function in the system of interest is $\hat{V}=V(r)$ and the rearrangement of @eq-se will give the following expression
 
@@ -29,7 +29,7 @@ where $f^n (x)$ is the function resolved at $n^{th}$ level, $\phi^n_{kl}(x)$ are
 \Rightarrow \Psi &= -(\hat{T} - E)^{-1}V\Psi \\
 \end{align}
 
-::: {.callout-warning icon=false}
+::: {.callout-note icon=false}
 ## Note
 Point to be noted here is that $V(r)$ can be any form of potential - Particle in a box, Simple harmonic oscillator, Hydrogen atom, Coulomb and Exchange from Hartree-Fock method etc.
 :::

@@ -1,41 +1,46 @@
 /* css styles */
-
-// Source Serif 4
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-// Work Sans
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+// google sans code
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+// Alegreya Sans
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 
 // color-variables
-$chalk-white:#F9F7F4;
-$putty-beige:#D7CEC7;
 $charcoal-wood:#5F5C57;
 $near-black: #212121;
-$ragin-beige: #fff5d7;
 $link-pink: #ff3a22;
-$sleuthe-yellow: #feb300;
+$green-ale: #2B4403;
+$green-ale-bg: #F9FCF0;
+
 // Colors
-$navbar-bg:$charcoal-wood;
-$body-bg:$ragin-beige;
+$navbar-bg:$green-ale;
+$body-bg:$green-ale-bg;
 $link-color:$link-pink;
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Source Serif 4', serif;
-  color:$near-black;
-  weight: 900;
+  font-family:'Alegreya Sans', sans-serif;
+  color:$charcoal-wood;
 }
 
 body {
-  background-color:$body-bg;  // Light Mint Green for body background
-  color:$near-black;          // Near Black for body text
-  font-family:'Work Sans', sans-serif;
-  text-align: justify;
+  background-color:$body-bg; 
+  color:$charcoal-wood;          
+  font-family:'Alegreya', serif; 
+  // text-align: justify;
+}
+
+code, kbd, .sourceCode span:not(.op) {
+  font-family: 'Google Sans Code', monospace;
+}
+
+pre {
+  font-family: 'Google Sans Code', monospace;
 }
 
 /*-- scss:rules --*/
 .navbar-nav .nav-item .nav-link {
-    font-family: "Work Sans", sans-serif;
-    color: $chalk-white;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: $green-ale-bg;
 }
 

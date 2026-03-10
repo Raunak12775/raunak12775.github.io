@@ -10,7 +10,7 @@
 <atom:link href="https://raunakfarhaz.com/resources/personal.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 09 Mar 2026 21:42:56 GMT</lastBuildDate>
+<lastBuildDate>Tue, 10 Mar 2026 01:54:56 GMT</lastBuildDate>
 <item>
   <title>Notes on Git Version Control</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -192,7 +192,7 @@ Note
  ]]></description>
   <category>computer</category>
   <guid>https://raunakfarhaz.com/resources/mynotes/git.html</guid>
-  <pubDate>Mon, 09 Mar 2026 21:42:56 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 01:54:56 GMT</pubDate>
 </item>
 <item>
   <title>MADNESS installation in HPC</title>
@@ -206,7 +206,7 @@ Note
 <section id="instructions-ubuntu-22.04-bra16" class="level2">
 <h2 class="anchored" data-anchor-id="instructions-ubuntu-22.04-bra16">Instructions : Ubuntu 22.04 : bra16</h2>
 <p>Assuming you are in <code>/user/home/projects/madness</code> directory with LibXC located at <code>/user/home/libxc</code></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">user@host</span> ~/projects/madness $ ssh rigi</span>
 <span id="cb1-2"><span class="ex" style="color: null;
@@ -266,7 +266,7 @@ font-style: inherit;">-j</span> 12 install</span></code></pre></div></div>
 <section id="writing-a-module-for-loading-madness-into-environment-to-compute-molecules" class="level2">
 <h2 class="anchored" data-anchor-id="writing-a-module-for-loading-madness-into-environment-to-compute-molecules">Writing a module for loading MADNESS into environment to compute molecules</h2>
 <p>One write the module files in <code>lua</code> language. The new one that I wrote is</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode lua code-with-copy"><code class="sourceCode lua"><span id="cb2-1"><span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb2-1"><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#%</span><span class="va" style="color: #111111;
 background-color: null;
@@ -492,7 +492,7 @@ font-style: inherit;">-</span><span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">environment</span></span></code></pre></div></div>
 <p>To enable <code>LibXC</code> to work with it.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">$</span> cmake <span class="at" style="color: #657422;
 background-color: null;
@@ -514,7 +514,7 @@ font-style: inherit;">=</span>/huge/rafa/devel/apps/install/madness-beta ../madn
 </section>
 <section id="running-the-submad.sh-script-to-submit-jobs" class="level2">
 <h2 class="anchored" data-anchor-id="running-the-submad.sh-script-to-submit-jobs">Running the submad.sh script to submit jobs</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">$</span> submad.sh <span class="at" style="color: #657422;
 background-color: null;
@@ -532,7 +532,7 @@ font-style: inherit;">-v</span> 0.3 testrun</span></code></pre></div></div>
 </section>
 <section id="final-wrap-up-to-update-the-madness-in-bra16" class="level2">
 <h2 class="anchored" data-anchor-id="final-wrap-up-to-update-the-madness-in-bra16">Final Wrap-Up to update the madness in bra16</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#!/usr/bin/bash</span></span>
 <span id="cb5-2"><span class="fu" style="color: #4758AB;
@@ -584,7 +584,7 @@ font-style: inherit;"># build and install</span></span></code></pre></div></div>
  ]]></description>
   <category>computer</category>
   <guid>https://raunakfarhaz.com/resources/mynotes/madness-install.html</guid>
-  <pubDate>Mon, 09 Mar 2026 21:42:56 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 01:54:56 GMT</pubDate>
 </item>
 <item>
   <title>SSH Notes</title>
@@ -598,7 +598,7 @@ font-style: inherit;"># build and install</span></span></code></pre></div></div>
 <section id="passwordless-ssh-login" class="level2">
 <h2 class="anchored" data-anchor-id="passwordless-ssh-login">Passwordless ssh login</h2>
 <p>First open terminal and check whether you have a ssh key in your local laptop/desktop by checking ~/.ssh folder. And then if not then follow the steps:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">$</span> ssh-keygen <span class="at" style="color: #657422;
 background-color: null;
@@ -617,7 +617,7 @@ Note
 <p>If the passphrase is kept empty, <strong>recommended</strong> is to give a password to secure the ssh key.</p>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">$</span> ssh-copy-id <span class="at" style="color: #657422;
 background-color: null;
@@ -647,7 +647,7 @@ Tip
  ]]></description>
   <category>computer</category>
   <guid>https://raunakfarhaz.com/resources/mynotes/ssh.html</guid>
-  <pubDate>Mon, 09 Mar 2026 21:42:56 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 01:54:56 GMT</pubDate>
 </item>
 </channel>
 </rss>

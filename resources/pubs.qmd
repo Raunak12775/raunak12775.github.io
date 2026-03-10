@@ -1,0 +1,16 @@
+---
+title: List of Publications
+toc: false
+---
+
+## Peer-Reviewed and Published
+
+1. **Farhaz, R.**; Bischoff, F. A.; Stopkowicsz, S.; Blaschke, S. *Quantification of the basis set error for molecules in strong magnetic fields and general orientation.* **Journal of Chemical Physics** [[DOI](https://doi.org/10.1063/5.0274736)] **2025**
+
+2. Sardar, R.; Banik, R.; Ghosh, S.; **Farhaz, R.** *Drug-Induced Micelle-to-Supermicelle Transition in CTAB: Comparative Study with Acetylenic Gemini Surfactant via Experimental and DFT Approaches* [submitted]() **2026**
+
+## In Draft
+
+1. **Farhaz R.**, Rickert C., Bischoff F. A. *Helium Dimers and Trimers in Extreme Magnetic Fields : A
+Geometry Optimization Study*
+

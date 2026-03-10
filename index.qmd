@@ -2,23 +2,25 @@
 title: "**Raunak Farhaz**"
 image: "images/profile.jpeg"
 about:
-    template: jolla
+    template: solana
     image-shape: round
-    image-width: 15em 
+    image-width: 16em 
     links:
         - icon: envelope
-          href: mailto:raunak.farhaz@hu-berlin.de
+          href: mailto:farhazraunak@proton.me
         - icon: github
           href: https://github.com/Raunak12775
-        - text: "{{< fa brands bluesky >}}"
+        - icon: gitlab
+          href: https://gitlab.com/rfarhaz
+        - icon: bluesky
           href: https://bsky.app/profile/raunakfarhaz.bsky.social
         - icon: twitter-x
           href: https://twitter.com/Farhazraunak
 toc: false
 ---
 
-I am currently a Ph.D. student of Theoretical Chemistry at **Humboldt-Universität zu Berlin, Germany**. For full research and academic profile look into my [Bio](resources/bio.qmd). I have expertise in using **Multiresolution Analysis for studying molecules in strong magnetic fields**. For a detailed  overview of my research look into my [Research](resources/research.qmd). My research interest is primarily concerned with the understanding of chemical bonding and its philosophical aspects.  I love writing **pedagogic articles/essays on quantum chemistry** (_look into_ [Learn](resources/learn.qmd)).
+Doing my Ph.D. in Theoretical Chemistry at [**Humboldt-Universität zu Berlin**](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff). My research interest lies in the understanding of chemical bonding and its philosophical aspects. You can find **pedagogic articles/essays** in [Learn](resources/learn.qmd).
 
-For peeping ;) into my opinions look into my [Blog](resources/blog.qmd). For collaborations or queries send me an [email](mailto:raunak.farhaz@hu-berlin.de).
+For collaborations send a "Hi" at my [email](mailto:farhazraunak@proton.me).
 
 

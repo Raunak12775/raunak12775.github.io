@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Raunak Farhaz">
-<meta name="dcterms.date" content="2026-03-09">
+<meta name="dcterms.date" content="2026-03-10">
 
 <title>Scientific Plotting – Raunak Farhaz</title>
 <style>
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-5a65f6d6a6cb2564d1aec56f7fed0acc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-98a67b88a7b2ebdb42c90a796d5a2df1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-39f2d56453089a4e50486a07f4ddd0e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -151,12 +151,16 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../.././data/cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../../resources/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../resources/bio.html"> 
-<span class="menu-text">Bio</span></a>
+    <a class="nav-link" href="../../../resources/pubs.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/learn.html"> 
@@ -168,7 +172,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../resources/personal.html"> 
-<span class="menu-text">Personal</span></a>
+<span class="menu-text">Internal</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -202,7 +206,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 9, 2026</p>
+        <p class="date">March 10, 2026</p>
       </div>
     </div>
     
@@ -217,27 +221,20 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#chapter-1---the-hard-way" id="toc-chapter-1---the-hard-way" class="nav-link active" data-scroll-target="#chapter-1---the-hard-way">Chapter 1 - The Hard Way</a>
   <ul class="collapse">
-  <li><a href="#julia" id="toc-julia" class="nav-link" data-scroll-target="#julia">Julia</a>
+  <li><a href="#the-hard-way" id="toc-the-hard-way" class="nav-link active" data-scroll-target="#the-hard-way"><span class="header-section-number">1</span> The Hard Way</a>
   <ul class="collapse">
-  <li><a href="#pros" id="toc-pros" class="nav-link" data-scroll-target="#pros">Pros</a></li>
-  <li><a href="#cons" id="toc-cons" class="nav-link" data-scroll-target="#cons">Cons</a></li>
-  <li><a href="#concluding-remarks" id="toc-concluding-remarks" class="nav-link" data-scroll-target="#concluding-remarks">Concluding remarks</a></li>
+  <li><a href="#julia" id="toc-julia" class="nav-link" data-scroll-target="#julia"><span class="header-section-number">1.1</span> Julia</a></li>
+  <li><a href="#wolfram-mathematica" id="toc-wolfram-mathematica" class="nav-link" data-scroll-target="#wolfram-mathematica"><span class="header-section-number">1.2</span> Wolfram Mathematica</a></li>
+  <li><a href="#gnuplot" id="toc-gnuplot" class="nav-link" data-scroll-target="#gnuplot"><span class="header-section-number">1.3</span> Gnuplot</a></li>
+  <li><a href="#libreoffice" id="toc-libreoffice" class="nav-link" data-scroll-target="#libreoffice"><span class="header-section-number">1.4</span> Libreoffice</a></li>
+  <li><a href="#matplotlib-the-winner" id="toc-matplotlib-the-winner" class="nav-link" data-scroll-target="#matplotlib-the-winner"><span class="header-section-number">1.5</span> Matplotlib : the winner</a></li>
   </ul></li>
-  <li><a href="#wolfram-mathematica" id="toc-wolfram-mathematica" class="nav-link" data-scroll-target="#wolfram-mathematica">Wolfram Mathematica</a>
+  <li><a href="#strong-start" id="toc-strong-start" class="nav-link" data-scroll-target="#strong-start"><span class="header-section-number">2</span> Strong Start</a>
   <ul class="collapse">
-  <li><a href="#concluding-remarks-1" id="toc-concluding-remarks-1" class="nav-link" data-scroll-target="#concluding-remarks-1">Concluding remarks</a></li>
+  <li><a href="#scienceplots-will-save-your-day" id="toc-scienceplots-will-save-your-day" class="nav-link" data-scroll-target="#scienceplots-will-save-your-day"><span class="header-section-number">2.1</span> Scienceplots will save your day</a></li>
   </ul></li>
-  <li><a href="#gnuplot" id="toc-gnuplot" class="nav-link" data-scroll-target="#gnuplot">Gnuplot</a></li>
-  <li><a href="#libreoffice" id="toc-libreoffice" class="nav-link" data-scroll-target="#libreoffice">Libreoffice</a></li>
-  <li><a href="#the-winner-matplotlib" id="toc-the-winner-matplotlib" class="nav-link" data-scroll-target="#the-winner-matplotlib">The Winner : Matplotlib</a></li>
-  </ul></li>
-  <li><a href="#chapter-2---strong-start" id="toc-chapter-2---strong-start" class="nav-link" data-scroll-target="#chapter-2---strong-start">Chapter 2 - Strong Start</a>
-  <ul class="collapse">
-  <li><a href="#scienceplots-will-save-your-day" id="toc-scienceplots-will-save-your-day" class="nav-link" data-scroll-target="#scienceplots-will-save-your-day">Scienceplots will save your day</a></li>
-  </ul></li>
+  <li><a href="#get-your-hands-dirty" id="toc-get-your-hands-dirty" class="nav-link" data-scroll-target="#get-your-hands-dirty"><span class="header-section-number">3</span> Get your hands dirty</a></li>
   </ul>
 </nav>
     </div>
@@ -248,8 +245,8 @@ window.Quarto = {
 
 
 
-<section id="chapter-1---the-hard-way" class="level1">
-<h1>Chapter 1 - The Hard Way</h1>
+<section id="the-hard-way" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> The Hard Way</h1>
 <p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
 <ol type="1">
 <li>Conceptualization</li>
@@ -264,9 +261,9 @@ window.Quarto = {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">graph LR
-    A[TOOL] --&gt; B(Matplotlib from python)
-    A --&gt; C(Plots from julia)
+<pre class="mermaid mermaid-js">graph TD
+    A(Tools) --&gt; B(Matplotlib)
+    A --&gt; C(Plots.jl)
     A --&gt; D(Wolfram Mathematica)
     A --&gt; E(Gnuplot)
     A --&gt; F(Libreoffice)
@@ -276,67 +273,71 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<section id="julia" class="level2">
-<h2 class="anchored" data-anchor-id="julia">Julia</h2>
-<p>Here is the thing Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost by the <code>julia</code> developer himself see <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fu">collect</span>(<span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fu">sin</span>.(x)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,xlab<span class="op">=</span><span class="st">"x"</span>,ylab<span class="op">=</span><span class="st">"sin(x)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><img src="julia-sample.svg" class="img-fluid"></p>
-<section id="pros" class="level3">
-<h3 class="anchored" data-anchor-id="pros">Pros</h3>
+<section id="julia" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="julia"><span class="header-section-number">1.1</span> Julia</h2>
+<p>Here is the thing Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>x <span class="op">=</span> <span class="fu">collect</span>(<span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>y <span class="op">=</span> <span class="fu">sin</span>.(x)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">plot</span>(x,y,xlab<span class="op">=</span><span class="st">"x"</span>,ylab<span class="op">=</span><span class="st">"sin(x)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="jlplots.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p><strong>Pros</strong></p>
 <ul>
 <li>It is really intuitive and simple.</li>
 <li>It has a good documentation for most kind of plots see the link <a href="https://docs.juliaplots.org/latest/tutorial/" class="uri">https://docs.juliaplots.org/latest/tutorial/</a></li>
 <li>It has a huge amount of out of the box styles to be used for your particular purposes</li>
 </ul>
-</section>
-<section id="cons" class="level3">
-<h3 class="anchored" data-anchor-id="cons">Cons</h3>
+<p><strong>Cons</strong></p>
 <ul>
 <li><p>Although the issue of ttfp has been addressed well in <code>v1.9</code> and even more in <code>v1.10</code> but it is in news that <code>v1.11</code> is doing again worse in terms of ttfp compared to the older versions. So you can see it is a bit of a reliability issue.</p></li>
 <li><p>The package for loading dataframes or in plain english simply data from let’s say <code>excel</code> or <code>csv</code> files is called <code>DataFrames</code>. As we speak, I feel the package is not mature enough compared to the equivalent ones in <code>python</code>.</p></li>
 </ul>
-</section>
-<section id="concluding-remarks" class="level3">
-<h3 class="anchored" data-anchor-id="concluding-remarks">Concluding remarks</h3>
+<section id="concluding-remarks" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="concluding-remarks"><span class="header-section-number">1.1.1</span> Concluding remarks</h3>
 <p>If you are using <code>julia</code> for a simulation or an algorithm and you also want to plot some outcomes while running the simulation. Then I would say go for it. Because it would anyways take time so why not just use a functionality that is already given in the programming environment. But if you want it as a standalone data analysis tool then you might feel things are a bit slower.</p>
 </section>
 </section>
-<section id="wolfram-mathematica" class="level2">
-<h2 class="anchored" data-anchor-id="wolfram-mathematica">Wolfram Mathematica</h2>
+<section id="wolfram-mathematica" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="wolfram-mathematica"><span class="header-section-number">1.2</span> Wolfram Mathematica</h2>
 <p>This is meant for a visual and computeresque mathematical tool made by a brilliant physicist Stephen Wolfram in 90s for symbolic computation (which basically means to have a translation of mathematics done in pen and paper to the computer screen). It became a bit of popular tool. But the worst part for the students is it is licensed and not open-source. Recent news although says how <code>wolfram</code> is giving free licenses for academic usage but only the headless environment. So basically the strength of mathematica lies in the notebook environment according to me. But if one does not get to use the notebook then it is a bit of a pity. So I would rather skip this section of syntax completely because the price might be a bit of a hurdle for the students.</p>
-<section id="concluding-remarks-1" class="level3">
-<h3 class="anchored" data-anchor-id="concluding-remarks-1">Concluding remarks</h3>
+<section id="concluding-remarks-1" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="concluding-remarks-1"><span class="header-section-number">1.2.1</span> Concluding remarks</h3>
 <p>I also plotted initially many of my research paper plots in mathematica. But sooner I realised scripting with wolfram is a bit of a hurdle especially when you need to plot many of them.</p>
 </section>
 </section>
-<section id="gnuplot" class="level2">
-<h2 class="anchored" data-anchor-id="gnuplot">Gnuplot</h2>
+<section id="gnuplot" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="gnuplot"><span class="header-section-number">1.3</span> Gnuplot</h2>
 <p>Gnuplot has nothing to do with <code>GNU</code> (those who are familiar with <code>linux</code> or <code>unix</code>). It is a complete terminal based plotter. It is quite powerful. But the learning curve can be a bit high. I tried it in my masters and then also tried to use it in my PhD. Still it bothers me and always makes me google things which is a bit of a pain. I mean its okay to google things, but not okay to look into google to make even smaller stuffs. But it is definitely powerful but I feel it is outdated. I will skip this too.</p>
 </section>
-<section id="libreoffice" class="level2">
-<h2 class="anchored" data-anchor-id="libreoffice">Libreoffice</h2>
+<section id="libreoffice" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="libreoffice"><span class="header-section-number">1.4</span> Libreoffice</h2>
 <p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
 </section>
-<section id="the-winner-matplotlib" class="level2">
-<h2 class="anchored" data-anchor-id="the-winner-matplotlib">The Winner : Matplotlib</h2>
+<section id="matplotlib-the-winner" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="matplotlib-the-winner"><span class="header-section-number">1.5</span> Matplotlib : the winner</h2>
 <p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.1</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>np.sin(x)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"x"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><img src="./python.png" class="img-fluid"></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3"></a>x<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.1</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>y<span class="op">=</span>np.sin(x)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>plt.plot(x,y)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>plt.xlabel(<span class="st">"x"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./python.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
 <p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
 </section>
 </section>
-<section id="chapter-2---strong-start" class="level1">
-<h1>Chapter 2 - Strong Start</h1>
+<section id="strong-start" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Strong Start</h1>
 <p>There are innumerous ways to waste time during your first year of Ph.D.</p>
 <ul>
 <li>How would I produce very beautiful looking plots?</li>
@@ -350,21 +351,21 @@ window.Quarto = {
 <li>it would be even great that there are already presets for different standard journals</li>
 <li>renders mathematical formulas well</li>
 </ol>
-<section id="scienceplots-will-save-your-day" class="level2">
-<h2 class="anchored" data-anchor-id="scienceplots-will-save-your-day">Scienceplots will save your day</h2>
+<section id="scienceplots-will-save-your-day" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="scienceplots-will-save-your-day"><span class="header-section-number">2.1</span> Scienceplots will save your day</h2>
 <p>There is a package in both <code>conda-forge</code> as well as <code>pip</code> repositories called <code>scienceplots</code>. And it solved all of my desires and it will also solve yours too. It basically contains global style settings for matplotlib library so one kind of presets for many standard journals. It also has color-blind friendly palettes. All the functions of matplotlib can be used as it is. So just install and use it. I will go through it one by one through examples. But first let’s install it. There are 3 ways of doing it, do whatever suits you.</p>
 <ul>
 <li><em>conda</em></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> conda install conda-forge::scienceplots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">$</span> conda install conda-forge::scienceplots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><em>pip</em></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pip install scienceplots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">$</span> pip install scienceplots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><em>uv</em></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> uv add scienceplots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">$</span> uv add scienceplots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -379,24 +380,20 @@ Note
 </div>
 </div>
 <p>The last <code>python</code> example using matplotlib looked very unprofessional and without anything. Now we will take the same plot and use the scienceplots style backend and generate the plot and we will see how it makes pretty plots effortlessly.</p>
-<div id="59188706" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scienceplots</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.style.use([<span class="st">"science"</span>])</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.1</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>np.sin(x)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"x"</span>)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">import</span> scienceplots</span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-4"><a href="#cb6-4"></a>plt.style.use([<span class="st">"science"</span>])</span>
+<span id="cb6-5"><a href="#cb6-5"></a>x<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.1</span>)</span>
+<span id="cb6-6"><a href="#cb6-6"></a>y<span class="op">=</span>np.sin(x)</span>
+<span id="cb6-7"><a href="#cb6-7"></a>plt.plot(x,y)</span>
+<span id="cb6-8"><a href="#cb6-8"></a>plt.xlabel(<span class="st">"x"</span>)</span>
+<span id="cb6-9"><a href="#cb6-9"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
+<span id="cb6-10"><a href="#cb6-10"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="plotting-story_files/figure-html/cell-2-output-1.png" width="321" height="237" class="figure-img"></p>
+<p><img src="scipyplt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
 </figure>
-</div>
-</div>
 </div>
 <p>Hence one can see that it has <code>tex</code> fonts rendered within the plot by default “science” style.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -413,11 +410,20 @@ Warning
 </div>
 </div>
 <p>The amazing part about this package is that one does not need to think about fontfamily, fontsize, color-palletes etc. It kills a lot of time. And at the same time it is customizable and one can change components what they do not like. The next chapter will discuss about the detail of the <code>scienceplots</code> package and other styles. Once you are happy with the plot, export it into a <code>pdf</code> file by the following syntax.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"filename.pdf"</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>plt.savefig(<span class="st">"filename.pdf"</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>bbox_inches='tight'</code> keeps the whitespaces to be minimum. Enjoy your first plot already ready to put in your presentation, papers, notes, and wherever you want.</p>
-
-
 </section>
+</section>
+<section id="get-your-hands-dirty" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Get your hands dirty</h1>
+<p>Here is a strong example to show how the academic plots might look like.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="main-image.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -828,7 +834,7 @@ Warning
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2025</p>
+<p><span class="math inline">\(\textcopyright\)</span> Raunak Farhaz | Berlin 2026</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
