@@ -10,7 +10,7 @@
 <atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 09 Mar 2026 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 16 Mar 2026 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Scientific Plotting</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -303,7 +303,7 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
  ]]></description>
   <category>the-big-book</category>
   <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
-  <pubDate>Mon, 09 Mar 2026 23:00:00 GMT</pubDate>
+  <pubDate>Mon, 16 Mar 2026 23:00:00 GMT</pubDate>
   <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>

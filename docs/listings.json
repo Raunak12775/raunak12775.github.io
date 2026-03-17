@@ -1,10 +1,15 @@
 [
   {
-    "listing": "/resources/personal.html",
+    "listing": "/resources/blog.html",
     "items": [
-      "/resources/mynotes/git.html",
-      "/resources/mynotes/madness-install.html",
-      "/resources/mynotes/ssh.html"
+      "/resources/posts/20260313/20260313.html",
+      "/resources/posts/pdfInTyp/pdf-in-typst.html",
+      "/resources/posts/ukraineEU/ukraine-eu.html",
+      "/resources/posts/accessEdu/access-education.html",
+      "/resources/posts/flashback_2024/flashback.html",
+      "/resources/posts/harmony/harmony.html",
+      "/resources/posts/greece-trip/greece.html",
+      "/resources/posts/doi-murgi/yoghurt-chicken.html"
     ]
   },
   {
@@ -17,15 +22,11 @@
     ]
   },
   {
-    "listing": "/resources/blog.html",
+    "listing": "/resources/personal.html",
     "items": [
-      "/resources/posts/pdfInTyp/pdf-in-typst.html",
-      "/resources/posts/ukraineEU/ukraine-eu.html",
-      "/resources/posts/accessEdu/access-education.html",
-      "/resources/posts/flashback_2024/flashback.html",
-      "/resources/posts/harmony/harmony.html",
-      "/resources/posts/greece-trip/greece.html",
-      "/resources/posts/doi-murgi/yoghurt-chicken.html"
+      "/resources/mynotes/git.html",
+      "/resources/mynotes/madness-install.html",
+      "/resources/mynotes/ssh.html"
     ]
   }
 ]

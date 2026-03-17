@@ -15,7 +15,7 @@ about:
         - icon: bluesky
           href: https://bsky.app/profile/raunakfarhaz.bsky.social
         - icon: twitter-x
-          href: https://twitter.com/Farhazraunak
+          href: https://twitter.com/Farhazraunak 
 toc: false
 ---
 
