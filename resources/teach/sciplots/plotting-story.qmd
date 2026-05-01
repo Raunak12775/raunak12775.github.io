@@ -3,7 +3,7 @@ title: "Scientific Plotting"
 subtitle: Learning how to plot for publication from Day 1 of research 
 description: ""
 date: today
-image: "./main-image.svg"
+image: "./sincos.png"
 categories: [the-big-book]
 toc: true
 toc-depth: 2
@@ -170,6 +170,7 @@ The `bbox_inches='tight'` keeps the whitespaces to be minimum. Enjoy your first 
 
 # Get your hands dirty
 
-Here is a strong example to show how the academic plots might look like.
+Here is an example to show what we will like to achieve as our plot outputs for our amazing paper that we will like to publish.
 
-![](main-image.svg){fig-align="center" width="600"}
+![Caption : The first 5 legendre polynomials in the domain of $[0,1]$](main-image.svg){fig-align="center" width="600"}
+

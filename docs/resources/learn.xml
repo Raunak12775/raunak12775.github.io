@@ -10,7 +10,7 @@
 <atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 16 Mar 2026 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 01 May 2026 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Scientific Plotting</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -290,10 +290,11 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
 </section>
 <section id="get-your-hands-dirty" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Get your hands dirty</h1>
-<p>Here is a strong example to show how the academic plots might look like.</p>
+<p>Here is an example to show what we will like to achieve as our plot outputs for our amazing paper that we will like to publish.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" class="img-fluid figure-img" width="600"></p>
+<figcaption>Caption : The first 5 legendre polynomials in the domain of <img src="https://latex.codecogs.com/png.latex?%5B0,1%5D"></figcaption>
 </figure>
 </div>
 
@@ -303,8 +304,8 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
  ]]></description>
   <category>the-big-book</category>
   <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
-  <pubDate>Mon, 16 Mar 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" medium="image" type="image/svg+xml"/>
+  <pubDate>Fri, 01 May 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/sincos.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Perpendicular Paramagnetic Bonding Mechanism</title>
@@ -316,12 +317,9 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
 <p>Page Under Construction</p>
 
 
-</section>
 
  ]]></description>
   <category>greenpaper</category>
@@ -339,12 +337,9 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>This is about teaching particle in a box. I would like to emphasize that</p>
+<p>Page under construction</p>
 
 
-</section>
 
  ]]></description>
   <category>brownpaper</category>
@@ -362,12 +357,9 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
 <p>Page Under Construction</p>
 
 
-</section>
 
  ]]></description>
   <category>bluepaper</category>

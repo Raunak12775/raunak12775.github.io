@@ -2,11 +2,9 @@
 #let bear-brownie = rgb("#73593A")
 #let matcha-bright = rgb("#0c7e29")
 
-#let sans-font = "TeX Gyre Heros"
-#let serif-font = "TeX Gyre Termes"
+#let sans-font="TeX Gyre Heros"
+#let serif-font="Libertinus Serif"
 #let mono-font = "Intel One Mono"
-#let body-size = 11pt
-#let heading-size = 14pt
 
 #let paper-colors = (
   bluepaper : azur-blue,
@@ -26,57 +24,36 @@
   // title block banner
   // Configure the page.
   let root-color = paper-colors.at(paper-type)
-  let lighten-percentage = 95%
-  set page(
-    paper: "a4",
-    margin: (x: 3cm, y: 2cm),
-    fill: root-color.lighten(lighten-percentage),
-    background: context if (
-      here().page() == 1
-    ) [
-      #place(top, rect(
-        fill: root-color,
-        height: 6cm,
-        width: 100%,
-      ))
-    ],
-    footer: context [
-      #set text(size: 8pt, font: sans-font)
+  set page(paper: "a4", margin: (x: 1.5cm, y: 1cm), fill: root-color.lighten(95%),
+footer: context [
+      #set text(size: 9pt, font: sans-font)
       #counter(page).display("1/1", both: true)
-    ],
-  )
+    ]
+)
+align(center)[
+#box(
+  width: 110%,
+  radius: 1em,
+  inset: 32pt,
+  fill: root-color
+)[
+#align(left, text(16pt, fill: white, weight: "bold", font: sans-font)[#title])
+#align(left, text(12pt, fill: white, weight: "bold", font: sans-font)[#subtitle])
+#v(1em)
+#align(right, text(11pt, fill: white, weight: "bold",font: sans-font)[revised on  #datetime.today().display() | curated by Raunak Farhaz])
+]
+]
 
-  grid(
-    columns: (1.78fr, 1fr),
-    [
-      #text(size: heading-size, font: sans-font, fill: root-color.lighten(lighten-percentage))[#title]
-
-      #text(size: body-size, font: sans-font, fill: root-color.lighten(lighten-percentage))[#emph(subtitle)]
-    ],
-    [
-      #text(
-        size: body-size,
-        font: sans-font,
-        fill: root-color.lighten(lighten-percentage),
-      )[*Raunak Farhaz* \ #text(9pt, font: mono-font)[#datetime.today().display()] \ #link("mailto:farhazraunak@proton.me")]
-    ],
-  )
-
-
-  // Configure equation numbering and spacing.
-  set math.equation(numbering: "(1)")
-  show math.equation: set block(spacing: 0.65em)
+v(2em)
+// Configure equation numbering and spacing.
+set math.equation(numbering: "(1)")
+show math.equation: set block(spacing: 0.65em)
 
   // Configure headings.
-  set heading(numbering: "I.A.1.")
-  show heading: set text(font: sans-font)
-
-  // set body properties.
-  v(4cm)
-  set text(body-size, font: serif-font)
-  set par(justify: true, spacing: 0.55cm, leading: 0.35cm, first-line-indent: (amount: 0.75cm, all: true))
-
-
+set heading(numbering: "I.A.1.")
+show heading: set text(font: sans-font, fill: root-color)
+set text(11pt, font: serif-font, fill: root-color.darken(30%))
+set par(justify: true, spacing: 0.55cm, leading: 0.35cm, first-line-indent: (amount: 0.75cm, all: true))
   // Display the paper's contents.
   body
 }
