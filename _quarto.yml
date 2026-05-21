@@ -15,8 +15,6 @@ website:
       - icon: ""
       - href: index.qmd
     right:
-      - text: "CV"
-        href: "./data/cv.pdf"
       - text: "Research"
         href: resources/research.qmd
       - text: "Publications"
@@ -25,9 +23,6 @@ website:
         href: resources/learn.qmd
       - text: "Blog"
         href: resources/blog.qmd
-      - text: "Internal"
-        href: resources/personal.qmd
-
 format:
   html:
     theme:

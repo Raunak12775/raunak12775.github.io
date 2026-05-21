@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/resources/learn.html",
+    "items": [
+      "/resources/teach/research101/main.html",
+      "/resources/teach/sciplots/plotting-story.html",
+      "/resources/teach/paramagneticBonding/lange.html",
+      "/resources/teach/particleInABox/particle-box.html",
+      "/resources/teach/vectorMatrices/vectors.html"
+    ]
+  },
+  {
     "listing": "/resources/blog.html",
     "items": [
       "/resources/posts/ukraineEU/ukraine-eu.html",
@@ -8,23 +18,6 @@
       "/resources/posts/harmony/harmony.html",
       "/resources/posts/greece-trip/greece.html",
       "/resources/posts/doi-murgi/yoghurt-chicken.html"
-    ]
-  },
-  {
-    "listing": "/resources/learn.html",
-    "items": [
-      "/resources/teach/sciplots/plotting-story.html",
-      "/resources/teach/paramagneticBonding/lange.html",
-      "/resources/teach/particleInABox/particle-box.html",
-      "/resources/teach/vectorMatrices/vectors.html"
-    ]
-  },
-  {
-    "listing": "/resources/personal.html",
-    "items": [
-      "/resources/mynotes/git.html",
-      "/resources/mynotes/madness-install.html",
-      "/resources/mynotes/ssh.html"
     ]
   }
 ]

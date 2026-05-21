@@ -1,5 +1,5 @@
 ---
-title: "Learning Resources"
+title: ""
 listing: 
     contents: teach/**/*.qmd
     sort: "date desc"
@@ -14,17 +14,21 @@ title-block-banner: false
 toc: false
 ---
 
+
 ## How to navigate?
 
-### Big Book
+|**Type**|**Details**|
+|:-------|:----------|
+|bigbook|a dynamic book where I add stuffs in a continuous manner and not in discrete articles.|
+|brownpaper|tutorials or lecture notes on computational/theoretical chemistry and related topics|
+|greenpaper|modern day research and my paper reading thoughts (**Opinions Warning!**)|
+|bluepaper|notes on maths and physics|
 
-The category **big-book** is like a dynamic book where I add stuffs in a continuous manner, and not in discrete articles.  
 
-### Brownpapers, Greenpapers and Bluepapers
+::: {.callout-note}
+All articles are downloadable in `.pdf` file format except bigbook and whitepaper. Please find the clickable <span class="badge bg-transparent text-dark border border-dark">Typst</span> button on the top-right side of each article.
+:::
 
-All the article type posts are categorised into 3 groups - brownpaper, whitepaper and bluepaper. Every article is in `PDF` file format. The explanation of different kinds of paper are as follows
-
-1. **brownpapers** - these are tutorials or lecture notes for computational/theoretical chemistry and related topics
-2. **greenpapers** - these would be mainly related to modern day research - basically my paper reading thoughts (**Opinions Warning!**)
-3. **bluepapers** - these are notes from topics that are applied in computational chemistry
-
+::: {.callout-important title="Disclaimer"}
+[**The articles are solely written by me without any usage of large language models (LLM).**]{style="color:red;"}
+:::

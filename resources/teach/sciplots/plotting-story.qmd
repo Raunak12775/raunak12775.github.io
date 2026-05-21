@@ -3,8 +3,8 @@ title: "Scientific Plotting"
 subtitle: Learning how to plot for publication from Day 1 of research 
 description: ""
 date: today
-image: "./sincos.png"
-categories: [the-big-book]
+image: "cover.jpg"
+categories: [bigbook]
 toc: true
 toc-depth: 2
 number-sections: true
@@ -174,3 +174,4 @@ Here is an example to show what we will like to achieve as our plot outputs for 
 
 ![Caption : The first 5 legendre polynomials in the domain of $[0,1]$](main-image.svg){fig-align="center" width="600"}
 
+So where to go from here

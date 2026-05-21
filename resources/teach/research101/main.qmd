@@ -1,0 +1,230 @@
+---
+title: "CompChem Tools 101"
+subtitle: Essential things to learn if you are a computational chemistry PhD student 
+description: ""
+date: last-modified
+image: "cover.jpg"
+categories: [bigbook]
+toc: true
+toc-depth: 2
+number-sections: true
+---
+
+Doing a PhD is a gigantic task and especially when you are coming from Chemistry Honors/Majors background to computational chemistry. Many Indian universities except the IITs and IISERs do not provide necessary background in computer related tech stuffs which is daily required once you join the PhD. Here I am outlining some of the things which I needed to learn for surviving the PhD days. 
+
+::: {.callout-note}
+The following tutorial is made keeping in mind that the user is using `Linux`as their **primary operating system**.
+:::
+
+
+# Git
+
+One of the major things to first learn is using a version control. This can be thought as a time machine for your codes and text files or more generally non binary source files.
+
+::: callout-note
+**What is a non binary file?**
+
+A non binary file is a simple text file and not any application like `.exe` or `.docx` or `.pptx` etc.
+:::
+
+Git is the best tool for version control until today and it is used as an industry standard. There are websites called [Github](https://github.com) or [Gitlab](https://gitlab.com) or [Codeberg](https://codeberg.org) which are remote or online instances of the git program. So, git is an local tool. It can be installed through any linux package manager.
+
+```bash
+sudo apt install git
+```
+## Configure Git
+
+Once installed, one has to configure the git in their own machines. To check whether git is installed or not we shall test it with following command:
+
+```bash
+git --version
+```
+
+This would give you some number as an output, if not then install git in your machine.
+
+*Configure your git config file:*
+
+```bash
+git config --global user.name "Raunak Farhaz"
+git config --global user.email "rubbish@gmail.com"
+git config --global core.editor nano
+git config --global init.defaultBranch main
+```
+
+And now to check your git config type
+
+```bash
+git config --list
+```
+
+## Initialize a git Branch
+
+Want to create a git repository?
+
+```bash
+git init -b main
+```
+
+> Always check the status of your git repository in every actions
+
+```bash
+git status
+```
+
+## Adding stuff for git to track
+
+There are following selection of commands that one can use for adding files to be tracked by git. 
+
+```bash
+git add [filename]
+git add .
+```
+
+The second command will add everything in the folder.
+
+::: {.callout-note}
+if you added something before and then added to `.gitignore` file to ignore, then it would still be tracked. Now in this kind of scenario one should remove the gitcache completely and add everything without that particular file to get a clean untracking.
+:::
+
+## Committing stuff
+
+Once added for tracking you have to commit to create a certain timestamp, use the
+following command
+
+```bash
+git commit -m "creative commit message"
+```
+
+If you use the `git commit` command without the `-m` flag you would be eventually redirected to the git-default text editor to input a commit message.
+
+> In that case even if you keep it empty and save the file it will be an empty commit message for that timestamp.
+
+## Checking the commits
+
+Once committed you need to see the timestamps, every timestamp has a unique hash-code. 
+
+::: {.callout-note}
+first 7 characters of hash is enough for uniqueness
+:::
+
+The command for checking the timestamps is `git log`, the following commands can be useful.
+
+```bash
+git log --stat
+git log --oneline
+```
+
+The first one gives long info and the other one is self-explanatory.
+
+To check the timestamps one can create an alias called `git graph` which I use often for my 
+machine. 
+
+::: {.callout-tip}
+## Creating an Alias
+`git config --global alias.creative "creative command"`
+:::
+
+To create the `git graph` alias in your machine type the following:
+
+```bash
+git config --global alias.graph "log --all --graph --decorate --oneline"
+```
+
+::: {.callout-caution}
+**What not to track?**\
+Try to avoid tracking binary files, for eg. `.jpeg`, `.png`, `.docx` etc. Text files are always preferable.
+
+*Example* : In $\LaTeX$ files, `.tex` has to be version controlled only but not the `.pdf` files.
+:::   
+
+
+## Branching git repositories
+
+Want to `git branch` a repo that you like to edit but do not want to mess with the original? Use the branching commands
+
+```bash
+$ git branch branch_name main
+$ git branch branch_name master
+```
+
+::: {.callout-note}
+The name `master` to the original branch is an old convention, the modern one is `main`. 
+:::
+
+
+## List all the branches
+
+```bash
+git branch
+```
+
+## Switching branches
+
+```bash
+git switch branch_name
+```
+
+## Merging branches
+
+```bash
+git merge branch_name
+```
+
+It branches with the branch node it was branched from.
+
+## Deleting branches
+
+```bash
+git branch -d branch_name
+```
+
+::: {.callout-caution}
+`-D` flag instead of `-d` deletes unmerged branches
+:::
+
+::: {.callout-note}
+If you remove the `.git` folder, you lose everything tracked in your local machine.
+:::
+
+# Secure Shell Protocol (SSH)
+
+The calculations in computational chemistry is not something that can be done in laptops. Yes, the fastness of the calculations have increased to much greater extent but still for larger molecules one needs to use high performance compute clusters or known as HPC. These machines do not have a **graphical user interface** (GUI) which means it cannot be used with a mouse pointer and click to function. Hence, one needs to use what is called **command line interface** (CLI) or using a terminal. The HPC has to be connected from a regular laptop or desktop in your office. The connection protocol is usually done via **secure shell protocol** or **ssh**. A usual ssh command is
+
+```bash
+ssh username@hostname.domain
+```
+
+|**keywords**|**meaning**|
+|:-----------|:----------|
+|username|username for the account in HPC|
+|hostname|hostname of the node of HPC can be a single name or an IP address|
+|domain|domain of the network connected to the HPC usually something `.com` or `.org`|
+
+After entering the command one has to enter their password associated to their accounts to access the remote server. To avoid this multiple password pressing one can use the following scheme.
+
+## Passwordless ssh login
+
+First open terminal and check whether you have a ssh key in your local laptop/desktop by checking the existence of `~/.ssh` folder. And then if not then follow the steps:
+
+```bash
+ssh-keygen -t rsa
+```
+this will generate two files `id_pub` and `id_pub.rsa`
+
+::: {.callout-note}
+If you want the passphrase to be empty press two times {{< kbd Enter >}}. It is definitely **recommended** to give a password to secure the ssh key in your own machine.
+:::
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub username@hostname
+```
+
+type the password for the hostmachine login and probably it should be done. Last but least check that the contents of id_pub.rsa has copied the same content in the ~/.ssh/authorized_keys file in your remote host.
+
+## Github or Gitlab ssh keys
+
+For passwordless git push and pulls one can `copy + paste` the contents of `id_pub.rsa` from `~/.ssh/` directory into the github or gitlab authorization sections to push and pull without password
+
+::: {.callout-tip}
+`ssh` cloning is much better and more stable than `http` 
+:::

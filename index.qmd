@@ -15,12 +15,28 @@ about:
         - icon: bluesky
           href: https://bsky.app/profile/raunakfarhaz.bsky.social
         - icon: twitter-x
-          href: https://twitter.com/Farhazraunak 
+          href: https://twitter.com/Farhazraunak
+        - icon: book
+          text: Google Scholar  
+          href: https://scholar.google.com/citations?user=cqfLXXQAAAAJ&hl=en&oi=ao
+        - icon: person-badge
+          text: ORCiD  
+          href: https://orcid.org/0009-0002-3513-3287
 toc: false
 ---
 
-Doing my Ph.D. in Theoretical Chemistry at [**Humboldt-Universität zu Berlin**](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff). My research interest lies in the understanding of chemical bonding and its philosophical aspects. You can find **pedagogic articles/essays** in [Learn](resources/learn.qmd).
+## About me
 
-For collaborations send a "Hi" at my [email](mailto:farhazraunak@proton.me).
+I did my Bachelors and Masters (_specialization in Physical Chemistry_) at **Jadavpur University, Kolkata, India**. I obtained my Ph.D. (**Doctor rerum naturalium**) degree with [PD Dr. Florian A. Bischoff](https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry/team/ag-bischoff/team/florian-bischoff) in Theoretical Chemistry at **Humboldt-Universität zu Berlin, Berlin, Germany**. For complete career information please have a look at my
+
+<a href="data/cv-academic.pdf" class="badge bg-danger text-decoration-none"><i class="bi bi-file-pdf"></i>&nbsp;Academic CV</a>
+or <a href="data/cv-technical.pdf" class="badge bg-primary text-decoration-none"><i class="bi bi-file-pdf"></i>&nbsp;Technical CV</a>
+
+## My interests
+
+My research interest lies in numerical method development for quantum chemistry, chemical bonding and its philosophical aspects. I also love to write and hence you might find my **pedagogic articles/essays** in the <a href="resources/learn.qmd" class="badge rounded-pill bg-info text-dark text-decoration-none">Learn</a> section interesting. I love computers and an ardent user of linux from a very young age. I can interact with the computer in following languages  <span class="badge bg-transparent text-dark border border-dark"><img src="https://cdn.simpleicons.org/python/3776AB" width="13" style="vertical-align:-2px;">&nbsp;Python</span> <span class="badge bg-transparent text-dark border border-dark"><img src="https://cdn.simpleicons.org/cplusplus/00599C" width="13" style="vertical-align:-2px;">&nbsp;C++</span> <span class="badge bg-transparent text-dark border border-dark"><img src="https://cdn.simpleicons.org/julia/9558B2" width="13" style="vertical-align:-2px;">&nbsp;Julia</span> <span class="badge bg-transparent text-dark border border-dark"><img src="https://cdn.simpleicons.org/wolframmathematica/DD1100" width="13" style="vertical-align:-2px;">&nbsp;Mathematica</span> <span class="badge bg-transparent text-dark border border-dark"><img src="https://cdn.simpleicons.org/fortran/734F96" width="13" style="vertical-align:-2px;">&nbsp;Fortran</span>
 
 
+<br>
+
+<a href="mailto:farhazraunak@proton.me" class="badge bg-success text-decoration-none"><i class="bi bi-envelope"></i>&nbsp;Email</a> *me for collaborations*. 

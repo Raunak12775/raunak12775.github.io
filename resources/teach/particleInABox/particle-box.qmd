@@ -3,7 +3,7 @@ title: Particle in a Box
 subtitle: "A computational introduction to particle in a 1-3D box"
 paper-type: "brownpaper"
 date: "01.11.2025"
-image: "./card-image.png"
+image: "cover.png"
 categories: [brownpaper]
 toc: true
 toc-depth: 3

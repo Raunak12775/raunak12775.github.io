@@ -3,7 +3,7 @@ title: Vectors and Matrices
 subtitle: "Understanding vectors and matrices computationally"
 paper-type: "bluepaper"
 date: "01.11.2025"
-image: "./card-image.png"
+image: "cover.jpg"
 categories: [bluepaper]
 toc: true
 toc-depth: 3

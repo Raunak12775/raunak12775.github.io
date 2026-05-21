@@ -10,7 +10,385 @@
 <atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 01 May 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 21 May 2026 19:32:24 GMT</lastBuildDate>
+<item>
+  <title>CompChem Tools 101</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/research101/main.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Doing a PhD is a gigantic task and especially when you are coming from Chemistry Honors/Majors background to computational chemistry. Many Indian universities except the IITs and IISERs do not provide necessary background in computer related tech stuffs which is daily required once you join the PhD. Here I am outlining some of the things which I needed to learn for surviving the PhD days.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following tutorial is made keeping in mind that the user is using <code>Linux</code>as their <strong>primary operating system</strong>.</p>
+</div>
+</div>
+<section id="git" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Git</h1>
+<p>One of the major things to first learn is using a version control. This can be thought as a time machine for your codes and text files or more generally non binary source files.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>What is a non binary file?</strong></p>
+<p>A non binary file is a simple text file and not any application like <code>.exe</code> or <code>.docx</code> or <code>.pptx</code> etc.</p>
+</div>
+</div>
+<p>Git is the best tool for version control until today and it is used as an industry standard. There are websites called <a href="https://github.com">Github</a> or <a href="https://gitlab.com">Gitlab</a> or <a href="https://codeberg.org">Codeberg</a> which are remote or online instances of the git program. So, git is an local tool. It can be installed through any linux package manager.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt install git</span></code></pre></div></div>
+<section id="configure-git" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="configure-git"><span class="header-section-number">1.1</span> Configure Git</h2>
+<p>Once installed, one has to configure the git in their own machines. To check whether git is installed or not we shall test it with following command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--version</span></span></code></pre></div></div>
+<p>This would give you some number as an output, if not then install git in your machine.</p>
+<p><em>Configure your git config file:</em></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> config <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--global</span> user.name <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Raunak Farhaz"</span></span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> config <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--global</span> user.email <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"rubbish@gmail.com"</span></span>
+<span id="cb3-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> config <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--global</span> core.editor nano</span>
+<span id="cb3-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> config <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--global</span> init.defaultBranch main</span></code></pre></div></div>
+<p>And now to check your git config type</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> config <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--list</span></span></code></pre></div></div>
+</section>
+<section id="initialize-a-git-branch" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="initialize-a-git-branch"><span class="header-section-number">1.2</span> Initialize a git Branch</h2>
+<p>Want to create a git repository?</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> init <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-b</span> main</span></code></pre></div></div>
+<blockquote class="blockquote">
+<p>Always check the status of your git repository in every actions</p>
+</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> status</span></code></pre></div></div>
+</section>
+<section id="adding-stuff-for-git-to-track" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="adding-stuff-for-git-to-track"><span class="header-section-number">1.3</span> Adding stuff for git to track</h2>
+<p>There are following selection of commands that one can use for adding files to be tracked by git.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> add <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">filename</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">]</span></span>
+<span id="cb7-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> add .</span></code></pre></div></div>
+<p>The second command will add everything in the folder.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>if you added something before and then added to <code>.gitignore</code> file to ignore, then it would still be tracked. Now in this kind of scenario one should remove the gitcache completely and add everything without that particular file to get a clean untracking.</p>
+</div>
+</div>
+</section>
+<section id="committing-stuff" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="committing-stuff"><span class="header-section-number">1.4</span> Committing stuff</h2>
+<p>Once added for tracking you have to commit to create a certain timestamp, use the following command</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> commit <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"creative commit message"</span></span></code></pre></div></div>
+<p>If you use the <code>git commit</code> command without the <code>-m</code> flag you would be eventually redirected to the git-default text editor to input a commit message.</p>
+<blockquote class="blockquote">
+<p>In that case even if you keep it empty and save the file it will be an empty commit message for that timestamp.</p>
+</blockquote>
+</section>
+<section id="checking-the-commits" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="checking-the-commits"><span class="header-section-number">1.5</span> Checking the commits</h2>
+<p>Once committed you need to see the timestamps, every timestamp has a unique hash-code.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>first 7 characters of hash is enough for uniqueness</p>
+</div>
+</div>
+<p>The command for checking the timestamps is <code>git log</code>, the following commands can be useful.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> log <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--stat</span></span>
+<span id="cb9-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> log <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--oneline</span></span></code></pre></div></div>
+<p>The first one gives long info and the other one is self-explanatory.</p>
+<p>To check the timestamps one can create an alias called <code>git graph</code> which I use often for my machine.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Creating an Alias
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>git config --global alias.creative "creative command"</code></p>
+</div>
+</div>
+<p>To create the <code>git graph</code> alias in your machine type the following:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> config <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--global</span> alias.graph <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"log --all --graph --decorate --oneline"</span></span></code></pre></div></div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>What not to track?</strong><br>
+Try to avoid tracking binary files, for eg. <code>.jpeg</code>, <code>.png</code>, <code>.docx</code> etc. Text files are always preferable.</p>
+<p><em>Example</em> : In <img src="https://latex.codecogs.com/png.latex?%5CLaTeX"> files, <code>.tex</code> has to be version controlled only but not the <code>.pdf</code> files.</p>
+</div>
+</div>
+</section>
+<section id="branching-git-repositories" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="branching-git-repositories"><span class="header-section-number">1.6</span> Branching git repositories</h2>
+<p>Want to <code>git branch</code> a repo that you like to edit but do not want to mess with the original? Use the branching commands</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> git branch branch_name main</span>
+<span id="cb11-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> git branch branch_name master</span></code></pre></div></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The name <code>master</code> to the original branch is an old convention, the modern one is <code>main</code>.</p>
+</div>
+</div>
+</section>
+<section id="list-all-the-branches" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="list-all-the-branches"><span class="header-section-number">1.7</span> List all the branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> branch</span></code></pre></div></div>
+</section>
+<section id="switching-branches" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="switching-branches"><span class="header-section-number">1.8</span> Switching branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> switch branch_name</span></code></pre></div></div>
+</section>
+<section id="merging-branches" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="merging-branches"><span class="header-section-number">1.9</span> Merging branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> merge branch_name</span></code></pre></div></div>
+<p>It branches with the branch node it was branched from.</p>
+</section>
+<section id="deleting-branches" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="deleting-branches"><span class="header-section-number">1.10</span> Deleting branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> branch <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-d</span> branch_name</span></code></pre></div></div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>-D</code> flag instead of <code>-d</code> deletes unmerged branches</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you remove the <code>.git</code> folder, you lose everything tracked in your local machine.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="secure-shell-protocol-ssh" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Secure Shell Protocol (SSH)</h1>
+<p>The calculations in computational chemistry is not something that can be done in laptops. Yes, the fastness of the calculations have increased to much greater extent but still for larger molecules one needs to use high performance compute clusters or known as HPC. These machines do not have a <strong>graphical user interface</strong> (GUI) which means it cannot be used with a mouse pointer and click to function. Hence, one needs to use what is called <strong>command line interface</strong> (CLI) or using a terminal. The HPC has to be connected from a regular laptop or desktop in your office. The connection protocol is usually done via <strong>secure shell protocol</strong> or <strong>ssh</strong>. A usual ssh command is</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ssh</span> username@hostname.domain</span></code></pre></div></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>keywords</strong></th>
+<th style="text-align: left;"><strong>meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">username for the account in HPC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hostname</td>
+<td style="text-align: left;">hostname of the node of HPC can be a single name or an IP address</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">domain</td>
+<td style="text-align: left;">domain of the network connected to the HPC usually something <code>.com</code> or <code>.org</code></td>
+</tr>
+</tbody>
+</table>
+<p>After entering the command one has to enter their password associated to their accounts to access the remote server. To avoid this multiple password pressing one can use the following scheme.</p>
+<section id="passwordless-ssh-login" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="passwordless-ssh-login"><span class="header-section-number">2.1</span> Passwordless ssh login</h2>
+<p>First open terminal and check whether you have a ssh key in your local laptop/desktop by checking the existence of <code>~/.ssh</code> folder. And then if not then follow the steps:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ssh-keygen</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-t</span> rsa</span></code></pre></div></div>
+<p>this will generate two files <code>id_pub</code> and <code>id_pub.rsa</code></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you want the passphrase to be empty press two times <span class="visually-hidden">Enter</span>. It is definitely <strong>recommended</strong> to give a password to secure the ssh key in your own machine.</p>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">ssh-copy-id</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-i</span> ~/.ssh/id_rsa.pub username@hostname</span></code></pre></div></div>
+<p>type the password for the hostmachine login and probably it should be done. Last but least check that the contents of id_pub.rsa has copied the same content in the ~/.ssh/authorized_keys file in your remote host.</p>
+</section>
+<section id="github-or-gitlab-ssh-keys" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="github-or-gitlab-ssh-keys"><span class="header-section-number">2.2</span> Github or Gitlab ssh keys</h2>
+<p>For passwordless git push and pulls one can <code>copy + paste</code> the contents of <code>id_pub.rsa</code> from <code>~/.ssh/</code> directory into the github or gitlab authorization sections to push and pull without password</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>ssh</code> cloning is much better and more stable than <code>http</code></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>bigbook</category>
+  <guid>https://raunakfarhaz.com/resources/teach/research101/main.html</guid>
+  <pubDate>Thu, 21 May 2026 19:32:24 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/research101/cover.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Scientific Plotting</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -297,15 +675,16 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
 <figcaption>Caption : The first 5 legendre polynomials in the domain of <img src="https://latex.codecogs.com/png.latex?%5B0,1%5D"></figcaption>
 </figure>
 </div>
+<p>So where to go from here</p>
 
 
 </section>
 
  ]]></description>
-  <category>the-big-book</category>
+  <category>bigbook</category>
   <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
-  <pubDate>Fri, 01 May 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/sincos.png" medium="image" type="image/png" height="81" width="144"/>
+  <pubDate>Wed, 20 May 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Perpendicular Paramagnetic Bonding Mechanism</title>
@@ -325,7 +704,7 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
   <category>greenpaper</category>
   <guid>https://raunakfarhaz.com/resources/teach/paramagneticBonding/lange.html</guid>
   <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/paramagneticBonding/card-image.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://raunakfarhaz.com/resources/teach/paramagneticBonding/cover.png" medium="image" type="image/png" height="113" width="144"/>
 </item>
 <item>
   <title>Particle in a Box</title>
@@ -345,7 +724,7 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
   <category>brownpaper</category>
   <guid>https://raunakfarhaz.com/resources/teach/particleInABox/particle-box.html</guid>
   <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/particleInABox/card-image.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://raunakfarhaz.com/resources/teach/particleInABox/cover.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
   <title>Vectors and Matrices</title>
@@ -365,7 +744,7 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
   <category>bluepaper</category>
   <guid>https://raunakfarhaz.com/resources/teach/vectorMatrices/vectors.html</guid>
   <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/vectorMatrices/card-image.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://raunakfarhaz.com/resources/teach/vectorMatrices/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

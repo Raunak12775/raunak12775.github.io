@@ -3,7 +3,7 @@ title: Perpendicular Paramagnetic Bonding Mechanism
 subtitle: "A third type of distinct bonding in presence of strong magnetic fields"
 paper-type: "greenpaper"
 date: "01.11.2025"
-image: "./card-image.png"
+image: "cover.png"
 categories: [greenpaper]
 toc: true
 toc-depth: 3

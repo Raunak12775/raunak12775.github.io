@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Raunak Farhaz">
+<meta name="dcterms.date" content="2026-05-21">
 
-<title>Notes on Git Version Control – Raunak Farhaz</title>
+<title>CompChem Tools 101 – Raunak Farhaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,24 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../../images/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-5a65f6d6a6cb2564d1aec56f7fed0acc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-39f2d56453089a4e50486a07f4ddd0e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../../images/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-5a65f6d6a6cb2564d1aec56f7fed0acc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-39f2d56453089a4e50486a07f4ddd0e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="../../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -91,13 +129,13 @@ window.Quarto = {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/favicon.svg" alt="" class="navbar-logo light-content">
-    <img src="../../images/favicon.svg" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../images/favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../../../images/favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -106,34 +144,26 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text"><strong>Raunak Farhaz</strong></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../.././data/cv.pdf"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resources/research.html"> 
+    <a class="nav-link" href="../../../resources/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resources/pubs.html"> 
+    <a class="nav-link" href="../../../resources/pubs.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resources/learn.html"> 
+    <a class="nav-link" href="../../../resources/learn.html"> 
 <span class="menu-text">Learn</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resources/blog.html"> 
+    <a class="nav-link" href="../../../resources/blog.html"> 
 <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resources/personal.html"> 
-<span class="menu-text">Internal</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -143,81 +173,134 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">CompChem Tools 101</h1>
+            <p class="subtitle lead">Essential things to learn if you are a computational chemistry PhD student</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">bigbook</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Raunak Farhaz </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 21, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting Started</a></li>
-  <li><a href="#initialize-a-git-branch" id="toc-initialize-a-git-branch" class="nav-link" data-scroll-target="#initialize-a-git-branch">Initialize a git Branch</a></li>
-  <li><a href="#adding-stuff-for-git-to-track" id="toc-adding-stuff-for-git-to-track" class="nav-link" data-scroll-target="#adding-stuff-for-git-to-track">Adding stuff for git to track</a></li>
-  <li><a href="#committing-stuff" id="toc-committing-stuff" class="nav-link" data-scroll-target="#committing-stuff">Committing stuff</a></li>
-  <li><a href="#checking-the-commits" id="toc-checking-the-commits" class="nav-link" data-scroll-target="#checking-the-commits">Checking the commits</a></li>
-  <li><a href="#branching-git-repositories" id="toc-branching-git-repositories" class="nav-link" data-scroll-target="#branching-git-repositories">Branching git repositories</a></li>
+  <ul class="collapse">
+  <li><a href="#git" id="toc-git" class="nav-link active" data-scroll-target="#git"><span class="header-section-number">1</span> Git</a>
+  <ul class="collapse">
+  <li><a href="#configure-git" id="toc-configure-git" class="nav-link" data-scroll-target="#configure-git"><span class="header-section-number">1.1</span> Configure Git</a></li>
+  <li><a href="#initialize-a-git-branch" id="toc-initialize-a-git-branch" class="nav-link" data-scroll-target="#initialize-a-git-branch"><span class="header-section-number">1.2</span> Initialize a git Branch</a></li>
+  <li><a href="#adding-stuff-for-git-to-track" id="toc-adding-stuff-for-git-to-track" class="nav-link" data-scroll-target="#adding-stuff-for-git-to-track"><span class="header-section-number">1.3</span> Adding stuff for git to track</a></li>
+  <li><a href="#committing-stuff" id="toc-committing-stuff" class="nav-link" data-scroll-target="#committing-stuff"><span class="header-section-number">1.4</span> Committing stuff</a></li>
+  <li><a href="#checking-the-commits" id="toc-checking-the-commits" class="nav-link" data-scroll-target="#checking-the-commits"><span class="header-section-number">1.5</span> Checking the commits</a></li>
+  <li><a href="#branching-git-repositories" id="toc-branching-git-repositories" class="nav-link" data-scroll-target="#branching-git-repositories"><span class="header-section-number">1.6</span> Branching git repositories</a></li>
+  <li><a href="#list-all-the-branches" id="toc-list-all-the-branches" class="nav-link" data-scroll-target="#list-all-the-branches"><span class="header-section-number">1.7</span> List all the branches</a></li>
+  <li><a href="#switching-branches" id="toc-switching-branches" class="nav-link" data-scroll-target="#switching-branches"><span class="header-section-number">1.8</span> Switching branches</a></li>
+  <li><a href="#merging-branches" id="toc-merging-branches" class="nav-link" data-scroll-target="#merging-branches"><span class="header-section-number">1.9</span> Merging branches</a></li>
+  <li><a href="#deleting-branches" id="toc-deleting-branches" class="nav-link" data-scroll-target="#deleting-branches"><span class="header-section-number">1.10</span> Deleting branches</a></li>
+  </ul></li>
+  <li><a href="#secure-shell-protocol-ssh" id="toc-secure-shell-protocol-ssh" class="nav-link" data-scroll-target="#secure-shell-protocol-ssh"><span class="header-section-number">2</span> Secure Shell Protocol (SSH)</a>
+  <ul class="collapse">
+  <li><a href="#passwordless-ssh-login" id="toc-passwordless-ssh-login" class="nav-link" data-scroll-target="#passwordless-ssh-login"><span class="header-section-number">2.1</span> Passwordless ssh login</a></li>
+  <li><a href="#github-or-gitlab-ssh-keys" id="toc-github-or-gitlab-ssh-keys" class="nav-link" data-scroll-target="#github-or-gitlab-ssh-keys"><span class="header-section-number">2.2</span> Github or Gitlab ssh keys</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Notes on Git Version Control</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">computer</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Raunak Farhaz </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="getting-started" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started">Getting Started</h3>
-<p>To start with we have to configure the git in our own machines. To check whether git is installed or not we shall test it with following command:</p>
-<pre><code>$ git --version</code></pre>
+<p>Doing a PhD is a gigantic task and especially when you are coming from Chemistry Honors/Majors background to computational chemistry. Many Indian universities except the IITs and IISERs do not provide necessary background in computer related tech stuffs which is daily required once you join the PhD. Here I am outlining some of the things which I needed to learn for surviving the PhD days.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following tutorial is made keeping in mind that the user is using <code>Linux</code>as their <strong>primary operating system</strong>.</p>
+</div>
+</div>
+<section id="git" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Git</h1>
+<p>One of the major things to first learn is using a version control. This can be thought as a time machine for your codes and text files or more generally non binary source files.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>What is a non binary file?</strong></p>
+<p>A non binary file is a simple text file and not any application like <code>.exe</code> or <code>.docx</code> or <code>.pptx</code> etc.</p>
+</div>
+</div>
+<p>Git is the best tool for version control until today and it is used as an industry standard. There are websites called <a href="https://github.com">Github</a> or <a href="https://gitlab.com">Gitlab</a> or <a href="https://codeberg.org">Codeberg</a> which are remote or online instances of the git program. So, git is an local tool. It can be installed through any linux package manager.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">sudo</span> apt install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="configure-git" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="configure-git"><span class="header-section-number">1.1</span> Configure Git</h2>
+<p>Once installed, one has to configure the git in their own machines. To check whether git is installed or not we shall test it with following command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This would give you some number as an output, if not then install git in your machine.</p>
 <p><em>Configure your git config file:</em></p>
-<pre><code>$ git config --global user.name "Raunak Farhaz"
-$ git config --global user.email "rubbish@gmail.com"
-$ git config --global core.editor nano
-$ git config --global init.defaultBranch main</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Raunak Farhaz"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"rubbish@gmail.com"</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor nano</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>And now to check your git config type</p>
-<pre><code>$ git config --list</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">git</span> config <span class="at">--list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="initialize-a-git-branch" class="level3">
-<h3 class="anchored" data-anchor-id="initialize-a-git-branch">Initialize a git Branch</h3>
+<section id="initialize-a-git-branch" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="initialize-a-git-branch"><span class="header-section-number">1.2</span> Initialize a git Branch</h2>
 <p>Want to create a git repository?</p>
-<pre><code>$ git init -b main</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">git</span> init <span class="at">-b</span> main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote class="blockquote">
 <p>Always check the status of your git repository in every actions</p>
 </blockquote>
-<pre><code>$ git status</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="adding-stuff-for-git-to-track" class="level3">
-<h3 class="anchored" data-anchor-id="adding-stuff-for-git-to-track">Adding stuff for git to track</h3>
+<section id="adding-stuff-for-git-to-track" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="adding-stuff-for-git-to-track"><span class="header-section-number">1.3</span> Adding stuff for git to track</h2>
 <p>There are following selection of commands that one can use for adding files to be tracked by git.</p>
-<pre><code>$ git add [filename]
-$ git add .</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">git</span> add <span class="pp">[</span><span class="ss">filename</span><span class="pp">]</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">git</span> add .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The second command will add everything in the folder.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -233,17 +316,17 @@ Note
 </div>
 </div>
 </section>
-<section id="committing-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="committing-stuff">Committing stuff</h3>
+<section id="committing-stuff" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="committing-stuff"><span class="header-section-number">1.4</span> Committing stuff</h2>
 <p>Once added for tracking you have to commit to create a certain timestamp, use the following command</p>
-<pre><code>$ git commit -m "creative commit message"</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"creative commit message"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>If you use the <code>git commit</code> command without the <code>-m</code> flag you would be eventually redirected to the git-default text editor to input a commit message.</p>
 <blockquote class="blockquote">
 <p>In that case even if you keep it empty and save the file it will be an empty commit message for that timestamp.</p>
 </blockquote>
 </section>
-<section id="checking-the-commits" class="level3">
-<h3 class="anchored" data-anchor-id="checking-the-commits">Checking the commits</h3>
+<section id="checking-the-commits" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="checking-the-commits"><span class="header-section-number">1.5</span> Checking the commits</h2>
 <p>Once committed you need to see the timestamps, every timestamp has a unique hash-code.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -259,8 +342,8 @@ Note
 </div>
 </div>
 <p>The command for checking the timestamps is <code>git log</code>, the following commands can be useful.</p>
-<pre><code>$ git log --stat
-$ git log --oneline</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">git</span> log <span class="at">--stat</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The first one gives long info and the other one is self-explanatory.</p>
 <p>To check the timestamps one can create an alias called <code>git graph</code> which I use often for my machine.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -277,7 +360,7 @@ $ git log --oneline</code></pre>
 </div>
 </div>
 <p>To create the <code>git graph</code> alias in your machine type the following:</p>
-<pre><code>$ git config --global alias.graph "log --all --graph --decorate --oneline"</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">git</span> config <span class="at">--global</span> alias.graph <span class="st">"log --all --graph --decorate --oneline"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -294,11 +377,11 @@ Try to avoid tracking binary files, for eg. <code>.jpeg</code>, <code>.png</code
 </div>
 </div>
 </section>
-<section id="branching-git-repositories" class="level3">
-<h3 class="anchored" data-anchor-id="branching-git-repositories">Branching git repositories</h3>
+<section id="branching-git-repositories" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="branching-git-repositories"><span class="header-section-number">1.6</span> Branching git repositories</h2>
 <p>Want to <code>git branch</code> a repo that you like to edit but do not want to mess with the original? Use the branching commands</p>
-<pre><code>$ git branch branch_name main
-$ git branch branch_name master</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a><span class="ex">$</span> git branch branch_name main</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="ex">$</span> git branch branch_name master</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -312,22 +395,23 @@ Note
 <p>The name <code>master</code> to the original branch is an old convention, the modern one is <code>main</code>.</p>
 </div>
 </div>
-<section id="list-all-the-branches" class="level4">
-<h4 class="anchored" data-anchor-id="list-all-the-branches">List all the branches</h4>
-<pre><code>$ git branch</code></pre>
 </section>
-<section id="switching-branches" class="level4">
-<h4 class="anchored" data-anchor-id="switching-branches">Switching branches</h4>
-<pre><code>$ git switch branch_name</code></pre>
+<section id="list-all-the-branches" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="list-all-the-branches"><span class="header-section-number">1.7</span> List all the branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">git</span> branch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="merging-branches" class="level4">
-<h4 class="anchored" data-anchor-id="merging-branches">Merging branches</h4>
-<pre><code>$ git merge branch_name</code></pre>
+<section id="switching-branches" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="switching-branches"><span class="header-section-number">1.8</span> Switching branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">git</span> switch branch_name</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="merging-branches" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="merging-branches"><span class="header-section-number">1.9</span> Merging branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">git</span> merge branch_name</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>It branches with the branch node it was branched from.</p>
 </section>
-<section id="deleting-branches" class="level4">
-<h4 class="anchored" data-anchor-id="deleting-branches">Deleting branches</h4>
-<pre><code>$ git branch -d branch_name</code></pre>
+<section id="deleting-branches" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="deleting-branches"><span class="header-section-number">1.10</span> Deleting branches</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">git</span> branch <span class="at">-d</span> branch_name</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -354,7 +438,76 @@ Note
 <p>If you remove the <code>.git</code> folder, you lose everything tracked in your local machine.</p>
 </div>
 </div>
-<!-- ## Git and GitHub -->
+</section>
+</section>
+<section id="secure-shell-protocol-ssh" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Secure Shell Protocol (SSH)</h1>
+<p>The calculations in computational chemistry is not something that can be done in laptops. Yes, the fastness of the calculations have increased to much greater extent but still for larger molecules one needs to use high performance compute clusters or known as HPC. These machines do not have a <strong>graphical user interface</strong> (GUI) which means it cannot be used with a mouse pointer and click to function. Hence, one needs to use what is called <strong>command line interface</strong> (CLI) or using a terminal. The HPC has to be connected from a regular laptop or desktop in your office. The connection protocol is usually done via <strong>secure shell protocol</strong> or <strong>ssh</strong>. A usual ssh command is</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">ssh</span> username@hostname.domain</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>keywords</strong></th>
+<th style="text-align: left;"><strong>meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">username for the account in HPC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hostname</td>
+<td style="text-align: left;">hostname of the node of HPC can be a single name or an IP address</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">domain</td>
+<td style="text-align: left;">domain of the network connected to the HPC usually something <code>.com</code> or <code>.org</code></td>
+</tr>
+</tbody>
+</table>
+<p>After entering the command one has to enter their password associated to their accounts to access the remote server. To avoid this multiple password pressing one can use the following scheme.</p>
+<section id="passwordless-ssh-login" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="passwordless-ssh-login"><span class="header-section-number">2.1</span> Passwordless ssh login</h2>
+<p>First open terminal and check whether you have a ssh key in your local laptop/desktop by checking the existence of <code>~/.ssh</code> folder. And then if not then follow the steps:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> rsa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>this will generate two files <code>id_pub</code> and <code>id_pub.rsa</code></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you want the passphrase to be empty press two times <kbd title="Enter" aria-hidden="true">Enter</kbd><span class="visually-hidden">Enter</span>. It is definitely <strong>recommended</strong> to give a password to secure the ssh key in your own machine.</p>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a><span class="ex">ssh-copy-id</span> <span class="at">-i</span> ~/.ssh/id_rsa.pub username@hostname</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>type the password for the hostmachine login and probably it should be done. Last but least check that the contents of id_pub.rsa has copied the same content in the ~/.ssh/authorized_keys file in your remote host.</p>
+</section>
+<section id="github-or-gitlab-ssh-keys" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="github-or-gitlab-ssh-keys"><span class="header-section-number">2.2</span> Github or Gitlab ssh keys</h2>
+<p>For passwordless git push and pulls one can <code>copy + paste</code> the contents of <code>id_pub.rsa</code> from <code>~/.ssh/</code> directory into the github or gitlab authorization sections to push and pull without password</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>ssh</code> cloning is much better and more stable than <code>http</code></p>
+</div>
+</div>
 
 
 </section>
@@ -779,5 +932,5 @@ Note
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
