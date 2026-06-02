@@ -2,7 +2,7 @@
 #let bear-brownie = rgb("#73593A")
 #let matcha-bright = rgb("#0c7e29")
 
-#let sans-font="TeX Gyre Heros"
+#let sans-font="Linux Biolinum O"
 #let serif-font="Libertinus Serif"
 #let mono-font = "Intel One Mono"
 
@@ -37,10 +37,10 @@ align(center)[
   inset: 32pt,
   fill: root-color
 )[
-#align(left, text(16pt, fill: white, weight: "bold", font: sans-font)[#title])
-#align(left, text(12pt, fill: white, weight: "bold", font: sans-font)[#subtitle])
+#align(left, text(16pt, fill: white, weight: "bold", font: serif-font)[#title])
+#align(left, text(12pt, fill: white, weight: "bold", font: serif-font)[#subtitle])
 #v(1em)
-#align(right, text(11pt, fill: white, weight: "bold",font: sans-font)[revised on  #datetime.today().display() | curated by Raunak Farhaz])
+#align(right, text(11pt, fill: white, weight: "bold",font: serif-font)[revised on  #datetime.today().display() | written by Raunak Farhaz])
 ]
 ]
 
@@ -50,10 +50,10 @@ set math.equation(numbering: "(1)")
 show math.equation: set block(spacing: 0.65em)
 
   // Configure headings.
-set heading(numbering: "I.A.1.")
-show heading: set text(font: sans-font, fill: root-color)
-set text(11pt, font: serif-font, fill: root-color.darken(30%))
-set par(justify: true, spacing: 0.55cm, leading: 0.35cm, first-line-indent: (amount: 0.75cm, all: true))
+set heading(numbering: none)
+show heading: set text(font: serif-font, fill: root-color)
+set text(11pt, font: sans-font, fill: root-color.darken(30%))
+set par(justify: true, spacing: 0.55cm, leading: 0.35cm)
   // Display the paper's contents.
   body
 }

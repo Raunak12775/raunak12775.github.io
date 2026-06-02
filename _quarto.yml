@@ -32,8 +32,8 @@ format:
     toc-location: right
     smooth-scroll: true
     code-line-numbers: true
-    code-overflow: wrap
-    highlight-style: kate
+    code-overflow: scroll
+    highlight-style: breeze
     code-copy: true
   
     

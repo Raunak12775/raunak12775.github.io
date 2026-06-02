@@ -2,8 +2,9 @@
   {
     "listing": "/resources/learn.html",
     "items": [
-      "/resources/teach/research101/main.html",
+      "/resources/teach/bluepaper20260602/coord-transformation.html",
       "/resources/teach/sciplots/plotting-story.html",
+      "/resources/teach/research101/main.html",
       "/resources/teach/paramagneticBonding/lange.html",
       "/resources/teach/particleInABox/particle-box.html",
       "/resources/teach/vectorMatrices/vectors.html"

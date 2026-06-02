@@ -2,19 +2,32 @@
 toc: false
 ---
 
-# Doctoral Thesis
+## Doctoral Thesis
+
 **Farhaz, R.** *Multiresolution Analysis in Extreme Magnetic Fields* [[PDF](https://edoc.hu-berlin.de/items/c88ce401-e0c8-4ef1-a965-201872bb12b3)]
 
-# Articles
+## Articles
 
-1. **Farhaz, R.**; Bischoff, F. A.; Stopkowicsz, S.; Blaschke, S. *Quantification of the basis set error for molecules in strong magnetic fields and general orientation.* **Journal of Chemical Physics** [[DOI](https://doi.org/10.1063/5.0274736)] **2025**
+1. Sardar, R.; Banik, R.; Ghosh, S.; **Farhaz, R.** *Drug-Induced Micelle-to-Supermicelle Transition in CTAB: Comparative Study with Acetylenic Gemini Surfactant via Experimental and DFT Approaches* [minor revision] **2026**
 
-2. Sardar, R.; Banik, R.; Ghosh, S.; **Farhaz, R.** *Drug-Induced Micelle-to-Supermicelle Transition in CTAB: Comparative Study with Acetylenic Gemini Surfactant via Experimental and DFT Approaches* [[minor revision]()] **2026**
+1. **Farhaz, R.**; Bischoff, F. A.; Stopkowicsz, S.; Blaschke, S. *Quantification of the basis set error for molecules in strong magnetic fields and general orientation.* **Journal of Chemical Physics** [[PDF](https://doi.org/10.1063/5.0274736)] **2025**
+
 
 <!-- ## In Preparation
 
 1. **Farhaz R.**, Rickert C., Bischoff F. A. *Helium Dimers and Trimers in Extreme Magnetic Fields : A
 Geometry Optimization Study* -->
 
+## Talks
 
+1. *Multiresolution Analysis in Extreme Magnetic Fields* - Doctoral Defense HU Berlin, Germany [PDF](talksPosters/phd-defense-t.pdf) **2026**
+
+
+## Posters
+
+1. *Studying basis set errors in strong magnetic fields with MRA* - World Association for Theoretical and Computational Chemists (WATOC) conference Oslo, Norway [PDF](talksPosters/watoc25-p.pdf) **2025**
+
+1. *Search for molecules in magnetic fields* - Numerical Methods in Quantum Chemistry (NMQC) conference Tromsø, Norway [PDF](talksPosters/nmqc23-p.pdf) **2023**
+
+1. *Prediction of Accurate Vibronic Spectra of Molecules in Strong Magnetic Field* - DFTK workshop Paris, France [PDF](talksPosters/dftk22-p.pdf) **2022**
 

@@ -10,7 +10,684 @@
 <atom:link href="https://raunakfarhaz.com/resources/learn.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 21 May 2026 19:32:24 GMT</lastBuildDate>
+<lastBuildDate>Tue, 02 Jun 2026 17:16:51 GMT</lastBuildDate>
+<item>
+  <title>Coordinate Transformation</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/bluepaper20260602/coord-transformation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="polar-or-spherical-coordinate-system" class="level2">
+<h2 class="anchored" data-anchor-id="polar-or-spherical-coordinate-system">Polar or Spherical Coordinate System</h2>
+<p>The spherical or polar coordinate system takes into account one radial component and two angular component to span the space. They are</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A&amp;r~%5Crightarrow~%5Ctext%7Bradial%20component%7D%20%5C%5C%0A&amp;%5Ctheta~%5Crightarrow~%5Ctext%7Bpolar%20angle%7D~&amp;%5B0%20%5Cleq%20%5Ctheta%20%5Cleq%20%5Cpi%5D%20%5C%5C%0A&amp;%5Cphi~%5Crightarrow~%5Ctext%7Bazimuthal%20angle%7D~&amp;%5B0%20%5Cleq%20%5Cphi%20%5Cleq%202%5Cpi%5D%0A%5Cend%7Balign%7D%0A"></p>
+<p>It can be illustrated which of the parameter does what in the following diagram.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/bluepaper20260602/spherical-illust.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Illustration of <img src="https://latex.codecogs.com/png.latex?r,%20%5Ctheta"> and <img src="https://latex.codecogs.com/png.latex?%5Cphi"> in 3D space.</figcaption>
+</figure>
+</div>
+<p>The relation between the Polar and Cartesian coordinates <img src="https://latex.codecogs.com/png.latex?%5C%7Bx,y,z%5C%7D"> is</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A&amp;x=r%20%5Csin%5Ctheta%20%5Ccos%5Cphi%20%5C%5C%0A&amp;y=r%20%5Csin%5Ctheta%20%5Csin%5Cphi%20%5C%5C%0A&amp;z=r%20%5Ccos%5Ctheta%0A%5Cend%7Balign%7D%0A"></p>
+<p>and <img src="https://latex.codecogs.com/png.latex?r%20=%20%5Csqrt%7Bx%5E2%20+%20y%5E2%20+%20z%5E2%7D"> . In quantum mechanics the major operator which is of interest to us is the Hamiltonian which comprises of Laplacian or double derivative operator.</p>
+</section>
+<section id="how-can-we-transform-a-cartesian-laplacian-to-spherical" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-we-transform-a-cartesian-laplacian-to-spherical">How can we transform a Cartesian Laplacian to Spherical?</h2>
+<p>We need to use multivariable chain rule. The formula for the <img src="https://latex.codecogs.com/png.latex?x"> component is</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20x%7D%20=%20%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20x%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20+%20%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20x%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Cphi%7D%0A"></p>
+<p>It is similar for <img src="https://latex.codecogs.com/png.latex?y"> and <img src="https://latex.codecogs.com/png.latex?z">. Just replace the <img src="https://latex.codecogs.com/png.latex?x"> with <img src="https://latex.codecogs.com/png.latex?y"> or <img src="https://latex.codecogs.com/png.latex?z"> and the equation would be in front of you.</p>
+<section id="obtaining-fracpartial-rpartial-x-fracpartial-rpartial-yfracpartial-rpartial-z" class="level3">
+<h3 class="anchored" data-anchor-id="obtaining-fracpartial-rpartial-x-fracpartial-rpartial-yfracpartial-rpartial-z">Obtaining <img src="https://latex.codecogs.com/png.latex?%5C%7B%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20x%7D,%20%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20y%7D,%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20z%7D%5C%7D"></h3>
+<p>Using <img src="https://latex.codecogs.com/png.latex?r%20=%20%5Csqrt%7Bx%5E2%20+%20y%5E2%20+%20z%5E2%7D~%20%5Ctext%7Bor,%7D%20~r%5E2%20=%20x%5E2%20+%20y%5E2%20+%20z%5E2"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20x%7D%20=%20%5Cfrac%7Bx%7D%7Br%7D%20%5Cquad%5Ctext%7Band%7D%5Cquad%20%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20y%7D%20=%20%5Cfrac%7By%7D%7Br%7D%20%5Cquad%5Ctext%7Band%7D%5Cquad%20%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20z%7D%20=%20%5Cfrac%7Bz%7D%7Br%7D%0A"></p>
+<p>Substituting the values of <img src="https://latex.codecogs.com/png.latex?%5C%7Bx,y,z%5C%7D"> in polar form we will easily obtain</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A&amp;%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20x%7D%20=%20%5Csin%5Ctheta%20%5Ccos%5Cphi%20%5C%5C%0A&amp;%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20y%7D%20=%20%5Csin%5Ctheta%20%5Csin%5Cphi%20%5C%5C%0A&amp;%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20z%7D%20=%20%5Ccos%5Ctheta%0A%5Cend%7Balign%7D%0A"></p>
+</section>
+<section id="obtaining-fracpartial-thetapartial-x-fracpartial-thetapartial-yfracpartial-thetapartial-z" class="level3">
+<h3 class="anchored" data-anchor-id="obtaining-fracpartial-thetapartial-x-fracpartial-thetapartial-yfracpartial-thetapartial-z">Obtaining <img src="https://latex.codecogs.com/png.latex?%5C%7B%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20x%7D,%20%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20y%7D,%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20z%7D%5C%7D"></h3>
+<p>The expression with only <img src="https://latex.codecogs.com/png.latex?%5Ctheta"> is</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Az%20=%20r%20%5Ccos%5Ctheta%20%5CRightarrow%20%5Ccos%5Ctheta%20=%20%5Cfrac%7Bz%7D%7Br%7D%0A"></p>
+<p>from this we need to derive the partial derivatives of <img src="https://latex.codecogs.com/png.latex?%5Ctheta"> wrt cartesian variables, so differentiating the above equation wrt <img src="https://latex.codecogs.com/png.latex?x"> gives</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A-%5Csin%5Ctheta%20%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20x%7D%20&amp;=%20-%5Cfrac%7Bz%7D%7Br%5E2%7D%20%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20x%7D%5C%5C%0A%5CRightarrow%20%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20x%7D%20&amp;=%20%5Cfrac%7Br%20%5Ccos%5Ctheta%7D%7Br%5E2%20%5Csin%5Ctheta%7D%20%5Csin%5Ctheta%20%5Ccos%5Cphi%20%5C%5C%0A%5CRightarrow%20%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20x%7D%20&amp;=%20%5Cfrac%7B%5Ccos%5Ctheta%20%5Ccos%5Cphi%7D%7Br%7D%0A%5Cend%7Balign%7D%0A"></p>
+<p>In a similar case</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A&amp;%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20y%7D%20=%20%5Cfrac%7B%5Ccos%5Ctheta%20%5Csin%5Cphi%7D%7Br%7D%20%5C%5C%0A&amp;%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20z%7D%20=%20-%5Cfrac%7B%5Csin%5Ctheta%7D%7Br%7D%0A%5Cend%7Balign%7D%0A"></p>
+</section>
+<section id="obtaining-fracpartial-phipartial-x-fracpartial-phipartial-yfracpartial-phipartial-z" class="level3">
+<h3 class="anchored" data-anchor-id="obtaining-fracpartial-phipartial-x-fracpartial-phipartial-yfracpartial-phipartial-z">Obtaining <img src="https://latex.codecogs.com/png.latex?%5C%7B%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D,%20%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20y%7D,%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20z%7D%5C%7D"></h3>
+<p>The expression for <img src="https://latex.codecogs.com/png.latex?%5Cphi"> exclusively can be found in dividing <img src="https://latex.codecogs.com/png.latex?y/x"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7By%7D%7Bx%7D%20=%20%5Cfrac%7Br%20%5Csin%5Ctheta%20%5Csin%5Cphi%7D%7Br%20%5Csin%5Ctheta%20%5Ccos%5Cphi%7D%20%5CRightarrow%20%5Ctan%5Cphi%20=%20%5Cfrac%7By%7D%7Bx%7D%0A"></p>
+<p>Differentiating the above expression wrt <img src="https://latex.codecogs.com/png.latex?x"> gives</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A-%5Cfrac%7By%7D%7Bx%5E2%7D%20&amp;=%20%5Csec%5E2%20%5Cphi%20~%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D%20%5C%5C%0A%5CRightarrow%20%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D%20&amp;=%20-%5Cfrac%7By%20%5Ccos%5E2%20%5Cphi%7D%7Bx%5E2%7D%20%5C%5C%0A%5CRightarrow%20%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D%20&amp;=%20-%5Cfrac%7Br%20%5Csin%5Ctheta%20%5Csin%5Cphi%20%5Ccos%5E2%20%5Cphi%7D%7Br%5E2%20%5Csin%5E2%20%5Ctheta%20%5Ccos%5E2%20%5Cphi%7D%20%5C%5C%0A%5Ctherefore%20%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D%20&amp;=%20-%5Cfrac%7B%5Csin%5Cphi%7D%7Br%20%5Csin%5Ctheta%7D%0A%5Cend%7Balign%7D%0A"></p>
+<p>Similarly</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A&amp;%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20y%7D%20=%20%5Cfrac%7B%5Ccos%5Cphi%7D%7Br%5Csin%5Ctheta%7D%20%5C%5C%0A&amp;%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20z%7D%20=%200%0A%5Cend%7Balign%7D%0A"></p>
+</section>
+<section id="combine-and-make-fracpartial-partial-x" class="level3">
+<h3 class="anchored" data-anchor-id="combine-and-make-fracpartial-partial-x">Combine and Make <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20%7D%7B%5Cpartial%20x%7D"></h3>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20x%7D%20&amp;=%20%5Cfrac%7B%5Cpartial%20r%7D%7B%5Cpartial%20x%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20+%20%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20x%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Cfrac%7B%5Cpartial%20%5Cphi%7D%7B%5Cpartial%20x%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Cphi%7D%20%5C%5C%0A%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20x%7D%20&amp;=%20%5Csin%5Ctheta%20%5Ccos%5Cphi%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20+%20%5Cfrac%7B%5Ccos%5Ctheta%5Ccos%5Cphi%7D%7Br%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%20-%20%5Cfrac%7B%5Csin%5Cphi%7D%7Br%5Csin%5Ctheta%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Cphi%7D%0A%5Cend%7Balign%7D%0A"></p>
+<p>After similar treatment in the <img src="https://latex.codecogs.com/png.latex?y"> and <img src="https://latex.codecogs.com/png.latex?z"> we can easily deduce the first order derivatives</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20y%7D%20&amp;=%20%5Csin%5Ctheta%5Csin%5Cphi%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20+%20%5Cfrac%7B%5Ccos%5Ctheta%5Csin%5Cphi%7D%7Br%7D%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Cfrac%7B%5Ccos%5Cphi%7D%7Br%5Csin%5Ctheta%7D%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Cphi%7D%5C%5C%0A%5Cend%7Balign%7D%0A"></p>
+<p>and lastly for <img src="https://latex.codecogs.com/png.latex?z"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20z%7D%20&amp;=%20%5Ccos%5Ctheta%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20-%5Cfrac%7B%5Csin%5Ctheta%7D%7Br%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%5C%5C%0A%5Cend%7Balign%7D%0A"></p>
+<p>From here on the <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20x%5E2%7D"> is much messier because we need to differentiate a differentiated function. Principally, one can do it on pen and paper, but we rather use either <code>wolfram mathematica</code> or <code>sympy</code> from <strong>python</strong>, whatever is available to compute symbolic algebra.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is to be noted that <code>Wolfram</code> has been built over decades so it has the richest symbolic algebra system in the world right now. But the only issue is its closedness. Hence, the reachability to many students, I believe, would be low. Hence for those I give the python <code>sympy</code> alternative. I also tried <code>Julia</code>’s <code>Symbolics.jl</code> package but it was not so easy for me. In future when I get used to it I will also provide <code>Julia</code> tutorial too for this. For now we stick with <code>Wolfram</code> and <code>Python</code></p>
+</div>
+</div>
+</section>
+</section>
+<section id="wolfram" class="level2">
+<h2 class="anchored" data-anchor-id="wolfram">Wolfram</h2>
+<p>If one has <code>Wolfram Mathematica</code> license or open source license then it is much easier to look at Laplacian directly in different coordinate system.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource mathematica number-lines code-with-copy"><code class="sourceCode mathematica"><span id="cb1-1">Laplacian<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">[</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">f</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">[</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">r</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> theta<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> phi<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">],</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">r</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> theta<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> phi<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">},</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Spherical"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">]</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Simplify</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Expand</span></span></code></pre></div></div>
+<p>The result would be obtained directly and there would be terms like <img src="https://latex.codecogs.com/png.latex?f%5E%7B(2,0,0)%7D%20%5Br,%5Ctext%7Btheta%7D,%20%5Ctext%7Bphi%7D%5D"> which is equivalent to <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%5E2%20f%7D%7B%5Cpartial%20r%5E2%7D"></p>
+</section>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<p>In <code>sympy</code> one has to do a little bit coding to derive it, first importing the package</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Displaying Formula and Equations">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Displaying Formula and Equations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use Jupyter notebook environment for the latex equation rendering and the function <code>display(expr)</code> automatically renders a latex expression in the notebook output cell. If one wants to have raw latex syntax for the expression one should use <code>latex(expr)</code> for it. I have not tried marimo notebooks for this stuff, but I hope it would work the same.</p>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sympy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> </span></code></pre></div></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If one wants to import like the following</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> sympy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> sp</span></code></pre></div></div>
+<p>then all the functions need to be called like</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">d_expr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sp.diff(expr)</span></code></pre></div></div>
+</div>
+</div>
+<p>Defining variables and functions</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1">r, theta, phi <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> symbols(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'r theta phi'</span>, positive<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>, real<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb5-2">f <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Function(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'f'</span>)(r, theta, phi)</span></code></pre></div></div>
+<p>Defining a python function to differentiate, although one can do it manually hard-coding by using <code>diff()</code> sympy function.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> diff_xi(cf_r, cf_theta, cf_phi, expr):</span>
+<span id="cb6-2">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> cf_r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> diff(expr, r) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> cf_theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> diff(expr, theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> cf_phi <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> diff(expr, phi)</span></code></pre></div></div>
+<p>The <code>cf_r</code> and others are coefficients of the derivative expression (<em>which are derived earlier by hand</em>). So one needs to put them into variables</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># x coeffs</span></span>
+<span id="cb7-2">ax_r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sin(theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> cos(phi)</span>
+<span id="cb7-3">ax_theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> cos(theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> cos(phi) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> r</span>
+<span id="cb7-4">ax_phi <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>sin(phi) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> sin(theta))</span>
+<span id="cb7-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># y coeffs</span></span>
+<span id="cb7-6">ay_r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sin(theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> sin(phi)</span>
+<span id="cb7-7">ay_theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> cos(theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> sin(phi) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> r</span>
+<span id="cb7-8">ay_phi <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> cos(phi) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> sin(theta))</span>
+<span id="cb7-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># z coeffs</span></span>
+<span id="cb7-10">az_r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> cos(theta)</span>
+<span id="cb7-11">az_theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>sin(theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> r</span>
+<span id="cb7-12">az_phi <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span></code></pre></div></div>
+<p>Do the double derivative using the custom <code>diff_xi()</code> function.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1">d2f_dx2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> diff_xi(ax_r, ax_theta, ax_phi, diff_xi(ax_r, ax_theta, ax_phi, f))</span>
+<span id="cb8-2">d2f_dy2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> diff_xi(ay_r, ay_theta, ay_phi, diff_xi(ay_r, ay_theta, ay_phi, f))</span>
+<span id="cb8-3">d2f_dz2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> diff_xi(az_r, az_theta, az_phi, diff_xi(az_r, az_theta, az_phi, f))</span></code></pre></div></div>
+<p>Calculate the Laplacian by summing them all up.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1">laplacian <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> d2f_dx2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> d2f_dy2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> d2f_dz2</span></code></pre></div></div>
+<p>Now display the Laplacian</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1">display(expand(simplify(laplacian)))</span></code></pre></div></div>
+<p>The output is</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Cpartial%5E%7B2%7D%7D%7B%5Cpartial%20r%5E%7B2%7D%7D%20f%7B%5Cleft(r,%5Ctheta,%5Cphi%20%5Cright)%7D%20+%20%5Cfrac%7B2%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20f%7B%5Cleft(r,%5Ctheta,%5Cphi%20%5Cright)%7D%7D%7Br%7D%20+%20%5Cfrac%7B%5Cfrac%7B%5Cpartial%5E%7B2%7D%7D%7B%5Cpartial%20%5Ctheta%5E%7B2%7D%7D%20f%7B%5Cleft(r,%5Ctheta,%5Cphi%20%5Cright)%7D%7D%7Br%5E%7B2%7D%7D%20+%20%5Cfrac%7B%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%20f%7B%5Cleft(r,%5Ctheta,%5Cphi%20%5Cright)%7D%7D%7Br%5E%7B2%7D%20%5Ctan%7B%5Cleft(%5Ctheta%20%5Cright)%7D%7D%20+%20%5Cfrac%7B%5Cfrac%7B%5Cpartial%5E%7B2%7D%7D%7B%5Cpartial%20%5Cphi%5E%7B2%7D%7D%20f%7B%5Cleft(r,%5Ctheta,%5Cphi%20%5Cright)%7D%7D%7Br%5E%7B2%7D%20%5Csin%5E%7B2%7D%7B%5Cleft(%5Ctheta%20%5Cright)%7D%7D%0A"></p>
+<p>which can be simplified further to be written as</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Cpartial%5E%7B2%7D%7D%7B%5Cpartial%20r%5E%7B2%7D%7D%20+%20%5Cfrac%7B2%7D%7Br%7D%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20+%20%5Cfrac%7B1%7D%7Br%5E%7B2%7D%7D%20%5Cfrac%7B%5Cpartial%5E%7B2%7D%7D%7B%5Cpartial%20%5Ctheta%5E%7B2%7D%7D%20+%20%5Cfrac%7B%5Ccot%5Ctheta%7D%7Br%5E2%7D%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Cfrac%7B1%7D%7Br%5E2%20%20%5Csin%5E2%5Ctheta%7D%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20%5Cphi%5E2%7D%0A"></p>
+<p>The equation can be also written in a way which textbooks write it.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cnabla%5E2%20=%20%5Cfrac%7B1%7D%7Br%5E2%7D%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20%5Cleft(r%5E2%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20r%7D%20%5Cright)%20+%20%5Cfrac%7B1%7D%7Br%5E2%20%5Csin%5Ctheta%7D%20%5Cfrac%7B%5Cpartial%20%7D%7B%5Cpartial%20%5Ctheta%7D%20%5Cleft(%5Csin%20%5Ctheta%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Ctheta%7D%5Cright)%20+%20%5Cfrac%7B1%7D%7Br%5E2%20%5Csin%5E2%5Ctheta%7D%20%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20%5Cphi%5E2%7D%0A"></p>
+</section>
+<section id="cylindrical-coordinate-system" class="level1">
+<h1>Cylindrical Coordinate System</h1>
+<p>Similar to polar coordinate system, cylindrical coordinate system can be visualized as follows where the degree of freedom is <img src="https://latex.codecogs.com/png.latex?%5C%7B%5Crho,%20%5Cphi,z%5C%7D">.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/bluepaper20260602/cylindrical-illust.svg" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption>Visualization of Cylindrical coordinate system. Attribution: By Jorge Stolfi - Own work, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=6692609">https://commons.wikimedia.org/w/index.php?curid=6692609</a></figcaption>
+</figure>
+</div>
+<p>One can go through hardships again using pen and paper and derive the Laplacian in cylindrical coordinate system exactly like in the previous case. Or if you are lazy like me use <code>wolfram</code> or use a hybrid method with <code>sympy</code>. Here I use <code>wolfram</code>. Firstly, the relation between the Cartesian and Cylindrical can also be seen using the following command</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode numberSource mathematica number-lines code-with-copy"><code class="sourceCode mathematica"><span id="cb11-1">CoordinateTransform<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">[</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cylindrical"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cartesian"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>rho<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> phi<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">z</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}]</span></span></code></pre></div></div>
+<p>The relations are</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%20%20%20%20&amp;x%20=%20%5Crho%20%5Ccos%20%5Cphi%20%5C%5C%0A%20%20%20%20&amp;y%20=%20%5Crho%20%5Csin%20%5Cphi%20%5C%5C%0A%20%20%20%20&amp;z=z%0A%5Cend%7Balign%7D%0A"></p>
+<p>where</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Crho=%5Csqrt%7B%20x%5E2%20+%20y%5E2%20%7D%0A"></p>
+<p>Just like the previous treatment, one can use the same chain rule logic and find the Laplacian or</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode numberSource mathematica number-lines code-with-copy"><code class="sourceCode mathematica"><span id="cb12-1">Laplacian<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">[</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">f</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">[</span>rho<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> phi<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">z</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">],</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>rho<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> phi<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">z</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">},</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cylindrical"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">]</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Simplify</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Expand</span></span></code></pre></div></div>
+<p>and the result is</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cnabla%5E2=%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20z%5E2%7D%20+%20%5Cfrac%7B1%7D%7B%5Crho%5E2%7D%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20%5Cphi%5E2%7D%20+%20%5Cfrac%7B1%7D%7B%5Crho%7D%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20%5Crho%7D%20+%20%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20%5Crho%5E2%7D%0A"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>bluepaper</category>
+  <guid>https://raunakfarhaz.com/resources/teach/bluepaper20260602/coord-transformation.html</guid>
+  <pubDate>Tue, 02 Jun 2026 17:16:51 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/bluepaper20260602/cover.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Scientific Plotting</title>
+  <dc:creator>Raunak Farhaz</dc:creator>
+  <link>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-hard-way" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> The Hard Way</h1>
+<p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
+<ol type="1">
+<li>Conceptualization</li>
+<li>Experimentation</li>
+<li>Data Curation</li>
+<li>Analysis</li>
+</ol>
+<p>The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the <code>Analysis</code> part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.</p>
+<p>There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the <code>matplotlib</code> a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A(Tools) --&gt; B(Matplotlib)
+    A --&gt; C(Plots.jl)
+    A --&gt; D(Wolfram Mathematica)
+    A --&gt; E(Gnuplot)
+    A --&gt; F(Libreoffice)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="julia" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="julia"><span class="header-section-number">1.1</span> Julia</h2>
+<p>Here is the thing Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">using</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">Plots</span></span>
+<span id="cb1-2">x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">collect</span>(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-3">y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sin</span>.(x)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(x,y,xlab<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"x"</span>,ylab<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sin(x)"</span>)</span></code></pre></div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/jlplots.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p><strong>Pros</strong></p>
+<ul>
+<li>It is really intuitive and simple.</li>
+<li>It has a good documentation for most kind of plots see the link <a href="https://docs.juliaplots.org/latest/tutorial/" class="uri">https://docs.juliaplots.org/latest/tutorial/</a></li>
+<li>It has a huge amount of out of the box styles to be used for your particular purposes</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li><p>Although the issue of ttfp has been addressed well in <code>v1.9</code> and even more in <code>v1.10</code> but it is in news that <code>v1.11</code> is doing again worse in terms of ttfp compared to the older versions. So you can see it is a bit of a reliability issue.</p></li>
+<li><p>The package for loading dataframes or in plain english simply data from let’s say <code>excel</code> or <code>csv</code> files is called <code>DataFrames</code>. As we speak, I feel the package is not mature enough compared to the equivalent ones in <code>python</code>.</p></li>
+</ul>
+<section id="concluding-remarks" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="concluding-remarks"><span class="header-section-number">1.1.1</span> Concluding remarks</h3>
+<p>If you are using <code>julia</code> for a simulation or an algorithm and you also want to plot some outcomes while running the simulation. Then I would say go for it. Because it would anyways take time so why not just use a functionality that is already given in the programming environment. But if you want it as a standalone data analysis tool then you might feel things are a bit slower.</p>
+</section>
+</section>
+<section id="wolfram-mathematica" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="wolfram-mathematica"><span class="header-section-number">1.2</span> Wolfram Mathematica</h2>
+<p>This is meant for a visual and computeresque mathematical tool made by a brilliant physicist Stephen Wolfram in 90s for symbolic computation (which basically means to have a translation of mathematics done in pen and paper to the computer screen). It became a bit of popular tool. But the worst part for the students is it is licensed and not open-source. Recent news although says how <code>wolfram</code> is giving free licenses for academic usage but only the headless environment. So basically the strength of mathematica lies in the notebook environment according to me. But if one does not get to use the notebook then it is a bit of a pity. So I would rather skip this section of syntax completely because the price might be a bit of a hurdle for the students.</p>
+<section id="concluding-remarks-1" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="concluding-remarks-1"><span class="header-section-number">1.2.1</span> Concluding remarks</h3>
+<p>I also plotted initially many of my research paper plots in mathematica. But sooner I realised scripting with wolfram is a bit of a hurdle especially when you need to plot many of them.</p>
+</section>
+</section>
+<section id="gnuplot" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="gnuplot"><span class="header-section-number">1.3</span> Gnuplot</h2>
+<p>Gnuplot has nothing to do with <code>GNU</code> (those who are familiar with <code>linux</code> or <code>unix</code>). It is a complete terminal based plotter. It is quite powerful. But the learning curve can be a bit high. I tried it in my masters and then also tried to use it in my PhD. Still it bothers me and always makes me google things which is a bit of a pain. I mean its okay to google things, but not okay to look into google to make even smaller stuffs. But it is definitely powerful but I feel it is outdated. I will skip this too.</p>
+</section>
+<section id="libreoffice" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="libreoffice"><span class="header-section-number">1.4</span> Libreoffice</h2>
+<p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
+</section>
+<section id="matplotlib-the-winner" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="matplotlib-the-winner"><span class="header-section-number">1.5</span> Matplotlib : the winner</h2>
+<p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb2-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb2-3">x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.arange(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>)</span>
+<span id="cb2-4">y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.sin(x)</span>
+<span id="cb2-5">plt.plot(x,y)</span>
+<span id="cb2-6">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"x"</span>)</span>
+<span id="cb2-7">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sin(x)"</span>)</span>
+<span id="cb2-8">plt.show()</span></code></pre></div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/python.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
+</section>
+</section>
+<section id="strong-start" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Strong Start</h1>
+<p>There are innumerous ways to waste time during your first year of Ph.D.</p>
+<ul>
+<li>How would I produce very beautiful looking plots?</li>
+<li>What tools are the best?</li>
+<li>Do you have any script that you use to generate plots?</li>
+</ul>
+<p>These questions drove me crazy in my first year and I wasted so much time as there were overwhelming amount of information on these things in internet. But I would have been extremely happy if there was one single workflow that generates</p>
+<ol type="1">
+<li>a high resolution image, preferably in PDF</li>
+<li>font family that blends well with <em>New Computer Modern</em> font (default font in <img src="https://latex.codecogs.com/png.latex?%5CLaTeX">)</li>
+<li>it would be even great that there are already presets for different standard journals</li>
+<li>renders mathematical formulas well</li>
+</ol>
+<section id="scienceplots-will-save-your-day" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="scienceplots-will-save-your-day"><span class="header-section-number">2.1</span> Scienceplots will save your day</h2>
+<p>There is a package in both <code>conda-forge</code> as well as <code>pip</code> repositories called <code>scienceplots</code>. And it solved all of my desires and it will also solve yours too. It basically contains global style settings for matplotlib library so one kind of presets for many standard journals. It also has color-blind friendly palettes. All the functions of matplotlib can be used as it is. So just install and use it. I will go through it one by one through examples. But first let’s install it. There are 3 ways of doing it, do whatever suits you.</p>
+<ul>
+<li><em>conda</em></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> conda install conda-forge::scienceplots</span></code></pre></div></div>
+<ul>
+<li><em>pip</em></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> pip install scienceplots</span></code></pre></div></div>
+<ul>
+<li><em>uv</em></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> uv add scienceplots</span></code></pre></div></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>uv</code> is a modern python package manager that is written using <code>rust</code> and the installations are blazingly fast compared to <code>conda</code> and <code>pip</code>.</p>
+</div>
+</div>
+<p>The last <code>python</code> example using matplotlib looked very unprofessional and without anything. Now we will take the same plot and use the scienceplots style backend and generate the plot and we will see how it makes pretty plots effortlessly.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> scienceplots</span>
+<span id="cb6-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb6-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb6-4">plt.style.use([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"science"</span>])</span>
+<span id="cb6-5">x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.arange(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>)</span>
+<span id="cb6-6">y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>np.sin(x)</span>
+<span id="cb6-7">plt.plot(x,y)</span>
+<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"x"</span>)</span>
+<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sin(x)"</span>)</span>
+<span id="cb6-10">plt.show()</span></code></pre></div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/scipyplt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p>Hence one can see that it has <code>tex</code> fonts rendered within the plot by default “science” style.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One should be aware that the <img src="https://latex.codecogs.com/png.latex?%5CLaTeX"> should be installed in the machine so that it can use the <code>tex</code> fonts. Otherwise it would throw error.</p>
+</div>
+</div>
+<p>The amazing part about this package is that one does not need to think about fontfamily, fontsize, color-palletes etc. It kills a lot of time. And at the same time it is customizable and one can change components what they do not like. The next chapter will discuss about the detail of the <code>scienceplots</code> package and other styles. Once you are happy with the plot, export it into a <code>pdf</code> file by the following syntax.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1">plt.savefig(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"filename.pdf"</span>, bbox_inches<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
+<p>The <code>bbox_inches='tight'</code> keeps the whitespaces to be minimum. Enjoy your first plot already ready to put in your presentation, papers, notes, and wherever you want.</p>
+</section>
+</section>
+<section id="get-your-hands-dirty" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Get your hands dirty</h1>
+<p>Here is an example to show what we will like to achieve as our plot outputs for our amazing paper that we will like to publish.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" class="img-fluid figure-img" width="600"></p>
+<figcaption>Caption : The first 5 legendre polynomials in the domain of <img src="https://latex.codecogs.com/png.latex?%5B0,1%5D"></figcaption>
+</figure>
+</div>
+<p>So where to go from here</p>
+
+
+</section>
+
+ ]]></description>
+  <category>bigbook</category>
+  <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
+  <pubDate>Mon, 01 Jun 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/cover.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>CompChem Tools 101</title>
   <dc:creator>Raunak Farhaz</dc:creator>
@@ -390,303 +1067,6 @@ Tip
   <media:content url="https://raunakfarhaz.com/resources/teach/research101/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Scientific Plotting</title>
-  <dc:creator>Raunak Farhaz</dc:creator>
-  <link>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="the-hard-way" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> The Hard Way</h1>
-<p>In research there are 3 sequential processes that go through most of the time. They are enumerated as follows:</p>
-<ol type="1">
-<li>Conceptualization</li>
-<li>Experimentation</li>
-<li>Data Curation</li>
-<li>Analysis</li>
-</ol>
-<p>The writing of the manuscript is the advertisement and archiving part of the research for the successors to follow and extend it. I am not putting it in the list. I am going to talk about the <code>Analysis</code> part, where a major part goes to visualizing the data extracted from the experiment. Now this is not a tutorial that will answer your questions like - what is the best possible plot to make for a given set of data to have a meaningful illustration of the work? I would suggest to go through any statistics 101 course for that. Here I will talk about the technicalities of drawing a plot with the help computers. I learned it myself the hard way and I am archiving the story here so that you do not need to reinvent your wheel of plotting.</p>
-<p>There are many tools as a software to plot beautiful scientific plots but each one of them comes with its pros and cons. I have tried all of them and found out the <code>matplotlib</code> a python package to be the most quickest and simplest to use. Although I will go through briefly why I am not going to discuss about the other tools elaborately.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A(Tools) --&gt; B(Matplotlib)
-    A --&gt; C(Plots.jl)
-    A --&gt; D(Wolfram Mathematica)
-    A --&gt; E(Gnuplot)
-    A --&gt; F(Libreoffice)
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<section id="julia" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="julia"><span class="header-section-number">1.1</span> Julia</h2>
-<p>Here is the thing Julia is one of my most favourite programming languages. I admire its functionality especially in scientific programming. But it comes with a limitation (although it has been dealt with pretty good in the modern <code>julia</code> versions). The time to the first plot (ttfp) is large. In plain english, it means that the first plot that you generate will be produced slow compared to the second and third plot. The reason here is <code>julia</code> being a just-in-time (JIT) compile language. I will give you a brief example how it looks in terms of syntax and also how the default output looks. For the improvement of ttfp in <code>julia</code> Plots library please have a look into the blogpost <a href="https://viralinstruction.com/posts/latency/" class="uri">https://viralinstruction.com/posts/latency/</a></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">using</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">Plots</span></span>
-<span id="cb1-2">x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">collect</span>(<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">:</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.1</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">:</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb1-3">y <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">sin</span>.(x)</span>
-<span id="cb1-4"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">plot</span>(x,y,xlab<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"x"</span>,ylab<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"sin(x)"</span>)</span></code></pre></div></div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/jlplots.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
-</figure>
-</div>
-<p><strong>Pros</strong></p>
-<ul>
-<li>It is really intuitive and simple.</li>
-<li>It has a good documentation for most kind of plots see the link <a href="https://docs.juliaplots.org/latest/tutorial/" class="uri">https://docs.juliaplots.org/latest/tutorial/</a></li>
-<li>It has a huge amount of out of the box styles to be used for your particular purposes</li>
-</ul>
-<p><strong>Cons</strong></p>
-<ul>
-<li><p>Although the issue of ttfp has been addressed well in <code>v1.9</code> and even more in <code>v1.10</code> but it is in news that <code>v1.11</code> is doing again worse in terms of ttfp compared to the older versions. So you can see it is a bit of a reliability issue.</p></li>
-<li><p>The package for loading dataframes or in plain english simply data from let’s say <code>excel</code> or <code>csv</code> files is called <code>DataFrames</code>. As we speak, I feel the package is not mature enough compared to the equivalent ones in <code>python</code>.</p></li>
-</ul>
-<section id="concluding-remarks" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="concluding-remarks"><span class="header-section-number">1.1.1</span> Concluding remarks</h3>
-<p>If you are using <code>julia</code> for a simulation or an algorithm and you also want to plot some outcomes while running the simulation. Then I would say go for it. Because it would anyways take time so why not just use a functionality that is already given in the programming environment. But if you want it as a standalone data analysis tool then you might feel things are a bit slower.</p>
-</section>
-</section>
-<section id="wolfram-mathematica" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="wolfram-mathematica"><span class="header-section-number">1.2</span> Wolfram Mathematica</h2>
-<p>This is meant for a visual and computeresque mathematical tool made by a brilliant physicist Stephen Wolfram in 90s for symbolic computation (which basically means to have a translation of mathematics done in pen and paper to the computer screen). It became a bit of popular tool. But the worst part for the students is it is licensed and not open-source. Recent news although says how <code>wolfram</code> is giving free licenses for academic usage but only the headless environment. So basically the strength of mathematica lies in the notebook environment according to me. But if one does not get to use the notebook then it is a bit of a pity. So I would rather skip this section of syntax completely because the price might be a bit of a hurdle for the students.</p>
-<section id="concluding-remarks-1" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="concluding-remarks-1"><span class="header-section-number">1.2.1</span> Concluding remarks</h3>
-<p>I also plotted initially many of my research paper plots in mathematica. But sooner I realised scripting with wolfram is a bit of a hurdle especially when you need to plot many of them.</p>
-</section>
-</section>
-<section id="gnuplot" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="gnuplot"><span class="header-section-number">1.3</span> Gnuplot</h2>
-<p>Gnuplot has nothing to do with <code>GNU</code> (those who are familiar with <code>linux</code> or <code>unix</code>). It is a complete terminal based plotter. It is quite powerful. But the learning curve can be a bit high. I tried it in my masters and then also tried to use it in my PhD. Still it bothers me and always makes me google things which is a bit of a pain. I mean its okay to google things, but not okay to look into google to make even smaller stuffs. But it is definitely powerful but I feel it is outdated. I will skip this too.</p>
-</section>
-<section id="libreoffice" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="libreoffice"><span class="header-section-number">1.4</span> Libreoffice</h2>
-<p>It is useful to make quick data charts to see some instant trends in your data. But for the publication it is less useful and the customization options are limited.</p>
-</section>
-<section id="matplotlib-the-winner" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="matplotlib-the-winner"><span class="header-section-number">1.5</span> Matplotlib : the winner</h2>
-<p>After testing all of these from above I found out that <code>matplotlib</code> is pretty intuitive and easily customizable. And also the packages that you need for data analysis is very rich in python due to its high applicability in the field. The syntax is pretty comfortable and easy to remember. At least you do not need to google all the time for a basic plot. It looks a bit like the following with the default output.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb2-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb2-3">x<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>np.arange(<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.1</span>)</span>
-<span id="cb2-4">y<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>np.sin(x)</span>
-<span id="cb2-5">plt.plot(x,y)</span>
-<span id="cb2-6">plt.xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"x"</span>)</span>
-<span id="cb2-7">plt.ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"sin(x)"</span>)</span>
-<span id="cb2-8">plt.show()</span></code></pre></div></div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/python.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
-</figure>
-</div>
-<p>So I hope you got a bit of a flavour of how things are. I assume that you might be thinking that the output looks pretty basic. In the next blog post, I will go into the details of <code>matplotlib</code> of how it can be powerful and useful for academic publishing as well as day-to-day data analysis. Then I hope you will also be able to make very amazing and beautiful looking plots.</p>
-</section>
-</section>
-<section id="strong-start" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Strong Start</h1>
-<p>There are innumerous ways to waste time during your first year of Ph.D.</p>
-<ul>
-<li>How would I produce very beautiful looking plots?</li>
-<li>What tools are the best?</li>
-<li>Do you have any script that you use to generate plots?</li>
-</ul>
-<p>These questions drove me crazy in my first year and I wasted so much time as there were overwhelming amount of information on these things in internet. But I would have been extremely happy if there was one single workflow that generates</p>
-<ol type="1">
-<li>a high resolution image, preferably in PDF</li>
-<li>font family that blends well with <em>New Computer Modern</em> font (default font in <img src="https://latex.codecogs.com/png.latex?%5CLaTeX">)</li>
-<li>it would be even great that there are already presets for different standard journals</li>
-<li>renders mathematical formulas well</li>
-</ol>
-<section id="scienceplots-will-save-your-day" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="scienceplots-will-save-your-day"><span class="header-section-number">2.1</span> Scienceplots will save your day</h2>
-<p>There is a package in both <code>conda-forge</code> as well as <code>pip</code> repositories called <code>scienceplots</code>. And it solved all of my desires and it will also solve yours too. It basically contains global style settings for matplotlib library so one kind of presets for many standard journals. It also has color-blind friendly palettes. All the functions of matplotlib can be used as it is. So just install and use it. I will go through it one by one through examples. But first let’s install it. There are 3 ways of doing it, do whatever suits you.</p>
-<ul>
-<li><em>conda</em></li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> conda install conda-forge::scienceplots</span></code></pre></div></div>
-<ul>
-<li><em>pip</em></li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> pip install scienceplots</span></code></pre></div></div>
-<ul>
-<li><em>uv</em></li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> uv add scienceplots</span></code></pre></div></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><code>uv</code> is a modern python package manager that is written using <code>rust</code> and the installations are blazingly fast compared to <code>conda</code> and <code>pip</code>.</p>
-</div>
-</div>
-<p>The last <code>python</code> example using matplotlib looked very unprofessional and without anything. Now we will take the same plot and use the scienceplots style backend and generate the plot and we will see how it makes pretty plots effortlessly.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> scienceplots</span>
-<span id="cb6-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb6-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb6-4">plt.style.use([<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"science"</span>])</span>
-<span id="cb6-5">x<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>np.arange(<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.1</span>)</span>
-<span id="cb6-6">y<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>np.sin(x)</span>
-<span id="cb6-7">plt.plot(x,y)</span>
-<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"x"</span>)</span>
-<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"sin(x)"</span>)</span>
-<span id="cb6-10">plt.show()</span></code></pre></div></div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/scipyplt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
-</figure>
-</div>
-<p>Hence one can see that it has <code>tex</code> fonts rendered within the plot by default “science” style.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>One should be aware that the <img src="https://latex.codecogs.com/png.latex?%5CLaTeX"> should be installed in the machine so that it can use the <code>tex</code> fonts. Otherwise it would throw error.</p>
-</div>
-</div>
-<p>The amazing part about this package is that one does not need to think about fontfamily, fontsize, color-palletes etc. It kills a lot of time. And at the same time it is customizable and one can change components what they do not like. The next chapter will discuss about the detail of the <code>scienceplots</code> package and other styles. Once you are happy with the plot, export it into a <code>pdf</code> file by the following syntax.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1">plt.savefig(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"filename.pdf"</span>, bbox_inches<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
-<p>The <code>bbox_inches='tight'</code> keeps the whitespaces to be minimum. Enjoy your first plot already ready to put in your presentation, papers, notes, and wherever you want.</p>
-</section>
-</section>
-<section id="get-your-hands-dirty" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Get your hands dirty</h1>
-<p>Here is an example to show what we will like to achieve as our plot outputs for our amazing paper that we will like to publish.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://raunakfarhaz.com/resources/teach/sciplots/main-image.svg" class="img-fluid figure-img" width="600"></p>
-<figcaption>Caption : The first 5 legendre polynomials in the domain of <img src="https://latex.codecogs.com/png.latex?%5B0,1%5D"></figcaption>
-</figure>
-</div>
-<p>So where to go from here</p>
-
-
-</section>
-
- ]]></description>
-  <category>bigbook</category>
-  <guid>https://raunakfarhaz.com/resources/teach/sciplots/plotting-story.html</guid>
-  <pubDate>Wed, 20 May 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/sciplots/cover.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Perpendicular Paramagnetic Bonding Mechanism</title>
   <dc:creator>Raunak Farhaz</dc:creator>
   <link>https://raunakfarhaz.com/resources/teach/paramagneticBonding/lange.html</link>
@@ -704,7 +1084,7 @@ font-style: inherit;">'tight'</span>)</span></code></pre></div></div>
   <category>greenpaper</category>
   <guid>https://raunakfarhaz.com/resources/teach/paramagneticBonding/lange.html</guid>
   <pubDate>Fri, 10 Jan 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://raunakfarhaz.com/resources/teach/paramagneticBonding/cover.png" medium="image" type="image/png" height="113" width="144"/>
+  <media:content url="https://raunakfarhaz.com/resources/teach/paramagneticBonding/cover.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Particle in a Box</title>
