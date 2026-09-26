@@ -1,12 +1,12 @@
 ---
-title: ""
+title: "Research Interests"
 bibliography: reference.bib
-csl: acs.csl
+csl: ieee.csl
 number-sections: false
 ---
 
 
-# Multiresolution Analysis
+## Multiresolution Analysis
 
 Multiresolution Analysis (MRA) brings an effective way to solve Schrödinger equation.
 
@@ -22,24 +22,16 @@ $${#eq-function-projection}
 
 where $f^n (x)$ is the function resolved at $n^{th}$ level, $\phi^n_{kl}(x)$ are the scaling functions and $s^n_{kl}$ are the scaling coefficients. The scaling or basis functions are derived from Legendre Polynomials. For a detailed overview, book chapter written by Bischoff @bischoff2019 is a good starting point. Assuming the potential energy function in the system of interest is $\hat{V}=V(r)$ and the rearrangement of @eq-se will give the following expression
 
-\begin{align}
-\hat{H}\Psi &= E\Psi \\ 
-\Rightarrow (\hat{T} + \hat{V})\Psi &= E\Psi \\
-\Rightarrow (\hat{T} - E)\Psi &= -V\Psi \\
-\Rightarrow \Psi &= -(\hat{T} - E)^{-1}V\Psi \\
-\end{align}
+$$
+(\hat{T} + \hat{V})\Psi = E\Psi \quad \Longleftrightarrow \quad \Psi = -(\hat{T} - E)^{-1}\hat{V}\Psi \quad \Longleftrightarrow \quad \Psi = - G_{\mu} \hat{V} \Psi
+$${#eq-mra}
 
-::: {.callout-note icon=false}
-## Note
+::: {.callout-note icon=false title="Note"}
 Point to be noted here is that $V(r)$ can be any form of potential - Particle in a box, Simple harmonic oscillator, Hydrogen atom, Coulomb and Exchange from Hartree-Fock method etc.
 :::
 
 The resulting equation above can be algorithmically considered to be a fixed point iteration problem. It can be self-consistently solved with a given good guess of $\Psi$. At the end, MRA would produce results in complete basis set (CBS)  limit being a real space grid based method.
 
-# Perpendicular Paramagnetic Bonding
+## Molecules in strong magnetic Field
 
 Besides covalent and ionic bonding, there exists a third kind of distinct bonding which occurs primarily in presence of strong magnetic fields. There is a rehybridization of antibonding orbitals in the systems which are non-bonded in ambient atmospheres. For example, singlet He~2~, it does not have a primary binding interaction according to Molecular Orbital Theory (MOT). But it shows strong primary binding interaction with the increase in $\mathbf{B}$ values.
-
-## Limitations of Gaussian basis functions
-
-In this particular scenario MRA wavelets are much better suited for strong $\mathbf{B}$ calculations, as it do not require subtle handwork which one needs to do in case of atom centered Gaussian basis functions. The wavefunction in $\mathbf{B}$ is not gauge-invariant which makes them meaningless entities. To overcome it, one needs to make them gauge-invariant, which in practise done using LONDON orbitals. But MRA does not have these problems as it is a real space grid based approach.

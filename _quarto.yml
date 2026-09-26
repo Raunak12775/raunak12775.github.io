@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+bibliography: resources/reference.bib
+csl: resources/ieee.csl
+
 website:
   title: "Raunak Farhaz"
   site-url: https://raunakfarhaz.com

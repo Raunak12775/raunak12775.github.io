@@ -2,8 +2,8 @@
 #let bear-brownie = rgb("#73593A")
 #let matcha-bright = rgb("#0c7e29")
 
-#let sans-font="Linux Biolinum O"
-#let serif-font="Libertinus Serif"
+#let sans-font="Nimbus Sans"
+#let serif-font="Nimbus Roman"
 #let mono-font = "Intel One Mono"
 
 #let paper-colors = (
@@ -14,7 +14,6 @@
 
 // global variables - title, subtitle, paper-type
 #let colored-papers(
-  // The paper's title.
   title: "Paper Title",
   subtitle: "Subtitle of the paper if any",
   paper-type: "bluepaper",
@@ -24,36 +23,49 @@
   // title block banner
   // Configure the page.
   let root-color = paper-colors.at(paper-type)
-  set page(paper: "a4", margin: (x: 1.5cm, y: 1cm), fill: root-color.lighten(95%),
+  set page(paper: "a4", margin: (x: 15mm, y: 15mm),
 footer: context [
-      #set text(size: 9pt, font: sans-font)
-      #counter(page).display("1/1", both: true)
-    ]
+  #grid(
+    columns: (1fr,1fr),
+    align: (left, right),
+    [#set text(size: 8pt, font: sans-font, fill: black.lighten(50%))
+    © Dr. Raunak Farhaz | Last update - #datetime.today().display()],
+    [#set text(size: 8pt, font: sans-font, fill: black.lighten(50%))
+      #counter(page).display("1/1", both: true)]
+  )
+ ]
 )
-align(center)[
-#box(
-  width: 110%,
-  radius: 1em,
-  inset: 32pt,
-  fill: root-color
-)[
-#align(left, text(16pt, fill: white, weight: "bold", font: serif-font)[#title])
-#align(left, text(12pt, fill: white, weight: "bold", font: serif-font)[#subtitle])
-#v(1em)
-#align(right, text(11pt, fill: white, weight: "bold",font: serif-font)[revised on  #datetime.today().display() | written by Raunak Farhaz])
-]
-]
 
+align(center,
+box(
+  width: 110%,
+  radius: 0.5em,
+  inset: 6mm,
+  fill: root-color.lighten(90%)
+)[
+#align(left, text(13pt, fill: root-color, weight: "bold", font: sans-font)[#title])
+#align(left, text(11pt, fill: root-color, font: sans-font)[#subtitle])
+])
 v(2em)
 // Configure equation numbering and spacing.
 set math.equation(numbering: "(1)")
-show math.equation: set block(spacing: 0.65em)
+show math.equation: set text(font:"TeX Gyre Termes Math")
+set figure.caption(separator: [ -- ])
+show figure.where(kind: table): set figure.caption(position: top)
+show figure.where(kind: table): set block(breakable: true)
+show figure.caption: it => [
+    #set align(left)
+    #set par(justify: true, leading: 0.6em)
+    #set text(9pt, font: sans-font, fill: black.lighten(20%), style: "italic")
+    #pad(x: 1.5em)[#it]
+  ]
 
   // Configure headings.
 set heading(numbering: none)
-show heading: set text(font: serif-font, fill: root-color)
-set text(11pt, font: sans-font, fill: root-color.darken(30%))
-set par(justify: true, spacing: 0.55cm, leading: 0.35cm)
+show heading: set text(font: sans-font, fill: root-color)
+set text(11pt, font: serif-font)
+set par(justify: true)
+set bibliography(title: "")
   // Display the paper's contents.
   body
 }
